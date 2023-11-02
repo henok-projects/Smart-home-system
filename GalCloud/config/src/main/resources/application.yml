@@ -1,0 +1,12 @@
+server:
+  port: 4060
+
+spring:
+  application:
+    name: ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: "/Users/ezanaaimero/Documents/ygproject/GalCloud-Config"
+          default-label: 'master'

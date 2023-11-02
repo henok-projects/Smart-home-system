@@ -1,0 +1,256 @@
+assets_file_version: "0.0"
+dataRepresentation:
+  # Variables:
+  # -- {LANG:THIS:dataRepresentation.all}: lang file, this one, then path
+  # -- {VALUE}: The value of whatever is being represented
+  # -- {VALUE_OR_NONE}: The value there exists a device with that value, else nothing
+  # -- {VALUE_OR_MIXED}: The value or mixed if its mixed over the virtual endpoints in a device / devices in a group
+  # -- {AVERAGE_VALUE}: Averages analogue values over the devices/virtual endpoints that hold the feature.
+
+  # -- {SOME_OR_OTHER_VALUE} represents some value if any virtual endpoints/devices have that value, else another,
+
+
+  # -- {G_COUNT_OR_ALL}: Count of physical devices in the group that have the value being represented. If all devices in the group, uses 'all'
+  # -- {G_COUNT_OR_ALL_OR_NONE}: Same as above, but none if no physical devices are in that state
+  # -- {G_COUNT_OVER_TOTAL}:  Count of physical devices that have the value being represented / total
+  # -- {G_COUNT_OVER_TOTAL_OR_ALL}: Same as above, but if all devices have the value, show All
+
+  # -- {D_COUNT}:  Count of virtual endpoints (devices) in the Physical device that have the value being represented
+  # -- {D_COUNT_OR_ALL}: Count of virtual endpoints (devices) in the Physical device that have the value being represented. If all, uses 'all'
+  # -- {D_COUNT_OR_ALL_OR_NONE}: Same as above, but none if no virtual endpoints are in that state
+  # -- {D_COUNT_OVER_TOTAL}:  Count of virtual endpoints that have the value being represented / total
+  # -- {D_COUNT_OVER_TOTAL_OR_ALL}: Same as above, but if all virtual devices  have the value, show All
+  # -- {ALL}: literally shows 'all' defined in dataRepresentation.all
+  all: 'All'
+  overTotal: '{X}/{Y}'
+  ofTotal: '{X} of {Y}'
+  featureRepresentation:
+    forAttributeTypes:
+      NaryAttribute: # includes binary. Binary is a special Nary
+        oneState: # representing one of the states. reference by FEATURE.ATTRIBUTE.STATE_NAME.countOnly/overTotal/..
+          countOnly: # representing the state by count
+            one:
+              single:
+                - us: '{VALUE}'
+              group:
+                - us: '{G_COUNT_OR_ALL} {VALUE}' # count of the grouped physical devices in that state. With All uses All if
+            many:
+              single:
+                - us: '{D_COUNT_OR_ALL} {VALUE}' # count of devices (virtual endpoints) in that state
+              group:
+                - us: '{D_COUNT_OR_ALL} {VALUE}' # count of  devices in that state
+          countOnlyOrNone: # representing the state by count if there exists any device with that state. else represent as empty
+            one:
+              single:
+                - us: '{VALUE_OR_NONE}'
+              group:
+                - us: '{G_COUNT_OR_ALL_OR_NONE} {VALUE_OR_NONE}' # count of groups in that state. With All uses All if
+            many:
+              single:
+                - us: '{D_COUNT_OR_ALL_OR_NONE} {VALUE_OR_NONE}' # count of devices in that state
+              group:
+                - us: '{D_COUNT_OR_ALL_OR_NONE} {VALUE_OR_NONE}' # count of  devices in that state
+          # when wanting to represent something of a total
+          overTotal:
+            one:
+              single:
+                - us: '{VALUE}'
+              group:
+                - us: '{G_COUNT_OVER_TOTAL_OR_ALL} {VALUE}'
+            many:
+              single:
+                - us: '{D_COUNT_OVER_TOTAL_OR_ALL} {VALUE}'
+              group:
+                - us: '{D_COUNT_OVER_TOTAL_OR_ALL} {VALUE}'
+          ofTotal:
+            one:
+              single:
+                - us: '{STATE_NAME}'
+              group:
+                - us: '{G_COUNT_OF_TOTAL_OR_ALL} {VALUE}'
+            many:
+              single:
+                - us: '{D_COUNT_OF_TOTAL_OR_ALL} {VALUE}'
+              group:
+                - us: '{D_COUNT_OF_TOTAL_OR_ALL} {VALUE}'
+        someOrOther: # represent some state if any device has a value matching, else, show another state. FEATURE.ATTRIBUTE.STATE_NAME.anyOrOther.OTHER_STATE.countOnly ... Note: countOnly can be ommitted, the defaultRepresentation is used instead
+          - us: '{SOME_OR_OTHER_VALUE}'
+        manyStates:
+          exploded: # explodes all states, comma separated
+            separator: ", "
+      analogueAttribute:
+        averageValue: # represent value ot Average value over the virtual endpoints
+          one:
+            single:
+              - us: '{AVERAGE_VALUE}' # average over single is equal to the single
+            group:
+              - us: '{AVERAGE_VALUE}'
+          many:
+            single:
+              - '{AVERAGE_VALUE}'
+            group:
+              - '{AVERAGE_VALUE}'
+        valueOrMixed:
+          one:
+            single: # never mixed for single, but consider it ofc.
+              - us:  '{VALUE}'
+            group:
+              - us: '{VALUE_OR_MIXED}'
+          many:
+            single:
+              - us: '{VALUE_OR_MIXED}'
+            group:
+              - us: '{VALUE_OR_MIXED}'
+      stringAttribute:
+        notComputed: # If its not computed, (works even if the value is computed)
+          valueOrMixed: # value (if all devices have same value) or mixed (if some device has a different value). without the count of devices that have that value eg: red OR mixed
+            one:
+              single:
+                - us: '{VALUE}'
+              group:
+                - us: '{VALUE_OR_MIXED}'
+              many:
+                single:
+                  - us: '{VALUE_OR_MIXED}'
+                group:
+                  - us: '{VALUE_OR_MIXED}'
+          totalValueOrMixed: # value (if all devices have same value) or mixed (if some device has a different value), with the count of devices that have that value. (same as all, but shows device count instead). eg: 5 (all) red OR 5 mixed
+            one:
+              single:
+                - us: '{VALUE}'
+              group:
+                - us: '{G_COUNT} {VALUE_OR_MIXED}'
+            many:
+              single:
+                - us: '{D_COUNT} {VALUE_OR_MIXED}'
+              group:
+                - us: '{D_COUNT} {VALUE_OR_MIXED}'
+          allValueOrMixed: # value (if all devices have same value) or mixed (if some device has a different value), with All. eg: All red, OR All mixed. Only works if computed
+            one:
+              single:
+                - us: '{VALUE}'
+              group:
+                - us: '{ALL} {VALUE_OR_MIXED}'
+              many:
+                single:
+                  - us: '{ALL} {VALUE_OR_MIXED}'
+                group:
+                  - us: '{ALL} {VALUE_OR_MIXED}'
+        computed: # if a string attribute is computed, is computed from some analogue values
+          fromAnalogue: # if its computed from analogue, it can be averaged or mixed
+            averageValue:
+              one:
+                single:
+                  - us: '{AVERAGE_VALUE}' # average over single is equal to the single
+                group:
+                  - us: '{AVERAGE_VALUE}'
+              many:
+                single:
+                  - '{AVERAGE_VALUE}'
+                group:
+                  - '{AVERAGE_VALUE}'
+            valueOrMixed:
+              one:
+                single: # never mixed for single, but consider it ofc.
+                  - us:  '{VALUE}'
+                group:
+                  - us: '{VALUE_OR_MIXED}'
+                many:
+                  single:
+                    - us: '{VALUE_OR_MIXED}'
+                  group:
+                    - us: '{VALUE_OR_MIXED}'
+    forFeatureType:
+      ACTUATOR_CONTROL_ONOFF: # for the actuator on-off feature
+        defaultRepresentation: # which attribute representations (ATTR_NAME) or representations (ATTR_NAME.WHATEVER) are apply for the feature of the feature is represented by default
+          - ON_OFF_ATTR
+        ON_OFF_ATTR: # for the on-off attribute
+          defaultRepresentation:
+            - ON.overTotal # can represent 2 if needbe, they would be comma or space seperated
+          name:
+            - us: 'On-Off'
+          stateNames:
+            ON:
+              name:
+                - us: 'On'
+            OFF:
+              name:
+                - us: 'Off'
+      LIGHT_CONTROL_BRIGHTNESS:
+        defaultRepresentation: # what attributes/attribute representation to represent by default.
+          - BRIGHTNESS_ATTR #uses BRIGHTNESS_ATTR.defaultRepresentation | Alternatively, can use BRIGHTNESS_ATTR.valueOrMixed
+        BRIGHTNESS_ATTR:
+          defaultRepresentation:
+            - valueOrMixed # by default show the value or mixed
+          name:
+            - us: 'Brightness'
+      LIGHT_CONTROL_COLOR:
+        defaultRepresentation:
+          - LIGHT_COLOR_ATTR
+        LIGHT_COLOR_ATTR: # is a struct
+          defaultRepresentation:
+            - COLOR_NAME_ATTR
+          HUE_ATTR:
+            name:
+              - us: 'Hue'
+          SATURATION_ATTR:
+            name:
+              - us: 'Saturation'
+          COLOR_NAME_ATTR:
+            defaultRepresentation:
+              - computed.fromAnalogue.averageValue
+            name:
+              - us: 'Color'
+      LIGHT_LUMINOSITY_SENSOR:
+        defaultRepresentation:
+          - LUMINOSITY_RATING_ATTR
+        LUMINOSITY_ATTR:
+          name:
+            - us: 'LUMINOSITY'
+          defaultRepresentation:
+            - averageValue
+        LUMINOSITY_RATING_ATTR:
+          defaultRepresentation:
+            - computed.fromAnalogue.averageValue
+      LIGHT_AMBIANCE_DETECTION:
+        name:
+          - us: 'Ambiance'
+        defaultRepresentation:
+          - LIGHT_AMBIANCE_ATTR
+        LIGHT_AMBIANCE_ATTR:
+          defaultRepresentation:
+            - COLOR_NAME_ATTR
+          COLOR_NAME_ATTR:
+            name:
+              - us: 'Color'
+            defaultRepresentation:
+              - notComputed.valueOrMixed # wouldn't show average over set color, even though the color name is computed. Why? It's misleading to users
+          HUE_ATTR:
+            name:
+              - us: 'Hue'
+            defaultRepresentation:
+              - valueOrMixed
+          SATURATION_ATTR:
+            name:
+              - us: 'Hue'
+            defaultRepresentation:
+              - valueOrMixed
+      MOTION_SENSOR:
+        defaultRepresentation:
+          - MOTION_DETECTION_ATTR
+        MOTION_DETECTION_ATTR:
+          name:
+            - us: 'Motion Detection'
+          defaultRepresentation:
+            - MOTION_DETECTED.anyOrOther.OTHER_STATE.NO_MOTION.countOnly
+          stateNames:
+            MOTION_DETECTED:
+              name:
+                - us: 'Motion'
+              defaultRepresentation:
+                - overTotal
+            NO_MOTION:
+              name:
+                - us: 'No Motion'
+              defaultRepresentation:
+                - overTotal

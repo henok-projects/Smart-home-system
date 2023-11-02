@@ -1,0 +1,48 @@
+{
+    "assets_file_version": "0.0",
+    "id": 0,
+    "items": [
+        {
+            "id": 0,
+            "component_image": "onboardingGalsie",
+            "name": "onboarding.introItems.galsie.name",
+            "description": "onboarding.introItems.galsie.description"
+        },
+        
+        {
+            "id": 1,
+            "component_image": "onboardingIntelligentlyAdaptive",
+            "name": "onboarding.introItems.adaptiveAndEfficient.name",
+            "description": "onboarding.introItems.adaptiveAndEfficient.description"
+        },
+        
+        {
+            "id": 2,
+            "component_image": "onboardingKeepingYouSecure",
+            "name": "onboarding.introItems.safeAndSecure.name",
+            "description": "onboarding.introItems.safeAndSecure.description"
+        },
+        
+        {
+            "id": 3,
+            "component_image": "onboardingStayEntertained",
+            "name": "onboarding.entertainmentAndAssistance.name",
+            "description": "onboarding.introItems.entertainmentAndAssistance.description"
+        },
+        
+        {
+            "id": 4,
+            "component_image": "onboardingMaintaingYourPrivacy",
+            "name": "onboarding.introItems.yourPrivacyMatters.name",
+            "description": "onboarding.introItems.yourPrivacyMatters.description"
+        },
+        
+        {
+            "id": 5,
+            "component_image": "onboardingBuiltWithMatter",
+            "name": "onboarding.introItems.builtWithMatter.name",
+            "description": "onboarding.introItems.builtWithMatter.description"
+        }
+
+    ]
+}

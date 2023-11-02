@@ -1,0 +1,58 @@
+<!--
+idType: UInt16
+
+Attribute
+- dataType:
+    - stringAttribute
+    - booleanAttribute
+    - typedNaryAttribute.
+        - Types need to be defined as which indicate the Nary states
+        - The type idType is UInt32. Why? At some point there may be more than 255 states
+    - unboundedAnalogueAttribute
+    - boundedAnalogueAttribute
+        - minBound, maxBound idType: UInt32
+    - structBasedAttribute
+- accessType:
+    - inherit
+    - get
+    - getset
+
+
+
+NOTE: attributes in structures can be structBased as well. Note that there can't be coupling & structures can only link to structures defined before them (above them)
+-->
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <attributeStructures>
+        <type>
+            <id>0</id>
+            <name>Light Ambiance</name>
+            <definition>LIGHT_AMBIANCE_STRUCT</definition>
+            <attributes>
+                <attribute dataType="boundedAnalogueAttribute" accessType="inherit"> <!-- access type depends on that of the attribute that references the structure. -->
+                    <id>0</id>
+                    <definition>HUE_ATTR</definition>
+                    <name>Hue</name>
+                    <minBound>0</minBound>
+                    <maxBound>239</maxBound>
+                    <unit definition="ANGLE" defaultType="DEGREES" defaultBase="BASE"/>
+                </attribute>
+
+                <attribute dataType="boundedAnalogueAttribute" accessType="inherit"> <!-- access type depends on that of the attribute that references the structure -->
+                    <id>1</id>
+                    <definition>SATURATION_ATTR</definition>
+                    <name>Saturation</name>
+                    <minBound>0</minBound>
+                    <maxBound>100</maxBound>
+                    <unit definition="NO_UNIT" defaultType="NO_UNIT" defaultBase="BASE"/>
+                </attribute>
+
+                <attribute dataType="stringAttribute" accessType="get" isComputed="true" computationType="fromAnalogue"> <!-- attribute is computed, users can only see value, cant set it. Computation type is used to determine whether the computed value can be averaged or not -->
+                    <id>2</id>
+                    <definition>COLOR_NAME_ATTR</definition>
+                    <name>Color</name>
+                </attribute>
+            </attributes>
+        </type>
+    </attributeStructures>
+</root>

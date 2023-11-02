@@ -1,0 +1,1091 @@
+## Translations for text displayed in the app view
+assets_file_version: "0.0"
+# Keep the test data for now
+test:
+  nolocale: 'translation for all locales'
+  data:
+    - 'us:hey'
+    - 'gb:hello'
+  data1:
+    - 'us:data1 trans'
+    - 'gb:data1 gb trans'
+  data2:
+    subdata2:
+        - 'blabla' # automatically sets to first fallback locale 'us'
+    subdata3: 0.0 # automatically sets to first fallback locale, all numerics are read by ios as string
+    subdata4: 1 # same as above
+    subdata5: '0' # automatically sets to first fallback locale
+testTrans: 'Test' # Used for viewing test components
+
+#######################################################################################
+############################### SHARED ################################################
+########################################################################################
+
+###################################
+####### LANGUAGE LOCALE NAMES #####
+##################################
+language: # TODO: rename to languageLocaleNames
+    name:
+        en: 'English'
+        ar: 'Arabic'
+
+#############################
+####### COMMON MESSAGES #####
+############################
+generalWarning: #TODO: rename to common messages
+    warning: 'Warning'
+    continue: 'Continue'
+    cancel: 'Cancel'
+    matterWarning: 'We noticed that this device has invalid Matter certificate' 
+    learnMore: 'Learn more'
+    areYouSure: 'Are you sure you want to continue?'
+
+###########################
+####### COMMON SHEETS #####
+###########################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'commonSheets'
+languageSheet:
+    title : 'Choose Language'
+    confirm : 'Confirm'
+    searchHint: 'Search for languages'
+
+
+####################################
+####### REQUEST OS PERMISSIONS #####
+####################################
+requestOSPermissionView: # TODO: Android, use these. 
+    bluetooth:
+        title: 'Allow permission to use your Bluetooth'
+        subtitle: 'This will give the app access to your bluetooth to start pairing'
+        pairingDevice: 'Pairing device'
+    camera:
+        title: 'Allow permission to use your Camera'
+        subtitle: 'This will give the app access to your phone camera'
+    wifi:
+        title: 'Allow permission to use your Wifi'
+        subtitle: 'This will give the app access to your home wifi'
+
+
+
+##############################################################################################
+############################# SCREENS & FLOWS ################################################
+##############################################################################################
+
+#################################
+####### ONBOARDING IMAGES #####
+################################
+onboarding:
+    next: 'Next'
+    skip: 'Skip'
+    finish: 'Finish'
+    chooseLanguage: 'Choose Language'
+    searchForLanguages: 'Search for languages'
+    searchForCountryCode: 'Search for your code country'
+    introItems:
+        galsie:
+            name: "Welcome to Galsie"
+            description: "Meet Galsie, a smart home assistant designed to enhance your home experience and adapt to your needs."
+        adaptiveAndEfficient:
+            name: "Adaptive And Efficient"
+            description: "Galsie adapts to your home’s unique conditions, offering smart suggestions and automated tasks for a greener, more comfortable living experience."
+        safeAndSecure:
+            name: "Safe And Secure"
+            description: "Galsie prioritizes safety & security, offering real-time sensor updates, biometric tracking, and instant notifications to guarantee your peace of mind."
+        entertainmentAndAssistance:
+            name: "Entertainment and Assistance"
+            description: "Enjoy your favorite audio and video streaming platforms with Galsie for a fun-filled home experience, complemented by Galsie’s assistant that tackles diverse tasks and offers convenience."
+        yourPrivacyMatters:
+            name: "Your Privacy Matters"
+            description: "We respect your privacy. Galsie securely stores your home data & activity, while giving you complete control over the data-dependent features."
+        builtWithMatter:
+            name: "Built With Matter"
+            description: "Galsie works with all Matter-enabled devices, ensuring a cohesive and reliable smart home experience"
+        
+
+#################################
+####### LOGIN & SIGNUP FLOW #####
+################################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'loginAndSignupFlow'
+loginSignup: # Login Signup View
+    heading:
+        title: 'Let''s create an account' # double quote for single quote
+        subtitle: 'Great to see you again!'
+    body:
+        withGalsie: 'Sign up with Email / Phone'
+        withApple: 'Sign in with Apple'
+        withGoogle: 'Sign in with Google'
+        alreadyHave: 'I already have an account'
+registration:
+    heading:
+        title: 'Welcome onboard!' # double quote for single quote
+        subtitle: 'Let''s enter your credentials'
+    inputs:
+        fullname: 'Full Name'
+        username: 'Username'
+        userNameInvalid: 'The Username must at least3 characters long, and must not contain space'
+        userNameValidationGreater: 'The username must be at least 3 characters long'
+        userNameValidationLesser: 'The Username must be less than 12 Characters'
+        emailAddress: 'Email Address'
+        mobilenumber: 'Mobile Number'
+
+    buttons:
+        continue: 'Continue'
+        alreadyHave: 'Already have an account?'
+        login: 'Log in'
+OTPview:
+    heading:
+        emailTitle: 'Email address verification'
+        title: 'Verify your account'
+        subtitle: 'An OTP has been sent to your email address, kindly insert the OTP to proceed further.'
+    buttons:
+        didntrecieve: 'Didn’t get OTP?'
+        resend: 'Resend ({variable} s)'
+        sms: 'Get via SMS'
+    input:
+        incorrectOtp: 'OTP code is incorrect'
+login:
+    heading:
+        title: 'Welcome back!'
+        subtitle: 'Great to see you again.'
+    inputs:
+        emailAddress: 'Email Address'
+        emailAddressValidation: 'Email is not a valid form'
+        mobilenumber: 'Mobile Number'
+        password: 'Password'
+        passwordValidation: 'The password must be at least 5 characters and less than 20 characters, includes 1 number, and 1 letter.'
+    buttons:
+        continue: 'Continue'
+        alreadyHave: 'Don’t have an account?'
+        signUp: 'Sign up'
+        forgotPassword: 'Forgot password'
+setPassword:
+    heading:
+        title: 'Set your password'
+        subtitle: 'Enter a strong password for your account.'
+    inputs:
+        password: 'Password'
+        repassword: 'Re-type password'
+setNewPassword:
+    heading:
+        title: 'Set new password'
+        subtitle: 'Please enter a new password for your account.'
+    inputs:
+        password: 'New Password'
+        repassword: 'Re-type new password'
+        confirmPasswordValidation: 'Password doesn''t match the original'
+forgotPassword:
+    heading:
+        title: 'Forgot your password?'
+        subtitle: 'Let’s get your account back.'
+    inputs:
+        emailAddress: 'Email Address'
+        mobilenumber: 'Mobile Number'
+    buttons:
+        continue: 'Continue'
+forgotPasswordOTP:
+    heading:
+        title: 'Forgot your password?'
+        subtitle: 'An OTP has been sent to your email address, kindly insert the OTP to proceed further.'
+    buttons:
+        didntrecieve: 'Didn’t get OTP? Resend (50s)'
+        sms: 'Get via SMS'
+
+#######################################
+####### Users USERS TO HOME FLOW #####
+#######################################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'inviteUserToHome'
+# Invite users flow
+
+inviteUsersEntryView:
+    heading:
+        title: 'Invite guests to your home'
+        subtitle: 'Lorem ipsum dolor sit amet, consectetur lorem psum.'
+    buttons:
+        createQR: 'Create QR code'
+        inviteWithUserInfo: 'Invite with user information'
+        viewExistingInvites: 'View existing invites'
+        userInvites: 'User invites'
+inviteUsersWithQR:
+    heading:
+        title: 'Invite link / QR code'
+        editTitle: 'Edit Invite'
+        widgetedFormTitle: 'Invite details'
+    inputs:
+        accessStartLabel: 'Access start'
+        accessStartHint: 'pick a date and time'
+        accessEndLabel: 'Access end'
+        accessEndHint: 'pick a date and time'
+        rolesLabel: 'Roles'
+        rolesHint: 'Select'
+        permissionsLabel: 'Permissions'
+        permissionsHint: 'Select'
+    buttons:
+        create: 'Create'
+        edit: 'Edit'
+        deleteInvitation: 'Delete Invitation'
+inviteWithEmail:
+    heading:
+        title: 'Guest information'
+        editTitle: 'Edit Invite'
+        generalInformationFormTitle: 'General information'
+        inviteUsersFormTitle: 'Invite details'
+    inputs:
+        userDetailsLabel: 'User details'
+        userDetailsHint: 'Select'
+        accessStartLabel: 'Access start'
+        accessStartHint: 'pick a date and time'
+        accessEndLabel: 'Access end'
+        accessEndHint: 'pick a date and time'
+        rolesLabel: 'Roles'
+        rolesHint: 'Select'
+        permissionsLabel: 'Permissions'
+        permissionsHint: 'Select'
+    buttons:
+        create: 'Create'
+inviteUserContactPermission:
+  heading:
+    title: 'Contact List'
+  label:
+    allowPermission: 'Allow Permission to use your contact list'
+    permissionInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+  buttons:
+    grantAccess: 'Grant access'
+    skip: 'Skip'
+    edit: 'Edit'
+invitationDetailsView:
+    heading:
+        invitationSentTitle: 'Invitation has been sent'
+        invitationSentSubtitle: 'Invite sent successfully'
+        invitationAcceptedTitle: 'Invitation accepted'
+        invitationAcceptedSubtitle: 'User has accepted your invitation'
+        invitationRejectedTitle: 'Invitation rejected'
+        invitationRejectedSubtitle: 'User has rejected your invitation'
+        invitationExpiredTitle: 'Invitation expired'
+        invitationExpiredSubtitle: 'Invitation expired while waiting for response'
+    details:
+        recipient: 'Recipient'
+        recipients: 'Recipients'
+        rolesAndPermissions: 'Roles & Permissions'
+        accessStart: 'Acess start on'
+        accessEnd: 'Acess end on'
+        invitationStatus: 'Invitation status'
+    buttons:
+        create: 'Create'
+        editInvite: 'Edit Invite'
+        manageUsers: 'Manage users'
+        createAgain: 'Create again'
+calendarView: # TODO: Name Access dates selection as part of the inviteUserToHome section
+    heading:
+        accessStartTitle: 'Access Start'
+        accessEndTitle: 'Access End'
+        accessNeverEnd: 'Access never ends'
+    calendar:
+        timeLabel: "Time"
+        amLabel: "AM"
+        pmLabel: "PM"
+    buttons:
+        confirm: 'Confirm'
+rolesView:
+    heading:
+        title: 'Roles'
+        subtitle: 'You may select as many options as you wish'
+        search: 'Search for roles'
+    buttons:
+        confirm: 'Confirm'
+permissionsView:
+    heading:
+        title: 'Permissions'
+        subtitle: 'You may select as many options as you wish'
+    buttons:
+        confirm: 'Confirm'
+invitationLink:
+    heading:
+        title: 'Invitation link / QR code'
+    details:
+        rolesAndPermissions: 'Roles & Permissions'
+        accessStart: 'Access start on'
+        accessEnd: 'Access end on'
+        usersJoined: 'Users joined'
+    buttons:
+        done: 'Done'
+        viewUsersJoined: 'View'
+        share: 'Share link'
+        editInvite: 'Edit invite'
+        createAgain: 'Create again'
+searchUserView:
+    heading:
+        title: 'User details'
+        recentsListTitle: 'Recently invited'
+        contactsListTitle: 'From your contacts'
+        galUsersListTitle: 'Galsie Users'
+        search: 'Name, mobile, or email'
+        searchError: 'Invalid name or email address'
+        userNotFound: 'is not in your contacts or a Galsie user, are you sure the email is correct?'
+        userNotFoundContinue: 'Continue'
+    buttons:
+        confirm: 'Confirm'
+invitationSuccessView:
+    heading:
+        invitationSentTitle: 'Invitation has been sent'
+        invitationSentSubtitle: 'Invite sent successfully'
+        invitationAcceptedTitle: 'Invitation accepted'
+        invitationAcceptedSubtitle: 'User has accepted your invitation'
+        invitationRejectedTitle: 'Invitation rejected'
+        invitationRejectedSubtitle: 'User has rejected your invitation'
+        invitationExpiredTitle: 'Invitation expired'
+        invitationExpiredSubtitle: 'Invitation expired while waiting for response'
+    details:
+        email: 'Email Address'
+        rolesAndPermissions: 'Roles & Permissions'
+        accessStart: 'Acess start on'
+        accessEnd: 'Acess end on'
+    buttons:
+        done: 'Done'
+        editInvite: 'Edit Invite'
+        manageUsers: 'Manage users'
+        createAgain: 'Create again'
+existingInvitesView:
+    heading:
+        title: 'Existing invites'
+        activeInvitesTitle: 'Active invites'
+        recentInvitesTitle: 'Recent history'
+    countdown:
+        endsIn: 'Access ends in {time_remaining}'
+        endsOn: 'Access ends on {time_remaining}'
+        endedAgo: 'Access ended {time_passed} ago'
+        endedOn: 'Access ended on {time_passed}'
+inviteWithQR:
+    heading:
+        title: 'Invite link/QR code'
+        widgetedFormTitle: 'Invite details'
+    inputs:
+        accessStartLabel: 'Access Start'
+        accessStartHint: 'pick a date and time'
+        accessEndLabel: 'Access End'
+        accessEndHint: 'pick a date and time'
+        rolesLabel: 'Roles'
+        rolesHint: 'Select'
+        permissionsLabel: 'Permission'
+        permissionsHint: 'Select'
+    buttons:
+        create: 'Create'
+inviteAccessEnd:
+    heading:
+        accessStart: 'Access start'
+        accessEnd: 'Access end'
+    inputs:
+       accessNeverEndLabel: 'Access never end'
+       time: 'Time'
+       confirm: 'Confirm'
+inviteRoles:
+    heading:
+         title: 'Roles'
+    inputs:
+          confirm: 'Confirm'
+          searchHint: 'Search for roles'
+    label:
+      selectMany: 'You may select as many options as you wish'
+      fullAccessTitle: 'Full access'
+      fullAccessSubtitle: 'Lorem ipsum dolor sit amet'
+      adminTitle: 'Admin'
+      adminSubtitle: 'Lorem ipsum dolor sit amet'
+      guestAccessTitle: 'Guest'
+      guestAccessSubtitle: 'Lorem ipsum dolor sit amet'
+invitePermissions:
+  heading:
+    title: 'Permissions'
+  inputs:
+    confirm: 'Confirm'
+  label:
+    selectMany: 'You may select as many options as you wish'
+    permission: 'Permission'
+inviteQrCode:
+  heading:
+    title: 'Invitation link /QR code'
+  inputs:
+    done: 'done'
+    invite: 'invite'
+    link: 'https://galsie.com/join/795QYDdl768'
+  label:
+    rolesAndPermissionsTitle: 'Roles & Permissions'
+    rolesAndPermissionsSubtitle: 'User, security manager, admin'
+    accessStartTitle: 'Access starts on'
+    accessStartSubtitle: 'Friday 19, January 2022 (tomorrow)'
+    accessEndTitle: 'Access ends on'
+    accessEndSubtitle: 'Saturday 20, January 2022 (10 days ago)'
+    usersJoinedTitle: 'Invitation Status'
+    usersJoinedSubtitle: '0 users'
+  buttons:
+    shareLink: 'Share Link'
+    editInvite: 'Edite Invite'
+    createdBy: 'Created by Liwaa on 11/11/21'
+inviteUserDetails:
+  heading:
+    title: 'User details'
+  inputs:
+    confirm: 'Confirm'
+    view: 'View'
+  label:
+    recentlyInvited: 'Recently Invited'
+    searchHint: 'Name, mobile, or email'
+    emptySearch: 'is not in your contacts or a Galsie user,are you sure the email is correct?'
+    alreadySent: 'Already sent'
+  buttons:
+    continue: 'Continue'
+inviteSent:
+  inputs:
+    done: 'Done'
+    invite: 'Invite'
+  buttons:
+    editInvite: 'Edit Inivite'
+  label:
+    invitationSent: 'Invitation has been sent'
+    invitationSentSuccessfully: 'Invite sent successfully'
+    recipientsTitle: 'Recipients'
+    emailSubtitle: 'Rony Jabbour'
+    emailSubtitleSmall: 'rony@galsie.com'
+    rolesAndPermissionsTitle: 'Roles & Permissions'
+    rolesAndPermissionsSubtitle: 'User,security manager, admin +3 more'
+    viewAll: 'View All'
+    accessStartTitle: 'Access starts on'
+    accessStartSubtitle: 'Friday 19, January 2022 (10 days ago)'
+    accessEndTitle: 'Access ends on'
+    accessEndSubtitle: 'Saturday 20, January 2022 (in 20 days)'
+    invitationStatusTitle: 'Invitation status'
+    invitationStatusSubtitle: 'Waiting for response'
+    rolesTitle: 'Roles'
+    rolesSubtitle: 'User, security manager, admin, child, another role.'
+    permissionsTitle: 'Permissions'
+    permissionsSubtitle: 'permission 1, permission 2, permission 3, other permissions.'
+deleteInvitationWarning:
+  heading:
+    title: 'Delete invitation'
+    notice: 'Notice: All the joined users will be remained connected to your home.'
+  buttons:
+    delete: 'Delete invitation'
+    cancel: 'Cancel'
+
+#############################
+####### JOIN HOME FLOW ######
+############################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'joinHome'
+joinHomeEntryView:
+  heading:
+    title: 'Join an existing home'
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+  buttons:
+    createQR: 'Scan QR code'
+    inviteWithUserInfo: 'Invite with guest information'
+    userInvites: 'User invites'
+joinHomeScanQr:
+    heading:
+      title: 'Scan QR code'
+      subtitle: 'Place the QR code portion in the middle of the camera frame for scanning'
+      scanDevice: 'Scan Device'
+    label:
+      scanning: 'Scanning...'
+      manualCode: 'Manual code'
+    input:
+      label: 'Invitation ID'
+      hint: 'Ex. 222222'
+joinHomeCameraPermission:
+    heading:
+      title: 'Scan Device'
+    label:
+      allowPermission: 'Allow permission to use your Camera'
+      permissionInfo: 'This will give the app access to your phone camera.'
+    buttons:
+      grantAccess: 'Grant access'
+joinHomeInvitation:
+    heading:
+      title: 'Invitation'
+    label:
+      title: 'Liwaa''s house'
+      subtitle: 'Aley, Hay Al Wata, Rayan Street, Kontar Bldg.'
+    input:
+      invitedByLabel: 'Invited by'
+      invitedByHint: 'Liwaa Al Kontar'
+      rolesLabel: 'Roles & Permissions'
+      rolesHint: 'User, security manager, admin'
+      accessStartLabel: 'Access starts on'
+      accessStartHint: 'Friday 19, January 2022'
+      accessEndLabel: 'Access ends on'
+      accessEndHint: 'Saturday 20, January 2022'
+      expiration: 'Expires in 3 days and 4 hours'
+    buttons:
+      accept: 'Accept'
+      reject: 'Reject'
+      close: 'Close'
+    bottomSheet:
+      invitedBy: 'Invited By'
+joinHomeUserInvites:
+  heading:
+    title: 'User invites'
+  label:
+    activeInvites: 'Active invites'
+    History: 'History'
+
+##############################
+####### Home List Screen #####
+#############################
+homeListScreen:
+    heading:
+        title: 'Welcome, Liwaa'
+    moreOptionsMenuDropDown:
+        archivedHomes: 'Archived Homes'
+        setupHome: 'Set up home'
+        editHomes: 'Edit homes'
+    searchView:
+        searchHomes: 'Search for homes and devices'
+    largeHomeWidget:
+        createHome: 'Create a new home'
+        customizeHome: 'You can customize your home to start automate your daily routine'
+        setupHome: 'Set up home'
+        addArea: 'Create your first area'
+        inviteGuests: 'Invite guests to your house'
+    smallHomeWidget:
+        showToastText: 'not yet Implemented'
+        watchTutorial: 'Watch our tutorial video guiding you throughout the application'
+        readPDF: 'Read the PDF guide to learn more about all our features'
+    suggestions: 'Suggestions'
+    homeWidget:
+        editMenu:
+            archiveHome: 'Archive home'
+            leaveHome: 'Leave home'
+            viewHome: 'View home'
+        houseDetails:
+            houseName: 'Liwaa''s House'
+            address: 'Aley,Hay Al Wata, Rayan St, Al Kontar building'
+            count: '4 residents, 2 guests'
+            temperature: '20°C'
+            weatherCondition: 'Partially sunny'
+        overview: 'Overview'
+    lastPersonLeavingHomeWarning:
+        warning: 'Warning'
+        warningText: 'You are the last user leaving this home. If you continue, home will be deleted.'
+        confirmation: 'Are you sure you want to leave?'
+        leave: 'Leave'
+        cancel: 'Cancel'
+    houseMasterLeavingHomeWarning:
+        warning: 'Warning'
+        warningText: 'You will no longer be the house master of this home. Another user will take this role.'
+        selectHouseMaster: 'You should select another house-master.'
+        select: 'Select'
+        cancel: 'Cancel'
+    houseMasterLeavingOperatorWarning:
+        warning: 'Warning'
+        warningText: 'Some operators (automations, rules, and scenes) depend on you and will no longer work if you leave.'
+        confirmation: 'Are you sure you want to leave?'
+        leave: 'leave'
+        cancel: 'Cancel'
+    selectHouseMaster:
+        title: 'Select housemaster'
+        confirm: 'confirm'
+    leavingMultipleHomes:
+        title: 'Leaving multiple homes'
+        finish: 'finish'
+        cancelBtn: 'Cancel'
+    homeToolbar:
+        done: 'Done'
+    bottomToolbar:
+        archive: 'Archive'
+        selectedHomes: 'selected homes'
+        selectedHome: 'selected home'
+#############################
+####### Setup Home Flow #####
+############################
+setupHome:
+    setupHomeIntro:
+        introTitle: 'Set up your home'
+        introSubTitle: 'Add your home information to get started'
+        addNewHome: 'Add new home'
+        joinExistingHome: 'Join existing home'
+        selectHomeNameValidation: 'Please select a home name before you continue'
+        homeNameLengthValidation: 'Home name must be between 3 and 20 characters'
+        homeNameNotInCorrectFormat: 'home name is not in the correct format'
+        homeAddressValidation: 'Please enter a home address before you continue'
+        homeAddressValidationFormat: 'Home Address in not in the correct format'
+    formInput:
+        select: 'Select'
+        name: 'Name'
+    homeTypeSelectionView:
+        apartment: 'Apartment'
+        flat: 'Flat'
+        house: 'House'
+        villa: 'Villa'
+    addHomeView:
+        homeInformation:
+            homeInfo: 'Home Information'
+            homeName: 'Home Name'
+            homeType: 'Home Type'
+        toolbarView:
+            addHome: 'Add home'
+            next: 'Next'
+            confirm: 'Confirm'
+        guides:
+            confused: 'Are you confused?'
+            readGuide: 'Read our floor guidline'
+        addFloor:
+            floor: 'Floor'
+            floor0: 'Floor 0'
+            variableFloor: 'Floor {num}'
+            edit: 'Edit'
+            done: 'Done'
+            floorNumber: 'Floor Number'
+            groundFloor: 'My Floor'
+            firstFloor: 'Ex. First floor' # TODO: perhaps store these (first, second, third, etc..) as a yml list
+            secondFloor: 'Ex. Second floor'
+            thirdFloor: 'Ex. Third floor'
+            fourthFloor: 'Ex. Fourth floor'
+            fifthFloor: 'Ex. Fifth floor'
+            sixthFloor: 'Ex. Sixth floor'
+            seventhFloor: 'Ex. Seventh floor'
+            eighthFloor: 'Ex. Eighth floor'
+            ninthFloor: 'Ex. Ninth floor'
+            floorDefault: 'Ex. Floor number'
+            noFloor: 'No added Floors'
+    addressFillingView:
+        detectLocation: 'Detect location'
+        address: 'Address'
+        addressInformation:
+            addressInfo: 'Address Information'
+            country: 'Country'
+            state: 'State'
+            addressline1: 'Address line 1'
+            addressline2: 'Address line 2'
+            zipCode: 'Zip Code'
+        enterHouseAddress: 'Enter house address'
+        zipCodeExample: 'Ex. 12345'
+    grantLocationView:
+        permission: 'Allow permission to use your location'
+        permissionInfo: 'This will give the app access to your GPS to auto fill location'
+        grantAccess: 'Grant access'
+    searchLocationView:
+        fetching: 'Fetching...'
+        autoFill: 'This will give the app access to your GPS to auto fill location'
+        searchStatusFailed: 'Detection failed. Please try again'
+        tryAgain: 'Try again'
+        setManually: 'Set it manually'
+    autoSearchLocationView:
+        selectYourAddress: 'Select your address'
+    generalPermissionRequestView:
+        findMyLocation: 'Find my location'
+ 
+############################
+####### Home Dashbaord #####
+###########################
+homeDashboard:
+    heading:
+      title: 'Liwaa''s Home'
+      subtitle: 'Aley, Hay Al Wata, Rayan St, Kontar Bldg'
+    largeHomeWidget:
+      createArea: 'Create your first area'
+      addDevice: 'Add your first device'
+      inviteGuests: 'Invite guests to your house'
+      customizeHome: 'You can customize your home to start automate your daily routine'
+      recommendations: 'Recommendations'
+    profilePicMenu:
+      userProfile: 'User profile'
+      homeList: 'Home list'
+    moreMenu:
+      devices: 'Devices'
+      historyAndAnalytics: 'History & analytics'
+      addDevice: 'Add device'
+      inviteUser: 'Invite User'
+      editDashboard: 'Edit Dashboard'
+    navBar:
+      dashboard: 'Dashboard'
+      area: 'Area'
+      operators: 'Operators'
+      suggestions: 'Suggestions'
+      settings: 'Settings'
+
+###########################
+####### Add Area Flow #####
+##########################
+addArea:
+    addAreaIntroView:
+        title: 'Create your first area'
+        subtitle: 'Set up your first area right now and fill its details'
+        addAreaButton: 'Add new area'
+    toolbarView:
+        next: 'Next'
+        confirm: 'Confirm'
+        title: 'Add area'
+        finish: 'Finish'
+    areaInformationFillingView:
+        areaInfo: 'Area Information'
+        areaType: 'Area Type'
+        areaName: 'Area Name'
+        areaInitials: 'Area initials'
+        areaFloor: 'Area floor'
+    formInput:
+        select: 'Select'
+        name: 'Name'
+        maximumCharacters: 'Maximum 3 characters'
+        myFloor: 'My Floor'
+    areaInitialsView:
+        preview: 'Preview'
+        initials: 'Initials'
+        characters: 'Character'
+    areaTypes:
+        backgroundColor: 'Background Color'
+        inside:
+            kitchen: 'Kitchen'
+            bedroom: 'Bedroom'
+            livingRoom: 'Living Room'
+            other: 'Other'
+            inside: 'INSIDE'
+        outside:
+            garden: 'Garden'
+            depot: 'Depot'
+            other: 'Other'
+            outside: 'OUTSIDE'
+        areaInitials: 
+            ki: 'KI'
+            br: 'BR'
+            lr: 'LR'
+            de: 'DE'
+            ot: 'OT'
+            gr: 'GA'  
+    areaFloorSelection:
+        ground: 'Ground floor'
+        first: 'First floor'
+        basement: 'Basement'
+    areaDoorsAndWindows:
+        title: 'Area doors & windows'
+        doors: 'Doors'
+        door: 'Door'
+        defaultDoors: 'No doors by default. Click + to add one'
+        windows: 'Windows'
+        defaultWindows: 'No windows by default. Click + to add one'
+        confused: 'Are you confused?'
+        guide: 'Read our door & window guidline'
+        selectConnectedArea: 'Select connected area'
+        areaAddedSuccessfully: 'Area has been created successfully'
+        addDoors:
+            door: 'Door {num}'
+            doorNumber: 'Door Number'
+            doorEx: 'Select connected area'
+        addWindows:
+            window: 'Window {num}'
+            windowNumber: 'Window Number'
+            windowNumbers: 'Windows Number'
+            windowNumbersHint: 'Enter the windows number'
+            windowEx: 'Ex. Kitchen area'
+    areasList:
+      title: 'Areas list'
+      searchForAreas: 'Search for areas'
+    connectingAreas:
+        title: 'Connecting areas'
+    selectAreaConnectionView:
+        title: 'Area list'
+        blank: ' '
+
+###########################
+#######Add Device Flow#####
+##########################
+addDevice:
+    addDeviceIntroView:
+        title: 'Built with Matter'
+        subtitle: 'Our system is compatible with Matter devices.Make sure you add devices that are running with Matter'
+        addDeviceButton: 'Start adding'
+    toolbarView:
+        addDevice: 'Add a device'
+        scanADeviceCode: 'Scan a device code'
+        cancel: 'Cancel'
+    scanADevice:
+        title: 'Place the QR code portion in the middle of the camera frame for scanning'
+        scanDevice: 'Scan device'
+        scanning: 'Scanning...'
+        enterCodeManually: 'Enter code manually'
+        useOtherMethods: 'Use other methods'
+        permissionDeniedError: 'Please access to camera in order to scan a QR code'
+    addADeviceMethods:
+        title: 'Select your method'
+        nearDevice: 'Bring near device'
+        networkScan: 'Scan on network'
+    scannedDeviceDetailsView:
+        title: 'Adding a new device'
+        subtitle: 'Device scanned successfully'
+        pairDevice: 'Pair device'
+        deviceCode: 'Device code'
+        vendorName: 'Vendor name & ID'
+        productName: 'Product name & ID'
+        deviceTypes: 'Device Types'
+        versions: 'Versions'
+    bringNearDeviceView:
+        title: 'Bring near device'
+        searching: 'Searching...'
+        scanningFailed: 'Scanning Failed'
+    scanOnNetworkView:
+        title: 'Scan on network'
+    setupDeviceNetwork:
+        title: 'Setup device network'
+        subtitle: 'Select the type of network the device uses'
+        wifiConnection: 'Wi-Fi connection'
+        threadConnection: 'THREAD connection'
+        consumption: 'Moderate power consumption'
+        notSupportedThread: 'Thread is not supported for this device'
+    pairADeviceViaBluetoothView:
+        initiatePair: 'Initiating pairing proccess...'
+        errorPairing: 'Error pairing device'
+        readGuide: 'Check our guideline for pairing devices'
+        learnMore: 'Learn more'
+        tryAgain: 'Try again'
+        pairAnotherDevice: 'Pair another device'
+        devicePaired: 'Device paired successfully'
+    configuringDeviceView:
+        title: 'Configuring device'
+        protocol: 'Initiating Wi-Fi protocols...'
+        failed: 'Failed to connect to this device'
+        success: 'Device connected successfully'
+        guide: 'Check our guidline for configuring devices'
+        learnMore: 'Learn more'
+        changeNetwork: 'Change network credentials'
+    wifiListView:
+        title: 'Wi-Fi list'
+        knownNetworks: 'Known networks'
+        unknownNetworks: 'Unknown networks'
+        usage: 'No devices use this network'
+        search: 'Search for hidden networks'
+    addOtherNetworkView:
+        title: 'Add other network'
+        networkDetails: 'Network details'
+        name: 'Name'
+        networkName: 'Network name'
+        security: 'Security'
+        password: 'Password'
+        enterPassword: 'Enter password'
+        wpa2: 'WPA2'
+        otherNetworkWarning1: 'You are connected to another Wifi network. Do you want to connect to the new network?'
+        otherNetworkWarning2: 'Using two different networks may impact offline operations?'
+    networkCredentialsView:
+        title: 'Network credentials'
+        wifiDetails: 'Wi-Fi details'
+        wifiPassword: 'Wi-Fi password'
+    enterCodeManuallyView:
+        title: 'Enter code manually'
+        subtitle: 'Check the device code on the back and insert the code below.'
+        setupCode: 'Setup code'
+        discriminator: 'Discriminator'
+        payloadCode: 'Use payload code'
+        payload: 'Payload'
+        setup: 'Use setup code & Discriminator'
+
+###############################
+####### User Profile Flow #####
+###############################
+## userProfileEntryScreen
+userProfileScreen:
+    heading:
+        title: 'User Profile'
+
+    userInfo:
+        fullName: 'Liwaa Al Kontar'
+        email: 'liwaa@galsie.com'
+        username: 'liwaa.k'
+
+    energyUsage:
+        totalEnergyLabel: 'Energy Used'
+        wattageUsed: '123 KW'
+        activePeriodLabel: 'Active Period'
+        activePeriodValue: '03:26'
+
+    userProfileEntryActions:
+        accountInformation: 'Account Information'
+        yourNotifications: 'Your Notifications'
+        invites: 'Invites'
+        entertainment: 'Entertainment'
+        linkedThirdPartyAccounts: 'Linked Third Party Accounts'
+        payments: 'Payments'
+        privacy: 'Privacy'
+        appSecurity: 'App Security'
+
+    ##userProfileInvitesScreen
+    userProfileInvites:
+        invitedByLabel: 'Invited By'
+        rolesPermissionsLabel: 'Roles & Permissions'
+        rolesPermissionsDetails: 'User, Security Manager, Admin'
+        accessStartLabel: 'Access Starts On'
+        accessStartStatus: '(Tomorrow)'
+        accessStartDate: 'Friday 19, January 2022'
+        accessEndLabel: 'Access Ends On'
+        accessEndStatus: '(In 20 days)'
+        accessEndDate: 'Saturday 20, January 2022'
+        invitationStatusLabel: 'Invitation Status'
+        invitationStatus: 'Waiting for Response'
+        bottomSheetStatus: 'Expires in 3 days and 4 hours'
+
+    status:
+        pending: 'Pending'
+        history: 'History'
+        learnMore: 'Learn more'
+
+    houseInfo:
+        owner: 'Liwaa’s House'
+        address: 'Aley, Hay Al Wata, Rayan Street, Kontar Bldg.'
+
+  ##userProfileShared
+    buttonText:
+      logOut: 'Log Out'
+      accept: 'Accept'
+      reject: 'Reject'
+      close: 'Close'
+      done: 'Done'
+
+    bottomSheet:
+        invitedBy: 'Invited By'
+
+    ##userProfilePrivacyScreen
+    privacyScreen:
+        title: 'Privacy'
+        locationSharing: 'Location Sharing'
+        enableLocationSharing: 'Enable Location Sharing'
+        enableLocationSharingSub: 'Lorem ipsum dolor sit amet consectetur'
+        selectHomes: 'Select Homes'
+        enableVisibility: 'Enable Visibility in Search'
+        appearInvite: 'Appear in Invite Search'
+        privacyPolicy: 'Galsie’s Privacy Policy'
+        readPrivacyPolicy: 'Read our privacy policy regarding how your data is stored and used'
+        privacyBottomSheetCenterText: 'Select Homes'
+        privacyBottomSheetEndText: 'Confirm'
+
+    ##userProfileEditProfilePicture
+    editProfilePicture:
+        title: 'Profile picture'
+        titleEndText: 'Edit'
+
+    ##userProfileEditProfilePictureBottomSheet
+    editProfilePictureBottomSheet:
+        editProfilePictureBottomSheetHeaderCenterText: 'Edit profile picture'
+        selectEditModeText: 'Please choose your preferred method to edit your profile picture'
+        choosePhotoBtnText: 'Choose photo'
+        takePhotoBtnText: 'Take photo'
+        useAvatarPhotoBtnText: 'Use avatar'
+        deletePhotoBtnText: 'Delete photo'
+
+    ##userProfileAppSecurityScreen
+    appSecurityScreen:
+        title: 'App security'
+        pinCodeLabel: 'Pin Code'
+        pinCodeSetupOption: 'Setup'
+        pinCodeChangeOption: 'Change'
+        pinCodeInfoText: 'Create a PIN code to use it for verification processes instead of the OTP verification code.  Note that this can’t be used to replace 2FA when logging in. '
+        enableFaceIDLabel: 'Enable Face ID'
+        enableFaceIDInfoText: 'Enable Face ID to make authentication faster'
+        appLockLabel: 'App lock'
+        appLockInfoText: 'Make access to your app more secure. Enable app lock and use Face ID or PIN code to unlock Galsie each time you use it'
+        enable2FALabel: 'Enable Two-Factor Authentication (2FA)'
+        enable2FAInfoText: 'Add an extra layer of protection used to ensure the security of your account'
+        faceIdBottomSheetTitle: 'Do you want to enable Face ID to make authentication easier and faster?'
+        faceIdBottomSheetEnableBtnText: 'Enable Face ID'
+        faceIdBottomSheetCancelBtnText: 'Cancel'
+        snackBar: 'PIN created successfully'
+
+    ##userProfileCreatePinScreen
+    createPinScreen:
+        createPinTitle: 'Create your PIN'
+        createPinSubTitle: 'You can use it in verification processes instead of using OTP codes verification'
+        createPinSubText: 'Enter your PIN'
+        invalidPinError: 'Pin does not match'
+
+    ##userProfileRetypePinScreen
+    retypePinScreen:
+        retypePinTitle: 'Re-type your PIN'
+        retypePinSubTitle: 'You can use it in verification processes instead of using OTP codes verification'
+        retypePinSubText: 'Re-type your PIN'
+        invalidPinError: 'Pin does not match'
+
+    ##userProfileFaceIdBottomSheet
+    faceIdBottomSheet:
+        faceIdTitle: 'Face ID'
+        faceIdBottomSheetSubTitle: 'Do you want to enable Face ID to make authentication easier and faster?'
+        faceIdButtonText: 'Enable Face ID'
+        cancel: 'Cancel'
+
+    ##userProfileAccountInfoEntryView
+    accountInfoView: # account Information View
+        heading:
+            title: 'Account Information'
+    personalDetails:
+        title: 'Personal details'
+        fullName: 'Full name'
+        dateOfBirth: 'Date Of Birth'
+        gender: 'Gender'
+    securityDetails:
+        title: 'Security details'
+        emailAddress: 'Email address'
+        phoneNumber: 'Phone number'
+        phoneNumberHint: 'Enter your phone number'
+        username: 'Username'
+        password: 'Password'
+        twoFactorAuth: 'Enable Two-Factor Authentication (2FA)'
+        twoFactorAuthSubtext: 'Add an extra layer of protection used to ensure the security of your account'
+    editModeWarning:
+        infoText: 'Please choose your preferred method to send you the verification code'
+        warningText: 'For your security, you must unlock the edit mode before you can modify your information. A verification code will be sent to you.'
+        sendOtpSmsButton: 'Send by SMS'
+        sendOtpEmailButton: 'Send by Email address'
+        verificationCodeTitle: 'Verification code'
+        verificationCodeText: 'Verification code'
+    toastMessages:
+        emailChangedSuccessful: 'Email address changed successfully'
+        dobChangedSuccessful: 'Date of birth address changed successfully'
+        genderChangedSuccessful: 'Gender changed successfully'
+        phoneChangedSuccessful: 'Phone Number changed successfully'
+        usernameChangedSuccessful: 'Username changed successfully'
+        passwordChangedSuccessful: 'Password Changed Successfully'
+    labels:
+        gender: 'Gender'
+        female: 'Female'
+        male: 'Male'
+    ##userProfileAccountInfoEditPersonalDetailsView
+    editPersonalDetailsView:
+        heading:
+           title: 'Personal details'
+        inputs:
+            firstName: 'First name'
+            firstNameHint: 'Optional'
+            middleName: 'Middle name'
+            middleNameHint: 'Optional'
+            lastName: 'Last name'
+            lastNameHint: 'Optional'
+            optionalNameHint: 'Optional'
+            userNameInvalid: 'The name must at least 3 characters long, and must not contain space'
+            userNameValidationGreater: 'The name must be at least 3 characters long'
+            userNameValidationLesser: 'The name must be less than 30 Characters'
+            userPhoneNumberInvalid: 'Please enter a valid phone number'
+
+    ##userProfileAccountInfoEditSecurityDetailsView
+    editSecurityDetailsView: # edit security details View
+        heading:
+            title: 'Security details'
+        inputs:
+            emailAddress: 'Email address'
+            newEmailAddress: 'New email'
+            oldEmailAddress: 'Old email'
+            retypeEmailAddress: 'Re-type new email'
+            emailAddressHint: 'Enter your email address'
+            retypeEmailAddressHint: 'Re-type your email address'
+            oldEmailAddressHint: 'Enter your old email address'
+            newEmailAddressHint: 'Enter your new email address'
+            emailsNotMatching: "Emails don't match"
+            phoneNumber: 'Phone number'
+            oldPhoneNumber: 'Old Phone number'
+            phoneNumberHint: 'Enter your phone number'
+            username: 'Username'
+            usernameHint: 'Enter your username'
+            password: 'Password'
+            oldPassword: 'Old password'
+            oldPasswordHint: 'password'
+            newPassword: 'New password'
+            newPasswordHint: 'Enter new password'
+            retype: 'Re-type'
+            newUsernameHint: 'Enter new username'
+            newUsername: 'New username'
+            retypePasswordHint: 'Re-type new password'
+            twoFactorAuth: 'Enable Two-Factor Authentication (2FA)'
+            twoFactorAuthSubtext: 'Add an extra layer of protection used to ensure the security of your account'
+        toastMessages:
+            passwordChangedSuccessful: 'Password Changed Successfully'

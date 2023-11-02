@@ -1,0 +1,86 @@
+# NOTE: Can include extra values at end for transaparency
+# TODO: Ensure all colors here match the color palette
+other:
+  transparent: '#FFFFFF00'
+  lightGreen: '#C5F3EA'
+  skin: '#FBE4DF'
+  darkSkin: '#FF6D4D'
+  lightYellow: '#FFF5DD'
+  darkYellow: '#FFCB50'
+
+primary: # color group
+  blue: '#007AC2' # color names
+  black: '#000000'
+  offwhite: '#FAF9FB'
+  brandBlack: '#212121'
+  darkGrey: '#404040'
+  darkGray: '#E2E2E2'
+  lightGrey: '#CCCCCC'
+  white: '#FFFFFF'
+  lightRed: '#CC553B'
+  semiLightRed: '#E86060'
+  gold: '#CEA030'
+  lightGold: '#FAD67F'
+  purple: '#7E57C2'
+  lightBlueColor: '#DBEDF8'
+  gray: '#AFAFAF'
+  violet: '#EFF0FE'
+  widgetAprikot: '#FFF5DD'
+  skin: '#FBE4DF'
+  errorAlertColor: '#E86060'
+  mediumLightRedColor: '#E86060'
+  yellowOrange: '#FFB400'
+  pressedBlue: '#2287C1'
+  shadow15: '#1F1F1F26'
+  primaryBlue: '#A8C7FA'
+
+secondary:
+  blue50: '#7FBCE0'
+  lightBlue: '#DBEDF8'
+  lightBlueIdk: '#DBF1FF'
+  lightBlue50: '#EBF3F9'
+  lightBlue20: '#F3FAFF'
+  disabled0: '#AFD3EA'
+  disabled1: '#83B7D6'
+  disabled2: '#DCDFE0'
+  greyShade1: '#636363'
+  greyShade2: '#9C9C9C'
+  greyShade3: '#AFAFAF'
+  greyShade4: '#E7E7E7'
+  greyShade5: '#EEEEEE'
+  lightGreyShade: '#F4F4F4'
+  greenSuccess: '#39BB6E'
+  pressedBlue: '#D9E6EE'
+status:
+  neutral: '#0D6DF2'
+  neutralLight: '#8FB7EF'
+  success: '#39BB6E'
+  success2: '#49B775'
+  successLight: '#8FEFB6'
+  warning: '#ECB613'
+  warningLight: '#EFD78F'
+  alert: '#F6722E'
+  alertLight: '#EFC28F'
+  error: '#E86060'
+  errorLight: '#EF8F8F'
+  overlayError: '#FF6868'
+
+categories:
+  entertainment: '#DC3C62'
+  entertainmentLighter: '#E0B8C1'
+  safety: '#3CDD71'
+  safetyLighter: '#B8E0C5'
+  feel: '#47C8D1'
+  feelLighter: '#B8E0DD'
+  lights: '#DDAF3C'
+  lightsLighter: '#E0D8B8'
+  security: '#3CA2DD'
+  securityLighter: '#B8C9E0'
+  misc: '#8C3CDD'
+  miscLighter: '#CCB8E0'
+background:
+  offwhite: '#FAF9FB'
+
+
+#E0E0E0
+## Device history and colors for scenes are unset

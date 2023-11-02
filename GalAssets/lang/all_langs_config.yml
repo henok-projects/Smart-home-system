@@ -1,0 +1,2 @@
+assets_file_version: '0.0' # FILE_VERSIONED
+fallbackLanguageCode: 'en' # Fallback to this language if the front-end user phone has a language that wasn't found

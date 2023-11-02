@@ -1,0 +1,15 @@
+assets_file_version: "0.0"
+# Translations for GCSResponseErrorType
+backend:
+  serviceResponse:
+    errorType:
+      unknownError: "Unknown Error"
+      repositoryNotFound: "The Repository wasn't found"
+      duplicateValue: "Duplicate value exists"
+      entityNotFound: "Entity not found"
+      authenticationFailed: "Authentication failed."
+      missingData: "Missing Data"
+      notSupport: "Not supported."
+      mismatchError: "Mismatch Error"
+      parsingError: "Parsing Error"
+      typeNotFound: "Type Not Found"

@@ -1,0 +1,530 @@
+<!--
+idType: UInt32
+clusterSet#idType UInt8
+
+Feature Attribute parameters
+    - dataType: # what data does this attribute hold
+        - stringAttribute
+        - booleanAttribute
+        - typedNaryAttribute.
+            - Types need to be defined as which indicate the Nary states
+            - The type idType is UInt32. Why? At some point there may be more than 255 states
+        - unboundedAnalogueAttribute
+        - boundedAnalogueAttribute
+            - minBound, maxBound idType: UInt32
+        - boundLoadedAnalogueAttribute
+        - structBasedAttribute (requires a struct name to be provided
+    - structDefinition: # if an attribute dataType is structBased, must have a definition
+        - definition of the structure from attribute_structures
+    - accessType: # can users just get the attribute data, or get it and set it
+        - get
+        - getset
+        - Note: Attribute structs can have the accessType inherit. This means it inherits the get/getset accessType of the feature attribute that is structBased
+    - galfeature: # Gal features are not related directly to the clusters the device has have
+        - true/false
+    - isSettings: # Settings related to features are also stored in attribtues for features
+        - true/false
+    - isComputed: # is the attribute computed by galsie, or is it device based
+        - true/false
+    - computationType: # must have isComputed true
+        - fromAnalogue
+
+- struc
+
+Note: idType of attributes is UInt8 - they are unique for each feature
+
+NOTE: Initially, for the sake of simplicity, a feature must have all clusters in a clusterSet to match a cluster set.
+
+    Currently, that is still the case.
+
+    In the future, that may change. That is why an mtrCluster in a clusterSet has a 'required' tag. (notice how they are all set to true because currently thats the case)
+-->
+
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <!--
+    Versioning
+    Major.Minor
+    -->
+    <featureTypes>
+        <!-- MOSTLY Shared IDS: 0->20 !-->
+        <type>
+            <id>0</id>
+            <definition>ACTUATOR_CONTROL_ONOFF</definition>
+            <name>Actuator Control On-Off</name>
+            <possibleClusterSets> <!-- Each feature can be operated through a set of clusters. There may be different sets of clusters that allow the same feature, these are clusterSets -->
+                <clusterSet>
+                    <id>0</id> <!-- cluster group ids are unique only for the feature, they alaways start at 0 -->
+                    <mtrCluster definition="MTR_ON_OFF" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+
+            <attributes>
+                <attribute dataType="typedNaryAttribute" accessType="getset">
+                    <id>0</id>
+                    <definition>ON_OFF_ATTR</definition>
+                    <name>OnOff</name>
+                    <types>
+                        <type>
+                            <id>0</id>
+                            <definition>ON</definition>
+                            <name>On</name>
+                        </type>
+                        <type>
+                            <id>1</id>
+                            <definition>OFF</definition>
+                            <name>Off</name>
+                        </type>
+                    </types>
+                </attribute>
+            </attributes>
+        </type>
+
+        <type>
+            <id>1</id>
+            <definition>ACTUATOR_PLUGIN_DETECTOR</definition>
+            <name>Actuator Plugin Detector</name>
+            
+            <possibleClusterSets>
+
+            </possibleClusterSets>
+            
+            <attributes>
+                <attribute dataType="typedNaryAttribute" accessType="get">
+                    <id>0</id>
+                    <definition>PLUGGED_IN_ATTR</definition>
+                    <name>OnOff</name>
+                    <types>
+                        <type>
+                            <id>0</id>
+                            <definition>PLUGGED_IN</definition>
+                            <name>Plugged In</name>
+                        </type>
+                        <type>
+                            <id>1</id>
+                            <definition>PLUGGED_OUT</definition>
+                            <name>Plugged Out</name>
+                        </type>
+                    </types>
+                </attribute>
+            </attributes>
+        </type>
+
+        <!--- Lighting IDS: 21 -> 40-->
+        <type>
+            <id>21</id>
+            <definition>LIGHT_CONTROL_BRIGHTNESS</definition>
+            <name>Light Control Brightness</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_LEVEL_CONTROL" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+
+            <attributes>
+                <attribute dataType="boundLoadedAnalogueAttribute" accessType="getset">
+                    <id>0</id>
+                    <definition>BRIGHTNESS_ATTR</definition>
+                    <name>Brightness</name>
+                    <unit definition="PERCENTAGE" defaultType="PERCENTAGE" defaultBase="BASE"/>
+                </attribute>
+
+                <attribute dataType="booleanAttribute" accessType="getset" galfeature="true"> <!-- Gal features are not related directly to the clusters the device has have -->
+                    <id>1</id>
+                    <definition>ADAPTIVE_BRIGHTNESS</definition>
+                    <name>Adaptive Brightness</name>
+                </attribute>
+            </attributes>
+        </type>
+
+        <type>
+            <id>22</id>
+            <definition>LIGHT_CONTROL_COLOR</definition>
+            <name>Light Control Color</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_COLOR_CONTROL" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+
+            <attributes>
+                <attribute dataType="structBasedAttribute" structDefinition="LIGHT_AMBIANCE_STRUCT" accessType="getset"> <!-- from attribute_structures.xml -->
+                    <id>0</id>
+                    <definition>LIGHT_COLOR_ATTR</definition>
+                    <name>Light Color</name>
+                </attribute>
+
+                <attribute dataType="booleanAttribute" accessType="getset" galfeature="true"> <!-- Gal features are not related directly to the clusters have -->
+                    <id>1</id>
+                    <definition>ADAPTIVE_COLOR</definition>
+                    <name>Adaptive Color</name>
+                </attribute>
+
+            </attributes>
+        </type>
+
+        <type>
+            <id>23</id>
+            <definition>LIGHT_LUMINOSITY_DETECTION</definition>
+            <name>Light Luminisoty Detection</name>
+            
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_ILLUMINANCE_MEASUREMENT" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+
+            <attributes>
+                <attribute dataType="unboundedAnalogueAttribute" accessType="get"> <!-- can get the value of the attribute, can't set it -->
+                    <id>0</id>
+                    <definition>LUMINOSITY_ATTR</definition>
+                    <name>Luminosity</name>
+                    <unit definition="LIGHT_INTENSITY" defaultType="LUMENS" defaultBase="BASE"/>  <!-- analogue values may have a unit a unit -->
+                </attribute>
+
+                <attribute dataType="stringAttribute" accessType="get" isComputed="true" computationType="fromAnalogue"> <!-- computed by Galsie. -->
+                    <id>2</id>
+                    <definition>LUMINOSITY_RATING_ATTR</definition>
+                    <name>Luminosity Rating</name>
+                </attribute>
+            </attributes>
+        </type>
+
+        <type>
+            <id>24</id>
+            <definition>LIGHT_AMBIANCE_DETECTION</definition>
+            <name>Light Ambiance detection</name>
+            
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+
+            <attributes>
+                <!-- Get Set access since can control and fetch current value-->
+                <attribute dataType="structBasedAttribute" structDefinition="LIGHT_AMBIANCE_STRUCT" accessType="get"> <!-- from attribute_structures.xml -->
+                    <id>0</id>
+                    <definition>LIGHT_AMBIANCE_ATTR</definition>
+                    <name>Light ambiance</name>
+                </attribute>
+            </attributes>
+        </type>
+
+        <type>
+            <id>25</id>
+            <definition>WINDOW_COVERING_CONTROL</definition>
+            <name>Window Covering Control</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_WINDOW_COVERING" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+            <attributes>
+                <attribute dataType="boundedAnalogueAttribute" accessType="getset">
+                    <id>0</id>
+                    <definition>OPEN_ATTR</definition>
+                    <name>Open</name>
+                    <minBound>0</minBound>
+                    <maxBound>100</maxBound>
+                    <unit definition="PERCENTAGE" defaultType="PERCENTAGE" defaultBase="BASE"/>
+                </attribute>
+            </attributes>
+        </type>
+
+        <!-- Plug IDS 41 -> 60 -->
+
+        <type>
+            <id>41</id>
+            <definition>PLUG_CONTROL_SUPPLY</definition>
+            <name>Plug Control Supply</name>
+            
+            <possibleClusterSets>
+                
+                
+            </possibleClusterSets>
+            
+            <attributes>
+                
+            </attributes>
+        </type>
+
+
+        <!-- FEEL IDS: 61 -> 80 -->
+
+        <type>
+            
+            <id>61</id>
+            <definition>TEMPERATURE_VALUE_DETECT</definition>
+            <name>Temperature Value Detection</name>
+            
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_TEMP_MEASUREMENT" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+
+            <attributes>
+
+            </attributes>
+        </type>
+        
+        <type>
+            
+            <id>62</id>
+            <definition>TEMPERATURE_VALUE_CONTROL</definition>
+            <name>Temperature Value Control</name>
+            
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+            
+            <attributes>
+                
+            </attributes>
+        </type>
+
+        <type>
+            <id>63</id>
+            <definition>HUMIDITY_VALUE_DETECT</definition>
+            <name>Humidity Value Detection</name>
+            
+            <possibleClusterSets>
+            
+            </possibleClusterSets>
+            
+            <attributes>
+                
+            </attributes>
+        </type>
+        
+        <type>
+            <id>64</id>
+            <definition>HUMIDITY_VALUE_CONTROL</definition>
+            <name>Humidity Value Control</name>
+            
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+            
+            <attributes>
+                
+            </attributes>
+        </type>
+
+        <type>
+            <id>65</id>
+            <definition>PRESSURE_VALUE_DETECT</definition>
+            <name>Pressure Value Detection</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_PRESSURE_MEASUREMENT" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+            
+            <attributes>
+                
+            </attributes>
+        </type>
+
+        <type>
+            <id>66</id>
+            <definition>FAN_CONTROL</definition>
+            <name>Fan Control</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_FAN_CONTROL" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+        </type>
+
+
+        <type>
+            <id>67</id>
+            <definition>THERMOSTAT</definition>
+            <name>Thermostat</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_THERMOSTAT" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+        </type>
+
+
+        <!-- Security IDS: 81 -> 100 -->
+
+        <type>
+            <id>81</id>
+            <definition>MOTION_DETECTION</definition>
+            <name>Motion Detection</name>
+            <possibleClusterSets>
+                <clusterSet>
+                    <id>0</id>
+                    <mtrCluster definition="MTR_OCCUPANCY_SENSING" required="true"/>
+                </clusterSet>
+            </possibleClusterSets>
+
+            <attributes>
+                <attribute dataType="typedNaryAttribute" accessType="get">
+                    <id>0</id>
+                    <definition>MOTION_DETECTION_ATTR</definition>
+                    <name>Motion Detected</name> <!-- name here is for fun, its in lang tho -->
+                    <types>
+                        <type>
+                            <id>0</id>
+                            <definition>MOTION_DETECTED</definition>
+                            <name>Motion</name>
+                        </type>
+                        <type>
+                            <id>1</id>
+                            <definition>NO_MOTION</definition>
+                            <name>No Motion</name>
+                        </type>
+                    </types>
+                </attribute>
+            </attributes>
+        </type>
+        
+        <type>
+            <id>82</id>
+            <definition>LOCK_OPERATE</definition>
+            <name>Lock Operate</name>
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+        </type>
+        <type>
+            <id>83</id>
+            <definition>LOCK_PASSWORD</definition>
+            <name>Lock Password</name>
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+        </type>
+        <type>
+            <id>84</id>
+            <definition>LOCK_FINGERPRINT</definition>
+            <name>Lock Fingerprint</name>
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+        </type>
+        <type>
+            <id>85</id>
+            <definition>LOCK_RFID</definition>
+            <name>Lock RFID</name>
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+        </type>
+        <type>
+            <id>86</id>
+            <definition>LOCK_NFC</definition>
+            <name>Lock NFC</name>
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+        </type>
+        
+        
+        <type>
+            <id>86</id>
+            <definition>LOCK_NFC</definition>
+            <name>Lock NFC</name>
+            <possibleClusterSets>
+                
+            </possibleClusterSets>
+        </type>
+
+        <!--
+        /*
+
+        // general
+        public static var BATTERY_POWERED
+        public static var SOLAR_POWERED
+        public static var POWER_CONSUMPTION_DETECTOR
+        public static var MALFUNCTION_DETECTOR
+        public static var ACTIVATE_DEACTIVATE
+
+
+        // misc
+
+
+        // keypad & switches
+        public static var BINARY_SWITCH
+        public static var MULTI_STATE_SWITCH
+        public static var NUMERIC_KEYPAD
+        public static var ALPHABETIC_KEYPAD
+        public static var SYMBOLIC_KEYPAD // keypad with symbols
+
+
+        // entertainment
+
+        //tv
+        //speaker
+
+        // safety
+        public static var CO_DETECTOR
+        public static var CO2_DETECTOR
+        public static var O2_DETECTOR
+        public static var AMMONIA_DETECTOR
+        public static var NATURA_GAS_DETECTOR
+        public static var VOC_DETECTOR
+        public static var SMOKE_DETECTOR
+
+        public static var WATER_LEAK_DETECTOR
+
+
+
+        // security
+
+
+        public static var GLASS_TAMPER_DETECTOR
+        public static var GLASS_SHATTER_DETECTOR
+
+        public static var CAMERA_VIDEO
+        public static var CAMERA_PHOTO
+
+        public static var MICROPHONE
+
+        public static var OPEN_CLOSE_DETECTOR
+
+        public static var LINEAR_ACTUATOR_CONTROL_POSITION
+        public static var LINEAR_ACTUATOR_CONTROL_SPEED
+
+        public static var DOOR_BELL_RING_DETECTOR
+        // feel
+
+        public static var HUMIDITY_CONTROL_VALUE
+        public static var HUMIDIFIER_LEVEL_DETECTOR
+        public static var HUMIDITY_DETECTOR
+
+        public static var TEMPERATURE_CONTROL_VALUE
+        public static var TEMPERATURE_DETECTOR
+
+        public static var VENTILATOR_CONTROL_MODE
+        public static var VENTILATOR_CONTROL_FAN
+
+        public static var AIR_PURIFIER_CONTROL_MODE
+        public static var AIR_PURIFIER_CONTROL_FAN
+        public static var AIR_PURIFIER_FILTER_DETECTOR
+
+
+        public static var UV_INDEX_DETECTOR
+        public static var RAIN_DETECTOR
+        public static var PRESSURE_DETECTOR
+        public static var WIND_DETECTOR
+        public static var GEIGER_COUNTER
+
+        public static var AIR_QUALITY_DETECTOR
+        public static var PM_DETECTOR // particulate matter
+        */
+        -->
+    </featureTypes>
+</root>

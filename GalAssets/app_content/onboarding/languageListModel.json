@@ -1,0 +1,22 @@
+{
+    "id": 0,
+    "assets_file_version": "0.0",
+    "languages": [
+        {
+            "id": 0,
+            "name": "English",
+            "langCode": "en",
+            "image": "ukflag",
+            "localName": "English",
+            "translationKey": "language.name.en"
+        },
+        {
+            "id": 1,
+            "name": "Arabic",
+            "langCode": "ar",
+            "image": "lebanonflag",
+            "localName": "العربية",
+            "translationKey": "language.name.ar"
+        }
+    ]
+}

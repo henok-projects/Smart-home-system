@@ -1,0 +1,141 @@
+{
+    "assets_file_version": "0.0",
+    "id": 0,
+    "items": [
+        {
+            "id": 0,
+            "home_name": "Liwaa's Home",
+            "home_type": "HOUSE",
+            "address": "Aley, Hay Al Wata, Rayan Street, Kontar Bldg.",
+            "is_archived": false,
+            "access_info": {
+                "id": 0,
+                "access_ended": false,
+                "access_start_info": {
+                    "id": 0,
+                    "date": "23/04/2022",
+                    "time": "10:00"
+                },
+                "access_end_info": null
+            },
+            "floors": [
+                {
+                    "id": 0,
+                    "number": 0,
+                    "name": "First Floor"
+                },
+                {
+                    "id": 1,
+                    "number": 1,
+                    "name": "Second Floor"
+                }
+            ],
+            "whereabouts_summary": [
+                {
+                    "type": "RESIDENTS",
+                    "count": 3
+                },
+                {
+                    "type": "GUESTS",
+                    "count": 2
+                }
+            ],
+            "category_breakdown": [
+                {
+                    "type": "LIGHTING",
+                    "description": "All Lights Off",
+                    "status": "NEUTRAL"
+                },
+                {
+                    "type": "SECURITY",
+                    "description": "20% Secure",
+                    "status": "BREACH"
+                },
+                {
+                    "type": "SAFETY",
+                    "description": "60% Safe",
+                    "status": "AlERT"
+                },
+                {
+                    "type": "FEEL",
+                    "description": "28deg, Cooling",
+                    "status": "NEUTRAL"
+                },
+                {
+                    "type": "WHEATHER",
+                    "description": "32deg, Very Hot",
+                    "state": "SUNNY",
+                    "status": "WARNING"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "home_name": "Amr's Home",
+            "home_type": "HOUSE",
+            "address": "Aley, Hay Al Wata, Rayan Street, Kontar Bldg.",
+            "is_archived": false,
+            "access_info": {
+                "id": 0,
+                "access_ended": false,
+                "access_start_info": {
+                    "id": 0,
+                    "date": "23/04/2022",
+                    "time": "10:00"
+                },
+                "access_end_info": null
+            },
+            "floors": [
+                {
+                    "id": 0,
+                    "number": 0,
+                    "name": "First Floor"
+                },
+                {
+                    "id": 1,
+                    "number": 1,
+                    "name": "Second Floor"
+                }
+            ],
+            "whereabouts_summary": [
+                {
+                    "type": "RESIDENTS",
+                    "count": 3
+                },
+                {
+                    "type": "GUESTS",
+                    "count": 2
+                }
+            ],
+            "category_breakdown": [
+                {
+                    "type": "LIGHTING",
+                    "description": "All Lights Off",
+                    "status": "NEUTRAL"
+                },
+                {
+                    "type": "SECURITY",
+                    "description": "20% Secure",
+                    "status": "BREACH"
+                },
+                {
+                    "type": "SAFETY",
+                    "description": "60% Safe",
+                    "status": "AlERT"
+                },
+                {
+                    "type": "FEEL",
+                    "description": "28deg, Cooling",
+                    "status": "NEUTRAl"
+                },
+                {
+                    "type": "WHEATHER",
+                    "description": "32deg, Very Hot",
+                    "state": "SUNNY",
+                    "status": "WARNING"
+                }
+            ]
+        }
+    ]
+}
+

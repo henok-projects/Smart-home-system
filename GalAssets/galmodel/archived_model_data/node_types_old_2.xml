@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<!--
+
+Render Variables:
+{NODE_NAME} the name of the node to be rendered
+
+-->
+
+
+<nodeTypes>
+
+    <!-- Lighting IDS: 0 -> 20 -->
+    <type>
+        <id>0</id>
+        <name>Light</name>
+        <definition>LIGHT</definition>
+        <category>LIGHTING</category>
+        <!-- One of these is required to consider a GalNode of this type. If more than one exist,
+         its more probable that the node is of this GalNodeType. When more than one exist,
+        controlling them would have the group treatment. These situations are rare though -->
+        <possiblePrimaryDeviceTypes>
+            <definition>LIGHT</definition>
+        </possiblePrimaryDeviceTypes>
+         its more probable that the node is of this GalNodeType. From a rendering perspective, there are views for each one of these being supported. IF the GalNode has multiple GalNodeDevices that are of the same secondaryDeviceTypes, they are rendered as a group -->
+        <possibleSecondaryDeviceTypes>
+            <definition>LIGHT_SENSOR</definition>
+            <definition>MOTION_DETECTOR</definition>
+        </possibleSecondaryDeviceTypes>
+    </type>
+
+    <type>
+        <id>1</id>
+        <name>Light Socket</name>
+        <definition>LIGHT_SOCKET</definition>
+        <category>LIGHTING</category>
+
+        <possiblePrimaryDeviceTypes>
+            <definition>LIGHT_SOCKET</definition>
+        </possiblePrimaryDeviceTypes>
+
+        <possibleSecondaryDeviceTypes>
+            <definition>LIGHT_SENSOR</definition>
+            <definition>MOTION_DETECTOR</definition>
+        </possibleSecondaryDeviceTypes>
+    </type>
+
+    <type>
+        <id>2</id>
+        <name>Light Sensor</name>
+        <definition>LIGHT_SENSOR</definition>
+        <category>LIGHTING</category>
+
+        <possiblePrimaryDeviceTypes>
+            <definition>LIGHT_SENSOR</definition>
+        </possiblePrimaryDeviceTypes>
+    </type>
+
+    <!-- PLUG_IDS: 21 -> 40 -->
+    <type>
+        <id>21</id>
+        <name>Plug</name>
+        <definition>PLUG</definition>
+        <category>PLUGS_AND_APPLIANCES</category>
+        <possiblePrimaryDeviceTypes>
+            <definition>PLUG</definition>
+        </possiblePrimaryDeviceTypes>
+    </type>
+    <!-- SECURITY IDS: 41 -> 60 -->
+    <type>
+        <id>41</id>
+        <name>Motion Sensor</name>
+        <definition>MOTION_SENSOR</definition>
+        <category>SECURITY</category>
+        <possiblePrimaryDeviceTypes>
+            <definition>MOTION_SENSOR</definition>
+        </possiblePrimaryDeviceTypes>
+    </type>
+    <!-- SAFETY IDS: 61 -> 80 -->
+
+    <!-- FEEL IDS: 81 -> 100 -->
+
+
+
+
+</nodeTypes>

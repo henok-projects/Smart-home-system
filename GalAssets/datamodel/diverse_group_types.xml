@@ -1,0 +1,27 @@
+<!-- idType: UInt16 -->
+
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    
+    <diverseGroupTypes>
+        <type isSystemGroup='true'> <!-- if its a system group, it is system generated and not grouped like normal devices by users -->
+            <id>0</id>
+            <definition>DOOR</definition>
+            <name>Door</name>
+            <possibleDeviceTypes>
+                <deviceType definition="DOOR_LOCK"/>
+            </possibleDeviceTypes>
+        </type>
+        
+        <type isSystemGroup='true'> <!-- if its a system group, it is system generated and not grouped like normal devices by users -->
+            <id>1</id>
+            <definition>WINDOW</definition>
+            <name>Window</name>
+            <possibleDeviceTypes>
+                <deviceType definition="WINDOW_COVERING"/>
+            </possibleDeviceTypes>
+        </type>
+        
+        <!-- mixed safety gasses -->
+    </diverseGroupTypes>
+</root>

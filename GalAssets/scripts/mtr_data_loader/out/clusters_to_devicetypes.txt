@@ -1,0 +1,120 @@
+FOR: HA_CONFIGURATION_TOOL
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: HA_CONFIGURATION_TOOL
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: HA_REMOTE_CONTROL
+	Replaceable Optional clusters: 
+		 - MTR_ILLUMINANCE_MEASUREMENT
+To Device: MTR_LIGHT_SENSOR
+
+FOR: HA_REMOTE_CONTROL
+	Replaceable Optional clusters: 
+		 - MTR_ILLUMINANCE_MEASUREMENT
+To Device: LO_LIGHT_SENSOR
+
+FOR: HA_COMBINED_INTERFACE
+	Replaceable Optional clusters: 
+		 - MTR_ILLUMINANCE_MEASUREMENT
+To Device: MTR_LIGHT_SENSOR
+
+FOR: HA_COMBINED_INTERFACE
+	Replaceable Optional clusters: 
+		 - MTR_ILLUMINANCE_MEASUREMENT
+To Device: LO_LIGHT_SENSOR
+
+FOR: MTR_ON_OFF_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: MTR_ON_OFF_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: HA_ON_OFF_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: HA_ON_OFF_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: LO_ON_OFF_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: LO_ON_OFF_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: MTR_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: MTR_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: HA_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: HA_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: LO_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: LO_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: HA_COLOR_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: HA_COLOR_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: LO_COLOR_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: MTR_OCCUPANCY_SENSOR
+
+FOR: LO_COLOR_DIMMABLE_LIGHT
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+
+FOR: HA_LIGHT_SENSOR
+	Replaceable Optional clusters: 
+		 - MTR_ILLUMINANCE_MEASUREMENT
+To Device: LO_LIGHT_SENSOR
+
+FOR: HA_OCCUPANCY_SENSOR
+	Replaceable Optional clusters: 
+		 - MTR_OCCUPANCY_SENSING
+To Device: LO_OCCUPANCY_SENSOR
+

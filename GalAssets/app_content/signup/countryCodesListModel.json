@@ -1,0 +1,22 @@
+{
+    "id": 0,
+    "assets_file_version": "0.0",
+    "countryCodes": [
+        {
+            "id": 0,
+            "countryName": "United Kingdom",
+            "countryCode": "44",
+            "image": "ukflag"
+            
+        },
+        
+        {
+            "id": 1,
+            "countryName": "Lebanon",
+            "countryCode": "961",
+            "image": "lebanonflag"
+            
+        }
+    ]
+}
+

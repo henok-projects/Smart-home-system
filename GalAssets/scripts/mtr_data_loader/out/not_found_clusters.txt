@@ -1,0 +1,433 @@
+Administrator Commissioning:
+ - Not found for the following devices 
+ - Matter Root Node
+
+Poll Control:
+ - Not found for the following devices 
+ - Matter Door Lock
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+
+Power Configuration:
+ - Not found for the following devices 
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+ - LO On/Off Balast
+ - LO Dimmable Balast
+
+Device Temperature Configuration:
+ - Not found for the following devices 
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+ - LO On/Off Balast
+ - LO Dimmable Balast
+
+Alarms:
+ - Not found for the following devices 
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+
+Time:
+ - Not found for the following devices 
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA Smart Plug
+ - HA White Goods
+ - HA White Goods
+ - HA Meter Interface
+
+Over the Air Bootloading:
+ - Not found for the following devices 
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+ - LO On/Off Light
+ - LO Dimmable Light
+ - LO Color Dimmable Light
+ - LO On/Off Light Switch
+ - LO Dimmer Switch
+ - LO Color Dimmer Switch
+ - LO Light Sensor
+ - LO Occupancy Sensor
+ - LO On/Off Balast
+ - LO Dimmable Balast
+ - LO On/Off Plug-in Unit
+ - LO Dimmable Plug-in Unit
+ - LO Color Temperature Light
+ - LO Extended Color Light
+ - LO Light Level Sensor
+ - LO Color Controller
+ - LO Color Scene Controller
+ - LO Non Color Controller
+ - LO Non Color Scene Controller
+ - LO Control Bridge
+ - LO On/off Sensor
+ - ZLL On/Off Light
+ - ZLL On/Off Plug-in Unit
+ - ZLL Dimmable Light
+ - ZLL Dimmable Plug-in Unit
+ - ZLL Color Light
+ - ZLL Extended Color Light
+ - ZLL Color Temperature Light
+ - ZLL Color Controller
+ - ZLL Color Scene Controller
+ - ZLL Non-color Controller
+ - ZLL Non-color Scene Controller
+ - ZLL Control Bridge
+ - ZLL On/Off Sensor
+
+Partition:
+ - Not found for the following devices 
+ - HA On/Off Switch
+ - HA Level Control Switch
+ - HA On/Off Output
+ - HA Level Controllable Output
+ - HA Scene Selector
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - HA Range Extender
+ - HA Mains Power Outlet
+ - HA Door Lock
+ - HA Door Lock Controller
+ - HA Simple Sensor
+ - HA On/Off Light
+ - HA Dimmable Light
+ - HA Color Dimmable Light
+ - HA On/Off Light Switch
+ - HA Dimmer Switch
+ - HA Color Dimmer Switch
+ - HA Light Sensor
+ - HA Occupancy Sensor
+ - HA Shade
+ - HA Shade Controller
+ - HA Window Covering
+ - HA Window Covering Controller
+ - HA Heating Cooling Unit
+ - HA Thermostat
+ - HA Temperature Sensor
+ - HA Pressure Sensor
+ - HA Flow Sensor
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+
+Illuminance Level Sensing:
+ - Not found for the following devices 
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+ - LO On/Off Balast
+ - LO Dimmable Balast
+ - LO Light Level Sensor
+ - LO Control Bridge
+
+Shade Configuration:
+ - Not found for the following devices 
+ - HA Configuration Tool
+ - HA Remote Control
+ - HA Combined Interface
+
+Simple Metering:
+ - Not found for the following devices 
+ - HA Remote Control
+ - HA Consumption Awareness Device
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+
+Shade configuration:
+ - Not found for the following devices 
+ - HA Shade
+ - HA Shade Controller
+
+IAS ACE:
+ - Not found for the following devices 
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+
+IAS WD:
+ - Not found for the following devices 
+ - HA IAS Control and Indication Equipment
+ - HA IAS Warning Device
+
+IAS Zone:
+ - Not found for the following devices 
+ - HA IAS Control and Indication Equipment
+ - HA IAS Ancillary Control Equipment
+ - HA IAS Zone
+ - HA IAS Warning Device
+
+Meter Identification:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA White Goods
+ - HA Meter Interface
+
+Power Profile:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA White Goods
+
+Appliance Statistics:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA White Goods
+
+Appliance Control:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA White Goods
+
+Appliance Identification:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA White Goods
+
+Appliance Events and Alert:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA White Goods
+
+Price:
+ - Not found for the following devices 
+ - HA Home Gateway / Energy Management System
+ - HA Smart Plug
+ - HA White Goods
+ - HA Meter Interface
+
+Demand Response and Load Control:
+ - Not found for the following devices 
+ - HA Smart Plug
+
+Messaging:
+ - Not found for the following devices 
+ - HA Meter Interface
+

@@ -1,0 +1,18 @@
+{
+    "id": 0,
+    "assets_file_version": "0.0",
+    "countries": [
+        {
+            "id": 0,
+            "phoneCode": "+44",
+            "image": "ukflag",
+            "name": "United Kingdom"
+        },
+        {
+            "id": 1,
+            "phoneCode": "+961",
+            "image": "lebanonflag",
+            "name": "Lebanon"
+        }
+    ]
+}

@@ -1,0 +1,452 @@
+## Same mapping for dark and light theme.
+## TODO:
+
+###########################################################################################
+######################################NEEDS FIXING########################################
+#########################################################################################
+####################
+#####used by ios###
+##################
+loadingGif: 'icons.loadingGif'
+#loadingGif: 'icons.loading.dotCircleGifTest'
+
+#Misc
+clearImage: 'icons.clearImage'
+### Splash screen
+splashScreenLogoIcon: 'logo.icon_only'
+
+
+
+add: 'icons.plusIcon'
+info: 'icons.info'
+archiveIcon: 'icons.archiveIcon'
+playVideo: 'icons.playVideo'
+grantLocation: 'icons.grantLocation'
+sunnyWeather: 'icons.sunnyWeather'
+pdfIcon: 'icons.pdfIcon'
+
+bluetooth: 'icons.bluetooth'
+
+
+nfcIcon: 'icons.nfcIcon'
+warningIcon: 'icons.warningIcon'
+
+
+### Flags
+ukflag: 'icons.flags.uk' # TODO: have the link directly in languageListModel
+lebanonflag: 'icons.flags.lebanon' # TODO: have the link directly in languageListModel
+lebanonflagmobile: 'icons.flags.lebanon_mobile'
+
+myCustomImage: 'icons.arrows.left' # TODO: Check removal
+
+### language SheetView
+close: 'icons.close'
+closeCircle: 'icons.closeCircle'
+
+
+inputswitch: 'icons.input_switch'
+
+
+### Checkers
+checkboxChecked: 'icons.checkbox.checked'
+checkboxUnChecked: 'icons.checkbox.unchecked'
+radioChecked: 'icons.radio.checked'
+radioUnChecked: 'icons.radio.unchecked'
+check: 'icons.check'
+
+### Others
+exclamation: 'icons.exclamation.inCircle'
+calendar: 'icons.calendar'
+copy: 'icons.copy'
+key: 'icons.key'
+
+wifiHome: 'wifiHome'
+
+homeListArhiveIcon: 'icons.archiveIcon'
+infoIcon: 'icons.infoIcon'
+alertIcon: 'icons.alertIcon'
+securityIcon: 'icons.securityIcon'
+emailStatusIcon: 'icons.emailStatusIcon'
+clockIcon: 'icons.clockIcon'
+dragIcon: 'icons.dragIcon'
+closeError: 'icons.closeError'
+leaveHome: 'icons.leaveHome'
+reorderDots: 'icons.reorderDots'
+galsieHomeIcon: 'icons.galsieHomeIcon'
+notificationIcon: 'icons.notificationIcon'
+notificationOutlineIcon: 'icons.notificationOutlineIcon'
+galsieLogoLightBlue: 'icons.galsieLogoLightBlue'
+moreIcon: 'icons.moreIcon'
+bellIcon: 'icons.bell'
+checkmark: 'icons.checkmark'
+checkmarkGreen: 'icons.checkmarkGreenIcon'
+checkmarkRed: 'icons.checkmarkRedIcon'
+trashIcon: 'icons.trash'
+closeIcon: 'icons.closeIcon'
+radioSelected: 'icons.radioSelected'
+radioUnselected: 'icons.radioUnselected'
+addIcon: 'icons.plusIcon'
+dummyMap: 'icons.dummyMap'
+locationIcon: 'icons.locationIcon'
+bluetoothIcon: 'icons.bluetoothIcon'
+wavesImage: 'icons.wavesImage'
+
+
+##############################################################################################
+###################################### SHARED ################################################
+##############################################################################################
+
+
+
+######################
+###placeholders######
+####################
+pinPlaceholder: 'icons.locationIcon'
+qrPlaceholder: 'icons.qr_placeholder'
+emailPlaceholder: 'icons.email_placeholder'
+scanPlaceholder: 'icons.scanQRIcon'
+imagePlaceholder: 'icons.imageIcon'
+
+
+
+galsieIconLarge: 'icons.galsieIcon'
+cameraPermission: 'bigicons.requestOSPermissionsCameralLogo'
+
+redoIcon: 'icons.redo'
+
+copyLinkIcon: 'icons.copy'
+
+
+
+###################
+#####Arrows#######
+#################
+bigArrowRight: 'icons.arrows.bigArrowRight'
+chevronRightCircle: 'icons.arrows.chevronRightCircle'
+bigArrowLeft: 'icons.arrows.bigArrowLeft'
+chevronLeftCircle: 'icons.arrows.chevronLeftCircle'
+bigArrowDown: 'icons.arrows.bigArrowDown'
+bigArrowUp: 'icons.arrows.bigArrowUp'
+
+###################
+####suggestion####
+##################
+homeListSuggestionWatchVideoNextIcon: 'icons.playVideoNext'
+homeListSuggestionReadPdfNextIcon: 'icons.readPdfNext'
+
+
+##############
+####TOAST####
+############
+
+toastWarningIcon: 'icons.warningIcon'
+toastAlertIcon: 'icons.exclamationIcon'
+toastSuccessIcon: 'icons.checkmarkGreenIcon'
+toastErrorIcon: 'icons.alertIcon'
+
+
+#####################
+###BOTTOM NAV BAR###
+###################
+
+# RENAME prefix to homeNanigationBar, move to shared section
+homeNavigationBarHomeIcon: 'icons.navBar.homeIcon'
+homeNavigationBarAreaIcon: 'icons.navBar.areaIcon'
+homeNavigationBarOperatorsIcon: 'icons.navBar.operatorsIcon'
+homeNavigationBarSuggestionsIcon: 'icons.navBar.suggestionsIcon'
+homeNavigationBarSettingsIcon: 'icons.navBar.homeSettingsIcon'
+
+
+#############################
+#####    OTHER BUTTONS  #####
+#############################
+### Widgeted Button (A widget that is a button -- like button in the home list for archived homes)
+# Archive icon
+widgetedButtonArchiveIcon: 'icons.archiveIcon'
+# Chevron right
+widgetedButtonChevronRight: 'icons.arrows.right'
+# Chevron left
+widgetedButtonChevronLeft: 'icons.arrows.left' # TODO Capitalize C
+
+########################
+######### FORMS ########
+########################
+formInputFieldErrorIcon: 'icons.exclamation.inCircle'
+formInputFieldSuccessIcon: 'icons.check'
+formInputFieldValidatingIcon: 'icons.loading.dotCircle'
+formInputFieldArrowUpIcon: 'icons.arrows.smallArrowUp'
+formInputFieldArrowRightIcon: 'icons.arrows.smallArrowRight'
+formInputFieldArrowLeftIcon: 'icons.arrows.smallArrowLeft'
+formInputFieldArrowDownIcon: 'icons.arrows.smallArrowDown'
+
+#########################################
+######     LIST VIEW COMPONENT     ######
+#########################################
+
+# radio
+listViewRadioChecked: 'icons.radio.checked'
+listViewRadioUnChecked: 'icons.radio.unchecked'
+
+# checkbox
+listViewCheckboxChecked: 'icons.checkbox.checked'
+listViewCheckboxUnChecked: 'icons.checkbox.unchecked'
+
+
+############################
+#####   SEARCH VIEW    #####
+############################
+
+#search icons
+searchViewSearchImage: 'icons.searchImage'
+searchImage: 'icons.searchImage'
+emptySearchIllustration: 'illustrations.expressive.emptySearchIllustration'
+searchingLocation: 'illustrations.expressive.searchingLocation'
+sheetSearchImage: 'icons.searchImage'
+
+##########################################
+#####  SHEET WARNING VIEW COMPONENT  #####
+##########################################
+
+# Warning icon
+sheetWarningWarningIcon: 'icons.warningIcon'
+
+
+#############################################
+#####  REQUEST OS PERMISSION COMPONENT  #####
+#############################################
+
+#wifi
+requestOSPermissionWifiLogo: 'bigicons.wifiWithAlert'
+#bluetooth
+requestOSPermissionBluetoothLogo: 'bigicons.bluetoothWithAlert'
+#camera
+requestOSPermissionCameraLogo: 'bigicons.requestOSPermissionsCameralLogo'
+
+#location
+requestOSPermissionLocationLogo: 'bigicons.grantLocationWithAlert'
+
+###############################################################################################
+###################################### SCREENS ################################################
+###############################################################################################
+
+#########################
+##  Onboarding Screen  ##
+#########################
+# TODO: REMOVE from here and use json model (ANDROID)
+onboardingGalsie: 'logo.slogan.text-right'
+onboardingIntelligentlyAdaptive: 'illustrations.expressive.guy_sitting_adapting'
+onboardingDesignedForAllHomes: 'illustrations.expressive.home_area_cross_section'
+onboardingKeepingYouSecure: 'illustrations.expressive.couple_sitting_chilling'
+onboardingEnsuringYoureSafe: 'illustrations.expressive.stove_with_smoke'
+onboardingEcoFriendlyLiving: 'illustrations.expressive.girl_monitoring_usage'
+onboardingPersonalizedAssistance: 'illustrations.expressive.girl_talking_through_phone'
+onboardingMaintaingYourPrivacy: 'illustrations.expressive.cloud_servers_sync'
+onboardingStayEntertained: 'illustrations.expressive.girl_watching_tv'
+onboardingBuiltWithMatter: 'illustrations.expressive.galsie_with_matter'
+
+################################
+##  REGISTER & LOGIN SCREENS  ##
+################################
+
+registrationAppleIcon: 'icons.thirdparty.apple'
+registrationGoogleIcon: 'icons.thirdparty.google'
+galsieicon: 'icons.thirdparty.galsie'
+
+registrationInputFieldEmailIcon: 'icons.email'
+registrationInputFieldPasswordIcon: 'icons.password'
+registrationInputFieldPasswordShownIcon: 'icons.password_eye.shown'
+registrationInputFieldPasswordHiddenIcon: 'icons.password_eye.hidden'
+registrationInputFieldInputSwitchIcon: 'icons.input_switch'
+registrationInputFieldMobileSwitchIcon: 'icons.mobile_switch'
+registrationInputFieldUsernameIcon: 'icons.username'
+registrationInputFieldProfileIcon: 'icons.profile'
+
+loginInputFieldEmailIcon: 'icons.email'
+loginInputFieldPasswordIcon: 'icons.password'
+loginInputFieldPasswordShownIcon: 'icons.password_eye.shown'
+loginInputFieldPasswordHiddenIcon: 'icons.password_eye.hidden'
+loginInputFieldInputSwitchIcon: 'icons.input_switch'
+loginInputFieldMobileSwitchIcon: 'icons.mobile_switch'
+################################
+#####   HOME LIST SCREEN   #####
+################################
+
+# TODO: be sure all prefixes are 'homelist'
+
+### TOP TOOLBAR:
+## TODO: Name ot top toolbar
+#more options icon
+homeListToolbarMoreIcon: 'icons.moreIcon'
+
+## WATCH TUTORIAL WIDGET
+#watch tutorial icon
+homelistWatchTutorialPlayVideoIcon: 'icons.playVideo'
+#arrow right icon
+homelistWatchTutorialWidgetArrowRightIcon:  'icons.arrows.chevronRightCircle'
+#arrow left icon
+homelistWatchTutorialWidgetArrowLeftIcon:  'icons.arrows.chevronLeftCircle'
+
+## READ PDF WIDGET
+#read PDF icon
+homelistReadPdfWidgetIcon: 'icons.pdfIcon'
+#arrow right icon
+homelistReadPDFWidgetArrowRightIcon:  'icons.arrows.chevronRightCircle'
+#arrow left icon
+homelistReadPDFWidgetArrowLeftIcon:  'icons.arrows.chevronLeftCircle'
+
+
+### ADDED HOME WIDGET
+#home icon
+homelistAddedHomeWidgetHomeIcon: 'icons.galsieHomeIcon'
+#bell icon
+#homelistAddedHomeWidgetBellIcon: 'icons.bell'
+#alert icon
+#homelistAddedHomeWidgetAlertIcon: 'icons.alertIcon'
+#security icon
+homelistAddedHomeWidgetSecurityIcon: 'icons.securityIcon'
+#drag icon
+homelistAddedHomeWidgetDragIcon: 'icons.dragIcon'
+#light bulb icon
+homelistAddedHomeWidgetLightBulbIcon: 'icons.lightBulb'
+#person icon
+homelistAddedHomeWidgetHumanIcon: 'icons.userProfileIcon'
+#profile icon
+userprofileHumanIcon: 'icons.userProfileIcon'
+#unionIcon
+unionIcon: 'icons.union'
+#bell icon
+homelistAddedHomeWidgetBellIcon: 'icons.homeListBell'
+#alert icon
+homelistAddedHomeWidgetAlertIcon: 'icons.homeListAlert'
+
+homelistAddedHomeWidgetHomeOwnerIcon: 'icons.homeOwner'
+
+homeListAddedHomeWidgetSunnyWeatherIcon: 'icons.sunnyWeather'
+
+homelistBottomToolbarArchiveIcon: 'icons.archiveIcon'
+#leave home icon
+homelistBottomToolbarLeaveHomeIcon: 'icons.leaveHome'
+
+
+
+
+
+#### BOTTOM TOOLBAR  
+## TODO: POTENTIALLY Make it a general Component soon, currently for homelist only
+#archive icon
+#homelistBottomToolbarArchiveIcon: 'icons.archiveIcon'
+#leave home icon
+#homelistBottomToolbarLeaveHomeIcon: 'icons.leaveHome'
+
+################################
+#####   SETUP HOME VIEW    #####
+################################
+
+### ADD HOME VIEW:
+#trash icon
+setupHomeDeleteFloorTrashIcon: 'icons.trash'
+#add icon
+setupHomeAddFloorPlusIcon: 'icons.plusIcon'
+#info icon
+setupHomeAddHomeInfoIcon: 'icons.infoIcon'
+
+### AUTO SEARCH LOCATION VIEW:
+#location icon
+setupHomeAutoSearchLocationLocationIcon: 'icons.locationIcon'
+
+
+########################
+##### ADD AREA VIEW####
+#######################
+
+### AREA DOORS & WINDOWS VIEW:
+#trash icon
+addAreaDeleteDoorTrashIcon: 'icons.trash'
+#add icon
+addAreaAddDoorPlusIcon: 'icons.plusIcon'
+
+######################
+###RECOMMENDATIONS####
+######################
+
+homeDashboardRecommendationsCreateArea: 'illustrations.expressive.dashboard.createArea'
+#add device
+homeDashboardRecommendationsAddDevice: 'illustrations.expressive.dashboard.addDevice'
+#invite guests
+homeDashboardRecommendationsInviteGuests: 'illustrations.expressive.dashboard.inviteGuests'
+
+
+
+######################
+####invite guests####
+####################
+inviteGuestEyeIcon: 'icons.eyeIcon'
+
+inviteGuestBinIcon: 'icons.binIcon'
+
+
+#################################
+#####    ADD DEVICE VIEW    #####
+#################################
+
+### ADD DEVICE INTRO VIEW:
+# matter logo
+addDeviceMatterLogo: 'icons.matterLogo'
+
+### ADD DEVICE METHODS VIEW:
+# clock icon
+addDeviceMethodsClockIcon: 'icons.clockIcon'
+
+### BRING NEAR DEVICE VIEW:
+# NFC icon
+addDeviceNFCIcon: 'icons.NFCIcon' # TODO: RENAME ICON TO NFC ICON, ALSO prefixc with addDevice
+
+
+### DEVICE BLUETOOTH PAIRING VIEW:
+# waves image
+addDeviceWavesImage: 'icons.wavesImage'
+
+### SCAN ON NETWORK VIEW:
+# scan on network icon
+addDeviceScanOnNetwork: 'icons.scanOnNetworkIcon'
+
+### SETUP DEVICE NETWORK VIEW:
+# wifi
+addDeviceSetupDeviceNetworkWifiIcon: 'icons.wifiIcon'
+# thread
+addDeviceSetupDeviceNetworkThreadIcon: 'icons.threadIcon'
+# router
+addDeviceSetupDeviceNetworkRouterIcon: 'icons.routerIcon'
+
+### WIFI LIST VIEW:
+# wifi
+addDeviceWifiListWifiIcon: 'icons.wifiIcon'
+# router
+addDeviceWifiListRouterIcon: 'icons.routerIcon'
+
+### CONFIGURING DEVICE VIEW:
+# router
+addDeviceConfiguringDeviceRouterIcon: 'icons.routerIcon'
+# iPhone
+addDeviceConfiguringDevicePhoneIcon: 'icons.iPhoneIcon'
+# speaker
+addDeviceConfiguringDeviceSpeakerIcon: 'icons.speakerIcon'
+
+### NETWORK CREDENTIALS VIEW:
+#wifi
+addDeviceNetworkCredentialsWifiIcon: 'icons.wifiIcon'
+
+### SCANNED DEVICE DETAILS VIEW:
+#person
+addDeviceScannedDeviceDetailsPersonIcon: 'icons.personIcon'
+
+######################################
+######### USER PROFILE VIEW ########
+######################################
+##userProfileShared
+userProfileEditingLockedIcon: 'icons.lock'
+userProfileEditingUnlockedIcon: 'icons.unlock'
+##userProfileEntry
+userProfileEntryTopCameraIcon: 'icons.cameraUserProfile'
+##userProfileAccountInformation
+userProfileEditingDropIcon: 'icons.dropIcon'

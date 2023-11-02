@@ -1,0 +1,16 @@
+{
+  "assets_file_version": "0.0",
+  "id": 0,
+  "profile": {
+    "first_name": "Liwaa",
+    "middle_name": "",
+    "last_name": "Al Kontar",
+    "username": "Liwaa.K",
+    "email": "liwaa@galsie.com",
+    "password": "password123",
+    "phone_number": "123-456-7890",
+    "date_of_birth": "11/11/21",
+    "gender": "Male",
+    "two_factor_auth_enabled": true
+  }
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<!---
+    <icon>
+        <any> </any>
+        <single></single> <- Not required if any is set
+        <group></group> <- Not required if group is set
+    </icon>
+
+    <nodeIcon>
+        <single> </single> <- when the node is not in a group
+        <group> </group> <- when the node is in a in a group of nodes of the same type
+    </nodeIcon>
+
+    <label style="..."> A label is some text with a style. It can hold a feature, or a variable.
+
+
+-->
+
+<devicesRenderInfo>
+
+    <renderInfo forNode="LIGHTS"> <!-- render info for the node of this definition -->
+        <iconMapping>
+            <!-- goes to assets/rendering/theme/.../{generalpath} -->
+            <generalPath>categories/lighting/nodes/lights/</generalPath>
+
+            <!-- at this point, thee renderer knows if its a group or node, and adds /group or /node to the path -->
+            <!-- to conditionally add something to the path, use -->
+            <conditionalMapping>
+
+
+            </conditionalMapping>
+
+
+        </iconMapping>
+
+        <icons>
+            <conditionalIconName> <!-- when a feature attribute matched the attributeValue, render that icon name -->
+                <featurePath>
+                    <deviceTypes>
+                        <definition>LIGHT</definition>
+                        <definition>LIGHT_SOCKET</definition>
+                    </deviceTypes>
+                    <featureDefinition>ACTUATOR_CONTROL_ONOFF</featureDefinition>
+                    <featureAttributeDefinition>ON_OFF_ATTR</featureAttributeDefinition> <!-- when unset, its up to the front-end renderer to determine which attribute is rendered -->
+                </featurePath>
+                <!-- we account for single and group here. One or Many are automatically accounted for by changing the path -->
+                <group>
+                    <when>
+                        <allValuesEquals>ON</allValuesEquals>
+                        <iconName>all-on</iconName>
+                    </when>
+                    <!-- else -->
+                    <when>
+                        <someValuesEqual>ON</someValuesEqual>
+                        <iconName>some-on</iconName>
+                    </when>
+                    <!-- else -->
+                    <when>
+                        <allValuesEquals>OFF</allValuesEquals>
+                        <iconName>off</iconName>
+                    </when>
+                </group>
+
+                <single>
+                    <when>
+
+                    </when>
+                </single>
+            </conditionalIconName>
+
+        </icons>
+
+        <nodeIconPath>lighting/lights</nodeIconPath> <!-- the path of a node icon contains either any.png or single.png and group.png assets -->
+
+        <nodeStatus> <!-- the node status is expressed in the nodeCard or elsewhere -->
+            <!-- if not disabled, shows the status of these features -->
+            <any> <!-- either any or single and group -->
+                <featurePathList>
+                    <featurePath>
+                        <definition>ON_OFF_FEATURE_PATH</definition> <!-- only need to give definition if used in a conditional -->
+                        <deviceTypes>
+                            <definition>LIGHT</definition>
+                            <definition>LIGHT_SOCKET</definition>
+                        </deviceTypes>
+                        <featureDefinition>ACTUATOR_CONTROL_ONOFF</featureDefinition>
+                        <featureAttributeDefinition>ON_OFF_ATTR</featureAttributeDefinition> <!-- when unset, its up to the front-end renderer to determine which attribute is rendered -->
+                    </featurePath>
+                    <featurePath>
+                        <deviceTypes>
+                            <definition>LIGHT</definition>
+                            <definition>LIGHT_SOCKET</definition>
+                        </deviceTypes>
+                        <featureDefinition>LIGHT_CONTROL_BRIGHTNESS</featureDefinition>
+                        <featureAttributeDefinition>BRIGHTNESS_ATTR</featureAttributeDefinition>
+                        <conditional>
+                            ON_OFF_FEATURE_PATH.ACTUATOR_CONTROL_ONOFF.ON_OFF_ATTR == ON
+                        </conditional>
+                    </featurePath>
+                </featurePathList>
+            </any>
+        </nodeStatus>
+
+        <headerWidget>
+            <header>
+                <leftSide>
+                    <content>
+                        <h1></h1>
+                        <h2></h2>
+                        <h3></h3>
+                    </content>
+                </leftSide>
+
+                <rightSide>
+                    <squareButton>
+                        <icon>
+                            <any></any>
+                        </icon>
+                        <label></label>
+                    </squareButton>
+
+                    <content>
+                        <text></text>
+                        <icon></icon>
+
+                        <label></label>
+                    </content>
+                </rightSide>
+            </header>
+        </headerWidget>
+    </renderInfo>
+
+</devicesRenderInfo>

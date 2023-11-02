@@ -1,0 +1,333 @@
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <renderInfo forDevice="LIGHT_SOCKET">
+        <staticNodeIconDefiniion>
+                <basePath>categories/lighting/nodes/light-socket/plugged-out/{oneOrMany}/on</basePath> <!-- one or many automatically replaced by one/many -->
+        </staticNodeIconDefiniion>
+
+        <dynamicNodeIconDefinition>
+                <basePath>categories/lighting/nodes/light-socket/{oneOrMany}/</basePath>
+                <one> <!-- if one device -->
+                    <featureAttributeConditional> <!-- first this is executed -->
+                        <featurePath>
+                            ACTUATOR_PLUGIN_DETECTOR.PLUGGED_IN_ATTR  <!-- when the attribute after the . is unset, its up to the front-end renderer to determine which attribute is rendered -->
+                        </featurePath>
+
+                        <whenFeatureDoesntExist>
+                            <addToPath>/plugged-in</addToPath>
+                        </whenFeatureDoesntExist>
+
+                        <singleOrGroup> <!-- if single or group -->
+                            <when>
+                                <someValuesEqual>PLUGGED_IN</someValuesEqual> <!-- some value because its for a group as well. It it were only single, use valueEquals -->
+                                <addToPath>/plugged-in</addToPath>
+                            </when>
+                            <defaultWhen>
+                                <addToPath>/plugged-out</addToPath>
+                            </defaultWhen>
+                        </singleOrGroup>
+                    </featureAttributeConditional>
+
+                    <finishIconPathContainer/> <!-- finish icon container indicates that the current path as is contains the disconnected and disabled folders. -->
+
+
+                    <featureAttributeConditional> <!-- then this is executed -->
+                        <featurePath>
+                            ACTUATOR_CONTROL_ONOFF.ON_OFF_ATTR
+                        </featurePath>
+                        <!-- Feature must exist
+                        <whenFeatureDoesntExist>
+                        </whenFeatureDoesntExist>
+                        -->
+                        <singleOrGroup> <!-- if single or group -->
+                            <when> <!-- this is executed first. If it failed, the next when is executed -->
+                                <someValuesEqual>ON</someValuesEqual>
+                                <addToPath>/on</addToPath>
+                            </when>
+                            <defaultWhen> <!-- executed when all the above conditions fail -->
+                                <addToPath>/off</addToPath>
+                            </defaultWhen>
+                        </singleOrGroup>
+                    </featureAttributeConditional>
+                </one>
+
+                <many> <!-- if many -->
+                    <featureAttributeConditional> <!-- first this is executed -->
+                        <featurePath>
+                            ACTUATOR_PLUGIN_DETECTOR.PLUGGED_IN_ATTR
+                        </featurePath>
+
+                        <whenFeatureDoesntExist> <!-- fallback to all of them plugged in -->
+                            <addToPath>/3-3-plugged-in</addToPath>
+                        </whenFeatureDoesntExist>
+
+                        <singleOrGroup> <!-- if single or group -->
+                            <when>
+                                <allValuesEquals>PLUGGED_IN</allValuesEquals> <!-- some value because its for a group as well. It it were only single, use valueEquals -->
+                                <addToPath>/3-3-plugged-in</addToPath>
+                            </when>
+                            <when>
+                                <atLeastHalfEquals>PLUGGED_IN</atLeastHalfEquals>
+                                <addToPath>/2-3-plugged-in</addToPath>
+                            </when>
+                            <when> <!-- at this point, less than half -->
+                                <someValuesEqual>PLUGGED_IN</someValuesEqual>
+                                <addToPath>/1-3-plugged-in</addToPath>
+                            </when>
+                            <defaultWhen>
+                                <addToPath>/plugged-out</addToPath>
+                            </defaultWhen>
+                        </singleOrGroup>
+
+                    </featureAttributeConditional>
+
+                    <finishIconPathContainer/> <!-- finish icon container indicates that the current path as is contains the disconnected and disabled folders. -->
+
+                    <featureAttributeConditional> <!-- then this is executed -->
+                        <featurePath>
+                            ACTUATOR_CONTROL_ONOFF.ON_OFF_ATTR
+                        </featurePath>
+                        <!-- Feature must exist-->
+                        <singleOrGroup> <!-- if single or group -->
+                            <when>
+                                <allValuesEquals>ON</allValuesEquals>
+                                <addToPath>/3-3-on</addToPath>
+                            </when>
+                            <when> <!-- this is executed first. If it failed, the next when is executed -->
+                                <atLeastHalfEquals>ON</atLeastHalfEquals>
+                                <addToPath>/2-3-on</addToPath>
+                            </when>
+                            <!-- else when... These are executed in top to bottom order -->
+                            <when>
+                                <someValuesEqual>ON</someValuesEqual>
+                                <addToPath>/1-3-on</addToPath>
+                            </when>
+
+                            <defaultWhen> <!-- in this case, no device is on. Its off -->
+                                <addToPath>/off</addToPath>
+                            </defaultWhen>
+                        </singleOrGroup>
+                    </featureAttributeConditional>
+                </many>
+        </dynamicNodeIconDefinition>
+
+        <nodeStatusDefinition>
+            <!-- One or more features/attributes that express the nodes status -->
+            <langFeatureRepresentation> <!-- representation of a feature from lang -->
+                <!-- this device -->
+                THIS.ACTUATOR_CONTROL_ONOFF.ON_OFF_ATTR.ON.countOnly <!-- X ON -->
+            </langFeatureRepresentation>
+        </nodeStatusDefinition>
+
+        <predefinedStatuses>
+            <status>
+                <definition>MAIN_STATUS</definition>
+                <langFeatureRepresentation>
+                    THIS.ACTUATOR_CONTROL_ONOFF.ON_OFF_ATTR.ON.ofTotal
+                </langFeatureRepresentation>
+            </status>
+
+            <status>
+                <definition>DETECTED_STATUS</definition>
+                <langFeatureRepresentation>
+                    OTHER.LIGHT_SENSOR.LIGHT_LUMINOSITY_DETECTION.LUMINOSITY_RATING_ATTR <!-- uses another device type in this physical device -->
+                </langFeatureRepresentation>
+                <langFeatureRepresentation>
+                    OTHER.LIGHT_SENSOR.LIGHT_AMBIANCE_DETECTOR.LIGHT_AMBIANCE_ATTR.COLOR_NAME
+                </langFeatureRepresentation>
+            </status>
+
+            <status>
+                <definition>MOTION_STATUS</definition>
+                <langFeatureRepresentation>
+                    OTHER.MOTION_SENSOR.MOTION_SENSOR.MOTION_DETECTION_ATTR.MOTION_DETECTED.anyOrOther.NO_MOTION <!-- either renders motion or no motion -->
+                </langFeatureRepresentation>
+            </status>
+
+            <status>
+                <definition>SET_VALUES_FULL_STATUS</definition> <!-- on, brightness 50% OR 2 on, 2 plugged out, -->
+                <langFeatureRepresentation>
+                    THIS.ACTUATOR_CONTROL_ONOFF.ON_OFF_ATTR.ON.ofTotal
+                </langFeatureRepresentation>
+                <langFeatureRepresentation>
+                    THIS.LIGHT_CONTROL_BRIGHTNESS.BRIGHTNESS_ATTR.valueOrMixed
+                </langFeatureRepresentation>
+                <langFeatureRepresentation>
+                    THIS.ACTUATOR_PLUGIN_DETECTOR.PLUGGED_IN_ATTR.PLUGGED_IN.ofTotal
+                </langFeatureRepresentation>
+            </status>
+        </predefinedStatuses>
+
+        <nodeControls>
+            <mainControl> <!-- usually on-off -->
+                <featurePath>
+                    THIS.ACTUATOR_CONTROL_ONOFF
+                </featurePath>
+            </mainControl>
+
+            <primaryControls>
+                <featurePath>
+                    THIS.ACTUATOR_CONTROL_BRIGHTNESS.LIGHT_CONTROL_BRIGHTNESS
+                </featurePath>
+            </primaryControls>
+
+            <secondaryControls> <!-- the control btns -->
+                <!-- none -->
+            </secondaryControls>
+        </nodeControls>
+
+        <asNodeCard>
+            <nodeCardStatus>
+                <predefinedStatus name="MAIN_STATUS"/>
+            </nodeCardStatus>
+        </asNodeCard>
+
+        <asMainNodeWidget>
+            <whenInMainPageInspectOverlay> <!-- the header widget in the inspect overlay -->
+            </whenInMainPageInspectOverlay>
+
+            <whenInMainPage>
+                <h1>
+                    <predefinedStatus name="MAIN_STATUS"/> <!-- use the status predefined above -->
+                </h1>
+                <h2>
+                    <predefinedStatus name="DETECTED_STATUS"/>
+                </h2> <!-- the ampersand implies this feature & the other, both. If one doesn't exist, either -->
+                <h3>
+                    <predefinedStatus name="MOTION_STATUS"/>
+                </h3> <!-- If the physical device has any node which has a motion detector, can render here. -->
+            </whenInMainPage>
+        </asMainNodeWidget>
+
+        <asListElement> <!-- render as a list element -->
+            <whenInMainPage> <!-- these are used when the node is in a group -->
+
+                <whenInMainPageMainWidgetNodeListFilter> <!-- if the single/diverse node group has a filter over nodes, this is rendered -->
+                    <whenInSingleNodeTypeGroup> <!-- when the node is rendered as a list element for a single group type -->
+                        <h1>
+                            {PHYS_DEVICE_NAME} <!-- the name of the physical device given by users -->
+                        </h1>
+                        <h2>
+                            <predefinedStatus name="DETECTED_STATUS"/>
+                            <predefinedStatus name="MOTION_STATUS"/>
+                        </h2>
+                        <h3>
+                            <predefinedStatus name="SET_VALUES_FULL_STATUS"/>
+                        </h3>
+                    </whenInSingleNodeTypeGroup>
+
+                    <whenInDiverseNodeTypeGroup>
+                        <h1>
+                            {PHYS_DEVICE_NAME} <!-- the name of the physical device given by users -->
+                        </h1>
+                        <h2>
+                            <predefinedStatus name="DETECTED_STATUS"/>
+                            <predefinedStatus name="MOTION_STATUS"/>
+                        </h2>
+                        <h3>
+                            <predefinedStatus name="SET_VALUES_FULL_STATUS"/>
+                        </h3>
+                    </whenInDiverseNodeTypeGroup>
+                </whenInMainPageMainWidgetNodeListFilter>
+
+                <whenInMainPageInspectOverlayNodeList> <!-- the single/diverse node group inspect has a filer over nodes, it shows single nodes only-->
+                    <whenInSingleNodeTypeGroup> <!-- when the node is rendered as a contributor for a single group type -->
+                        <one>
+                            <single></single>
+                        </one>
+                        <many>
+                            <single></single>
+                            <!-- can't be group in single node type -->
+                        </many>
+                    </whenInSingleNodeTypeGroup>
+
+                    <whenInDiverseNodeTypeGroup>
+                        <one>
+                            <single></single>
+                        </one>
+                        <many>
+                            <single></single>
+                            <!-- can't be group in single node type -->
+                        </many>
+                    </whenInDiverseNodeTypeGroup>
+                </whenInMainPageInspectOverlayNodeList>
+
+            </whenInMainPage>
+
+            <whenInCategoryPage>
+                <whenInCategoryMainWidgetNodeList> <!-- when filtered to node list in the category main widget -->
+                    <one>
+                        <single></single>
+                        <group></group>
+                    </one>
+                    <many>
+                        <single></single>
+                        <group></group>
+                    </many>
+                </whenInCategoryMainWidgetNodeList>
+
+                <whenInCategoryInspectOverlayNodeList> <!-- when filtered to node list in the category main page -->
+                    <one>
+                        <single></single>
+                        <group></group>
+                    </one>
+                    <many>
+                        <single></single>
+                        <group></group>
+                    </many>
+                </whenInCategoryInspectOverlayNodeList>
+            </whenInCategoryPage>
+
+        </asListElement>
+
+        <asContributor>
+            <whenInMainPage> <!-- these are used when the node is in a group -->
+                <whenInSingleNodeTypeGroup> <!-- when the node is rendered as a contributor for a single group type -->
+                    <one>
+                        <single></single>
+                        <group></group> <!-- Unusual (for lights, usual for window & door devices), but accounted for - if the single node type group allows grouping groups, and renders them as contributors, this would be rendered as a grouped contributor -->
+                    </one>
+                    <many>
+                        <single></single>
+                        <group></group> <!-- Unusual (for lights, usual for window & door devices), but accounted for - if the single node type group allows grouping groups, and renders them as contributors, this would be rendered as a grouped contributor -->
+                    </many>
+                </whenInSingleNodeTypeGroup>
+
+                <whenInDiverseNodeTypeGroup> <!-- when a contributor in diverse node type group -->
+                    <one>
+                        <single></single>
+                        <group></group> <!-- if the diverse group allows grouping groups, and renders them as contributors, this would be rendered as a grouped contributor -->
+                    </one>
+                   <many>
+                       <single></single>
+                       <group></group> <!-- if the diverse group allows grouping groups, and renders them as contributors, this would be rendered as a grouped contributor -->
+                   </many>
+                </whenInDiverseNodeTypeGroup>
+            </whenInMainPage>
+            <whenInCategoryPage> <!-- when a contributor in the node category main widget as a contributor -->
+                <area> <!-- how to render as contributor for the area lighting category -->
+                    <one>
+                        <single></single>
+                        <group></group>
+                    </one>
+                    <many>
+                        <single></single>
+                        <group></group>
+                    </many>
+                </area>
+                <home> <!-- how to render as contributor for the home lighting category -->
+                    <one>
+                        <single></single>
+                        <group></group>
+                    </one>
+                    <many>
+                        <single></single>
+                        <group></group>
+                    </many>
+                </home>
+            </whenInCategoryPage>
+
+        </asContributor>
+
+    </renderInfo>
+</root>

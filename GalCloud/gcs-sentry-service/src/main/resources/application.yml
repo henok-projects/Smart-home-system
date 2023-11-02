@@ -1,0 +1,29 @@
+server:
+  port: 0
+logging:
+  path: './out/logs'
+galsie:
+  microservice:
+    name: "gcs-sentry-service"
+    instance-unique-id: "0"
+    version: "0.0.1"
+    version-required: true
+  sentry:
+    default-microservice-passwords: galsie123, galsie234 # NOTE: Only added if no passwords exist
+
+spring:
+  application:
+    name: "gcs-sentry"
+  config:
+    import: 'configserver:http://localhost:4060'
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/galGCSSentryDB'
+    username: 'galsie'
+    password: 'galsie123'
+    #driver-class-name: 'com.mysql.jdbc.Driver' Warning popped out indicating this is Unnecessary
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka/'

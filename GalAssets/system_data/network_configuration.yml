@@ -1,0 +1,6 @@
+# Note: the dot joined path for networkAddresses is used statically in the code
+# meaning if you change the keys, some files in source have to be updated
+assets_file_version: "0.0"
+networkAddresses:
+    gatewayHost: "https://localhost:4062" 
+    continuousService: 'ws://localhost:60420'

@@ -1,0 +1,1768 @@
+<!--
+idType: UInt32
+-->
+<root>
+    
+    <assets_file_version>1.0</assets_file_version>
+    
+    <!-- GENERATED FROM SCRIPT -->
+
+     <mtrClusters>
+
+            <type>
+                <id>3</id>
+                <hexId>0x0003</hexId>
+                <definition>MTR_IDENTIFY</definition>
+                <name>Identify</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="IDENTIFY_TIME" side="server"/>
+                        <attribute definition="IDENTIFY_TYPE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>4</id>
+                <hexId>0x0004</hexId>
+                <definition>MTR_GROUPS</definition>
+                <name>Groups</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="GROUP_NAME_SUPPORT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>5</id>
+                <hexId>0x0005</hexId>
+                <definition>MTR_SCENES</definition>
+                <name>Scenes</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="SCENE_COUNT" side="server"/>
+                        <attribute definition="CURRENT_SCENE" side="server"/>
+                        <attribute definition="CURRENT_GROUP" side="server"/>
+                        <attribute definition="SCENE_VALID" side="server"/>
+                        <attribute definition="SCENE_NAME_SUPPORT" side="server"/>
+                        <attribute definition="LAST_CONFIGURED_BY" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>6</id>
+                <hexId>0x0006</hexId>
+                <definition>MTR_ON_OFF</definition>
+                <name>On/Off</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="ON_OFF" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="GLOBAL_SCENE_CONTROL" side="server"/>
+                        <attribute definition="ON_TIME" side="server"/>
+                        <attribute definition="OFF_WAIT_TIME" side="server"/>
+                        <attribute definition="START_UP_ON_OFF" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>7</id>
+                <hexId>0x0007</hexId>
+                <definition>MTR_ON_OFF_SWITCH_CONFIG</definition>
+                <name>On/off Switch Configuration</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="SWITCH_TYPE" side="server"/>
+                        <attribute definition="SWITCH_ACTIONS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>8</id>
+                <hexId>0x0008</hexId>
+                <definition>MTR_LEVEL_CONTROL</definition>
+                <name>Level Control</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="CURRENT_LEVEL" side="server"/>
+                        <attribute definition="LEVEL_CONTROL_REMAINING_TIME" side="server"/>
+                        <attribute definition="MINIMUM_LEVEL" side="server"/>
+                        <attribute definition="MAXIMUM_LEVEL" side="server"/>
+                        <attribute definition="CURRENT_FREQUENCY" side="server"/>
+                        <attribute definition="MIN_FREQUENCY" side="server"/>
+                        <attribute definition="MAX_FREQUENCY" side="server"/>
+                        <attribute definition="ON_OFF_TRANSITION_TIME" side="server"/>
+                        <attribute definition="ON_LEVEL" side="server"/>
+                        <attribute definition="ON_TRANSITION_TIME" side="server"/>
+                        <attribute definition="OFF_TRANSITION_TIME" side="server"/>
+                        <attribute definition="DEFAULT_MOVE_RATE" side="server"/>
+                        <attribute definition="OPTIONS" side="server"/>
+                        <attribute definition="START_UP_CURRENT_LEVEL" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>15</id>
+                <hexId>0x000F</hexId>
+                <definition>MTR_BINARY_INPUT_BASIC</definition>
+                <name>Binary Input (Basic)</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="ACTIVE_TEXT" side="server"/>
+                        <attribute definition="DESCRIPTION" side="server"/>
+                        <attribute definition="INACTIVE_TEXT" side="server"/>
+                        <attribute definition="OUT_OF_SERVICE" side="server"/>
+                        <attribute definition="POLARITY" side="server"/>
+                        <attribute definition="PRESENT_VALUE" side="server"/>
+                        <attribute definition="RELIABILITY" side="server"/>
+                        <attribute definition="STATUS_FLAGS" side="server"/>
+                        <attribute definition="APPLICATION_TYPE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>28</id>
+                <hexId>0x001c</hexId>
+                <definition>MTR_PWM</definition>
+                <name>Pulse Width Modulation</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>29</id>
+                <hexId>0x001d</hexId>
+                <definition>MTR_DESCRIPTOR</definition>
+                <name>Descriptor</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="DEVICE_LIST" side="server"/>
+                        <attribute definition="SERVER_LIST" side="server"/>
+                        <attribute definition="CLIENT_LIST" side="server"/>
+                        <attribute definition="PARTS_LIST" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>30</id>
+                <hexId>0x001e</hexId>
+                <definition>MTR_BINDING</definition>
+                <name>Binding</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="BINDING_LIST" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>31</id>
+                <hexId>0x001F</hexId>
+                <definition>MTR_ACCESS_CONTROL</definition>
+                <name>Access Control</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="ACL" side="server"/>
+                        <attribute definition="SUBJECTS_PER_ACCESS_CONTROL_ENTRY" side="server"/>
+                        <attribute definition="TARGETS_PER_ACCESS_CONTROL_ENTRY" side="server"/>
+                        <attribute definition="ACCESS_CONTROL_ENTRIES_PER_FABRIC" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="EXTENSION" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>37</id>
+                <hexId>0x0025</hexId>
+                <definition>MTR_ACTIONS</definition>
+                <name>Actions</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="ACTION_LIST" side="server"/>
+                        <attribute definition="ENDPOINT_LIST" side="server"/>
+                        <attribute definition="SETUP_URL" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>40</id>
+                <hexId>0x0028</hexId>
+                <definition>MTR_BASIC</definition>
+                <name>Basic</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="DATA_MODEL_REVISION" side="server"/>
+                        <attribute definition="VENDOR_NAME" side="server"/>
+                        <attribute definition="VENDOR_ID" side="server"/>
+                        <attribute definition="PRODUCT_NAME" side="server"/>
+                        <attribute definition="PRODUCT_ID" side="server"/>
+                        <attribute definition="NODE_LABEL" side="server"/>
+                        <attribute definition="LOCATION" side="server"/>
+                        <attribute definition="HARDWARE_VERSION" side="server"/>
+                        <attribute definition="HARDWARE_VERSION_STRING" side="server"/>
+                        <attribute definition="SOFTWARE_VERSION" side="server"/>
+                        <attribute definition="SOFTWARE_VERSION_STRING" side="server"/>
+                        <attribute definition="CAPABILITY_MINIMA" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MANUFACTURING_DATE" side="server"/>
+                        <attribute definition="PART_NUMBER" side="server"/>
+                        <attribute definition="PRODUCT_URL" side="server"/>
+                        <attribute definition="PRODUCT_LABEL" side="server"/>
+                        <attribute definition="SERIAL_NUMBER" side="server"/>
+                        <attribute definition="LOCAL_CONFIG_DISABLED" side="server"/>
+                        <attribute definition="REACHABLE" side="server"/>
+                        <attribute definition="UNIQUE_ID" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>41</id>
+                <hexId>0x0029</hexId>
+                <definition>MTR_OTA_PROVIDER</definition>
+                <name>OTA Software Update Provider</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>42</id>
+                <hexId>0x002a</hexId>
+                <definition>MTR_OTA_REQUESTOR</definition>
+                <name>OTA Software Update Requestor</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="DEFAULT_OTA_PROVIDERS" side="server"/>
+                        <attribute definition="UPDATE_POSSIBLE" side="server"/>
+                        <attribute definition="UPDATE_STATE" side="server"/>
+                        <attribute definition="UPDATE_STATE_PROGRESS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>43</id>
+                <hexId>0x002b</hexId>
+                <definition>MTR_LOCALIZATION_CONFIGURATION</definition>
+                <name>Localization Configuration</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="ACTIVE_LOCALE" side="server"/>
+                        <attribute definition="SUPPORTED_LOCALES" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>44</id>
+                <hexId>0x002c</hexId>
+                <definition>MTR_TIME_FORMAT_LOCALIZATION</definition>
+                <name>Time Format Localization</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="HOUR_FORMAT" side="server"/>
+                        <attribute definition="CALENDAR_TYPE" side="server"/>
+                        <attribute definition="SUPPORTED_CALENDAR_TYPES" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>45</id>
+                <hexId>0x002d</hexId>
+                <definition>MTR_UNIT_LOCALIZATION</definition>
+                <name>Unit Localization</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="TEMPERATURE_UNIT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>46</id>
+                <hexId>0x002E</hexId>
+                <definition>MTR_POWER_SOURCE_CONFIGURATION</definition>
+                <name>Power Source Configuration</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="SOURCES" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>47</id>
+                <hexId>0x002F</hexId>
+                <definition>MTR_POWER_SOURCE</definition>
+                <name>Power Source</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="POWER_SOURCE_STATUS" side="server"/>
+                        <attribute definition="POWER_SOURCE_ORDER" side="server"/>
+                        <attribute definition="POWER_SOURCE_DESCRIPTION" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="POWER_SOURCE_WIRED_ASSESSED_INPUT_VOLTAGE" side="server"/>
+                        <attribute definition="POWER_SOURCE_WIRED_ASSESSED_INPUT_FREQUENCY" side="server"/>
+                        <attribute definition="POWER_SOURCE_WIRED_CURRENT_TYPE" side="server"/>
+                        <attribute definition="POWER_SOURCE_WIRED_ASSESSED_CURRENT" side="server"/>
+                        <attribute definition="POWER_SOURCE_WIRED_NOMINAL_VOLTAGE" side="server"/>
+                        <attribute definition="POWER_SOURCE_WIRED_MAXIMUM_CURRENT" side="server"/>
+                        <attribute definition="POWER_SOURCE_WIRED_PRESENT" side="server"/>
+                        <attribute definition="POWER_SOURCE_ACTIVE_WIRED_FAULTS" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_VOLTAGE" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_PERCENT_REMAINING" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_TIME_REMAINING" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_CHARGE_LEVEL" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_REPLACEMENT_NEEDED" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_REPLACEABILITY" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_PRESENT" side="server"/>
+                        <attribute definition="POWER_SOURCE_ACTIVE_BAT_FAULTS" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_REPLACEMENT_DESCRIPTION" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_COMMON_DESIGNATION" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_ANSI_DESIGNATION" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_IEC_DESIGNATION" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_APPROVED_CHEMISTRY" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_CAPACITY" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_QUANTITY" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_CHARGE_STATE" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_TIME_TO_FULL_CHARGE" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_FUNCTIONAL_WHILE_CHARGING" side="server"/>
+                        <attribute definition="POWER_SOURCE_BAT_CHARGING_CURRENT" side="server"/>
+                        <attribute definition="POWER_SOURCE_ACTIVE_BAT_CHARGE_FAULTS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>48</id>
+                <hexId>0x0030</hexId>
+                <definition>MTR_GENERAL_COMMISSIONING</definition>
+                <name>General Commissioning</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="BREADCRUMB" side="server"/>
+                        <attribute definition="BASICCOMMISSIONINGINFO" side="server"/>
+                        <attribute definition="REGULATORYCONFIG" side="server"/>
+                        <attribute definition="LOCATIONCAPABILITY" side="server"/>
+                        <attribute definition="SUPPORTS_CONCURRENT_CONNECTION" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>49</id>
+                <hexId>0x0031</hexId>
+                <definition>MTR_NETWORK_COMMISSIONING</definition>
+                <name>Network Commissioning</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MAX_NETWORKS" side="server"/>
+                        <attribute definition="NETWORKS" side="server"/>
+                        <attribute definition="SCAN_MAX_TIME_SECONDS" side="server"/>
+                        <attribute definition="CONNECT_MAX_TIME_SECONDS" side="server"/>
+                        <attribute definition="INTERFACE_ENABLED" side="server"/>
+                        <attribute definition="LAST_NETWORKING_STATUS" side="server"/>
+                        <attribute definition="LAST_NETWORK_ID" side="server"/>
+                        <attribute definition="LAST_CONNECT_ERROR_VALUE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>50</id>
+                <hexId>0x0032</hexId>
+                <definition>MTR_DIAGNOSTIC_LOGS</definition>
+                <name>Diagnostic Logs</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>51</id>
+                <hexId>0x0033</hexId>
+                <definition>MTR_GENERAL_DIAGNOSTICS</definition>
+                <name>General Diagnostics</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="NETWORK_INTERFACES" side="server"/>
+                        <attribute definition="REBOOT_COUNT" side="server"/>
+                        <attribute definition="UPTIME" side="server"/>
+                        <attribute definition="TOTAL_OPERATIONAL_HOURS" side="server"/>
+                        <attribute definition="BOOT_REASONS" side="server"/>
+                        <attribute definition="ACTIVE_HARDWARE_FAULTS" side="server"/>
+                        <attribute definition="ACTIVE_RADIO_FAULTS" side="server"/>
+                        <attribute definition="ACTIVE_NETWORK_FAULTS" side="server"/>
+                        <attribute definition="TEST_EVENT_TRIGGERS_ENABLED" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>52</id>
+                <hexId>0x0034</hexId>
+                <definition>MTR_SOFTWARE_DIAGNOSTICS</definition>
+                <name>Software Diagnostics</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="THREAD_METRICS" side="server"/>
+                        <attribute definition="CURRENT_HEAP_FREE" side="server"/>
+                        <attribute definition="CURRENT_HEAP_USED" side="server"/>
+                        <attribute definition="CURRENT_HEAP_HIGH_WATERMARK" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>53</id>
+                <hexId>0x0035</hexId>
+                <definition>MTR_THREAD_NETWORK_DIAGNOSTICS</definition>
+                <name>Thread Network Diagnostics</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="CHANNEL" side="server"/>
+                        <attribute definition="ROUTING_ROLE" side="server"/>
+                        <attribute definition="NETWORK_NAME" side="server"/>
+                        <attribute definition="DIAG_PAN_ID" side="server"/>
+                        <attribute definition="DIAG_EXTENDED_PAN_ID" side="server"/>
+                        <attribute definition="MESH_LOCAL_PREFIX" side="server"/>
+                        <attribute definition="DIAG_OVERRUN_COUNT" side="server"/>
+                        <attribute definition="NEIGHBOR_TABLE" side="server"/>
+                        <attribute definition="ROUTE_TABLE" side="server"/>
+                        <attribute definition="PARTITION_ID" side="server"/>
+                        <attribute definition="WEIGHTING" side="server"/>
+                        <attribute definition="DATA_VERSION" side="server"/>
+                        <attribute definition="STABLE_DATA_VERSION" side="server"/>
+                        <attribute definition="LEADER_ROUTER_ID" side="server"/>
+                        <attribute definition="DETACHED_ROLE_COUNT" side="server"/>
+                        <attribute definition="CHILD_ROLE_COUNT" side="server"/>
+                        <attribute definition="ROUTER_ROLE_COUNT" side="server"/>
+                        <attribute definition="LEADER_ROLE_COUNT" side="server"/>
+                        <attribute definition="ATTACH_ATTEMPT_COUNT" side="server"/>
+                        <attribute definition="PARTITION_ID_CHANGE_COUNT" side="server"/>
+                        <attribute definition="BETTER_PARTITION_ATTACH_ATTEMPT_COUNT" side="server"/>
+                        <attribute definition="PARENT_CHANGE_COUNT" side="server"/>
+                        <attribute definition="TX_TOTAL_COUNT" side="server"/>
+                        <attribute definition="TX_UNICAST_COUNT" side="server"/>
+                        <attribute definition="TX_BROADCAST_COUNT" side="server"/>
+                        <attribute definition="TX_ACK_REQUESTED_COUNT" side="server"/>
+                        <attribute definition="TX_ACKED_COUNT" side="server"/>
+                        <attribute definition="TX_NO_ACK_REQUESTED_COUNT" side="server"/>
+                        <attribute definition="TX_DATA_COUNT" side="server"/>
+                        <attribute definition="TX_DATA_POLL_COUNT" side="server"/>
+                        <attribute definition="TX_BEACON_COUNT" side="server"/>
+                        <attribute definition="TX_BEACON_REQUEST_COUNT" side="server"/>
+                        <attribute definition="TX_OTHER_COUNT" side="server"/>
+                        <attribute definition="TX_RETRY_COUNT" side="server"/>
+                        <attribute definition="TX_DIRECT_MAX_RETRY_EXPIRY_COUNT" side="server"/>
+                        <attribute definition="TX_INDIRECT_MAX_RETRY_EXPIRY_COUNT" side="server"/>
+                        <attribute definition="TX_ERR_CCA_COUNT" side="server"/>
+                        <attribute definition="TX_ERR_ABORT_COUNT" side="server"/>
+                        <attribute definition="TX_ERR_BUSY_CHANNEL_COUNT" side="server"/>
+                        <attribute definition="RX_TOTAL_COUNT" side="server"/>
+                        <attribute definition="RX_UNICAST_COUNT" side="server"/>
+                        <attribute definition="RX_BROADCAST_COUNT" side="server"/>
+                        <attribute definition="RX_DATA_COUNT" side="server"/>
+                        <attribute definition="RX_DATA_POLL_COUNT" side="server"/>
+                        <attribute definition="RX_BEACON_COUNT" side="server"/>
+                        <attribute definition="RX_BEACON_REQUEST_COUNT" side="server"/>
+                        <attribute definition="RX_OTHER_COUNT" side="server"/>
+                        <attribute definition="RX_ADDRESS_FILTERED_COUNT" side="server"/>
+                        <attribute definition="RX_DESTADDR_FILTERED_COUNT" side="server"/>
+                        <attribute definition="RX_DUPLICATED_COUNT" side="server"/>
+                        <attribute definition="RX_ERR_NO_FRAME_COUNT" side="server"/>
+                        <attribute definition="RX_ERR_UNKNOWN_NEIGHBOR_COUNT" side="server"/>
+                        <attribute definition="RX_ERR_INVALID_SRC_ADDR_COUNT" side="server"/>
+                        <attribute definition="RX_ERR_SEC_COUNT" side="server"/>
+                        <attribute definition="RX_ERR_FCS_COUNT" side="server"/>
+                        <attribute definition="RX_ERR_OTHER_COUNT" side="server"/>
+                        <attribute definition="ACTIVE_TIMESTAMP" side="server"/>
+                        <attribute definition="PENDING_TIMESTAMP" side="server"/>
+                        <attribute definition="DELAY" side="server"/>
+                        <attribute definition="SECURITY_POLICY" side="server"/>
+                        <attribute definition="DIAG_CHANNEL_MASK" side="server"/>
+                        <attribute definition="OPERATIONAL_DATASET_COMPONENTS" side="server"/>
+                        <attribute definition="ACTIVE_THREAD_NETWORK_FAULTS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>54</id>
+                <hexId>0x0036</hexId>
+                <definition>MTR_WIFI_NETWORK_DIAGNOSTICS</definition>
+                <name>WiFi Network Diagnostics</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="BSSID" side="server"/>
+                        <attribute definition="SECURITY_TYPE" side="server"/>
+                        <attribute definition="WIFI_VERSION" side="server"/>
+                        <attribute definition="CHANNEL_NUMBER" side="server"/>
+                        <attribute definition="RSSI" side="server"/>
+                        <attribute definition="BEACON_LOST_COUNT" side="server"/>
+                        <attribute definition="BEACON_RX_COUNT" side="server"/>
+                        <attribute definition="PACKET_MULTICAST_RX_COUNT" side="server"/>
+                        <attribute definition="PACKET_MULTICAST_TX_COUNT" side="server"/>
+                        <attribute definition="PACKET_UNICAST_RX_COUNT" side="server"/>
+                        <attribute definition="PACKET_UNICAST_TX_COUNT" side="server"/>
+                        <attribute definition="CURRENT_MAX_RATE" side="server"/>
+                        <attribute definition="OVERRUN_COUNT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>55</id>
+                <hexId>0x0037</hexId>
+                <definition>MTR_ETHERNET_NETWORK_DIAGNOSTICS</definition>
+                <name>Ethernet Network Diagnostics</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="PHY_RATE" side="server"/>
+                        <attribute definition="FULL_DUPLEX" side="server"/>
+                        <attribute definition="PACKET_RX_COUNT" side="server"/>
+                        <attribute definition="PACKET_TX_COUNT" side="server"/>
+                        <attribute definition="TX_ERR_COUNT" side="server"/>
+                        <attribute definition="COLLISION_COUNT" side="server"/>
+                        <attribute definition="ETHERNET_OVERRUN_COUNT" side="server"/>
+                        <attribute definition="CARRIER_DETECT" side="server"/>
+                        <attribute definition="TIME_SINCE_RESET" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>56</id>
+                <hexId>0x0038</hexId>
+                <definition>MTR_TIME_SYNCHRONIZATION</definition>
+                <name>Time Synchronization</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="UTC_TIME" side="server"/>
+                        <attribute definition="GRANULARITY" side="server"/>
+                        <attribute definition="TIME_SOURCE" side="server"/>
+                        <attribute definition="TRUSTED_TIME_NODE_ID" side="server"/>
+                        <attribute definition="DEFAULT_NTP" side="server"/>
+                        <attribute definition="TIME_ZONE" side="server"/>
+                        <attribute definition="DST_OFFSET" side="server"/>
+                        <attribute definition="LOCAL_TIME" side="server"/>
+                        <attribute definition="TIME_ZONE_DATABASE" side="server"/>
+                        <attribute definition="NTP_SERVER_PORT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>57</id>
+                <hexId>0x0039</hexId>
+                <definition>MTR_BRIDGED_DEVICE_BASIC</definition>
+                <name>Bridged Device Basic</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="VENDOR_NAME" side="server"/>
+                        <attribute definition="VENDOR_ID" side="server"/>
+                        <attribute definition="PRODUCT_NAME" side="server"/>
+                        <attribute definition="NODE_LABEL" side="server"/>
+                        <attribute definition="HARDWARE_VERSION" side="server"/>
+                        <attribute definition="HARDWARE_VERSION_STRING" side="server"/>
+                        <attribute definition="SOFTWARE_VERSION" side="server"/>
+                        <attribute definition="SOFTWARE_VERSION_STRING" side="server"/>
+                        <attribute definition="MANUFACTURING_DATE" side="server"/>
+                        <attribute definition="PART_NUMBER" side="server"/>
+                        <attribute definition="PRODUCT_URL" side="server"/>
+                        <attribute definition="PRODUCT_LABEL" side="server"/>
+                        <attribute definition="SERIAL_NUMBER" side="server"/>
+                        <attribute definition="REACHABLE" side="server"/>
+                        <attribute definition="UNIQUE_ID" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>59</id>
+                <hexId>0x003b</hexId>
+                <definition>MTR_SWITCH</definition>
+                <name>Switch</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="NUMBER_OF_POSITIONS" side="server"/>
+                        <attribute definition="CURRENT_POSITION" side="server"/>
+                        <attribute definition="MULTI_PRESS_MAX" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>60</id>
+                <hexId>0x003c</hexId>
+                <definition>MTR_ADMINISTRATOR_COMMISSIONING</definition>
+                <name>AdministratorCommissioning</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="WINDOW_STATUS" side="server"/>
+                        <attribute definition="ADMIN_FABRIC_INDEX" side="server"/>
+                        <attribute definition="ADMIN_VENDOR_ID" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>62</id>
+                <hexId>0x003E</hexId>
+                <definition>MTR_OPERATIONAL_CREDENTIALS</definition>
+                <name>Operational Credentials</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="NOCS" side="server"/>
+                        <attribute definition="FABRICS" side="server"/>
+                        <attribute definition="SUPPORTED_FABRICS" side="server"/>
+                        <attribute definition="COMMISSIONED_FABRICS" side="server"/>
+                        <attribute definition="TRUSTED_ROOTS" side="server"/>
+                        <attribute definition="CURRENT_FABRIC_INDEX" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>63</id>
+                <hexId>0x003F</hexId>
+                <definition>MTR_GROUP_KEY_MANAGEMENT</definition>
+                <name>Group Key Management</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="GROUP_KEY_MAP" side="server"/>
+                        <attribute definition="GROUP_TABLE" side="server"/>
+                        <attribute definition="MAX_GROUPS_PER_FABRIC" side="server"/>
+                        <attribute definition="MAX_GROUP_KEYS_PER_FABRIC" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>64</id>
+                <hexId>0x0040</hexId>
+                <definition>MTR_FIXED_LABEL</definition>
+                <name>Fixed Label</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="LABEL_LIST" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>65</id>
+                <hexId>0x0041</hexId>
+                <definition>MTR_USER_LABEL</definition>
+                <name>User Label</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="LABEL_LIST" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>66</id>
+                <hexId>0x0042</hexId>
+                <definition>MTR_PROXY_CONFIGURATION</definition>
+                <name>Proxy Configuration</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>67</id>
+                <hexId>0x0043</hexId>
+                <definition>MTR_PROXY_DISCOVERY</definition>
+                <name>Proxy Discovery</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>68</id>
+                <hexId>0x0044</hexId>
+                <definition>MTR_PROXY_VALID</definition>
+                <name>Proxy Valid</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>69</id>
+                <hexId>0x0045</hexId>
+                <definition>MTR_BOOLEAN_STATE</definition>
+                <name>Boolean State</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="STATE_VALUE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>80</id>
+                <hexId>0x0050</hexId>
+                <definition>MTR_MODE_SELECT</definition>
+                <name>Mode Select</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MODE_DESCRIPTION" side="server"/>
+                        <attribute definition="STANDARD_NAMESPACE" side="server"/>
+                        <attribute definition="SUPPORTED_MODES" side="server"/>
+                        <attribute definition="CURRENT_MODE" side="server"/>
+                        <attribute definition="START_UP_MODE" side="server"/>
+                        <attribute definition="ON_MODE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>257</id>
+                <hexId>0x0101</hexId>
+                <definition>MTR_DOOR_LOCK</definition>
+                <name>Door Lock</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="LOCK_STATE" side="server"/>
+                        <attribute definition="LOCK_TYPE" side="server"/>
+                        <attribute definition="ACTUATOR_ENABLED" side="server"/>
+                        <attribute definition="AUTO_RELOCK_TIME" side="server"/>
+                        <attribute definition="OPERATING_MODE" side="server"/>
+                        <attribute definition="SUPPORTED_OPERATING_MODES" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="DOOR_STATE" side="server"/>
+                        <attribute definition="DOOR_OPEN_EVENTS" side="server"/>
+                        <attribute definition="DOOR_CLOSED_EVENTS" side="server"/>
+                        <attribute definition="OPEN_PERIOD" side="server"/>
+                        <attribute definition="NUM_TOTAL_USERS_SUPPORTED" side="server"/>
+                        <attribute definition="NUM_PIN_USERS_SUPPORTED" side="server"/>
+                        <attribute definition="NUM_RFID_USERS_SUPPORTED" side="server"/>
+                        <attribute definition="NUM_WEEKDAY_SCHEDULES_SUPPORTED_PER_USER" side="server"/>
+                        <attribute definition="NUM_YEARDAY_SCHEDULES_SUPPORTED_PER_USER" side="server"/>
+                        <attribute definition="NUM_HOLIDAY_SCHEDULES_SUPPORTED" side="server"/>
+                        <attribute definition="MAX_PIN_LENGTH" side="server"/>
+                        <attribute definition="MIN_PIN_LENGTH" side="server"/>
+                        <attribute definition="MAX_RFID_CODE_LENGTH" side="server"/>
+                        <attribute definition="MIN_RFID_CODE_LENGTH" side="server"/>
+                        <attribute definition="CREDENTIAL_RULES_SUPPORT" side="server"/>
+                        <attribute definition="NUM_CREDENTIALS_SUPPORTED_PER_USER" side="server"/>
+                        <attribute definition="LANGUAGE" side="server"/>
+                        <attribute definition="LED_SETTINGS" side="server"/>
+                        <attribute definition="SOUND_VOLUME" side="server"/>
+                        <attribute definition="DEFAULT_CONFIGURATION_REGISTER" side="server"/>
+                        <attribute definition="ENABLE_LOCAL_PROGRAMMING" side="server"/>
+                        <attribute definition="ENABLE_ONE_TOUCH_LOCKING" side="server"/>
+                        <attribute definition="ENABLE_INSIDE_STATUS_LED" side="server"/>
+                        <attribute definition="ENABLE_PRIVACY_MODE_BUTTON" side="server"/>
+                        <attribute definition="LOCAL_PROGRAMMING_FEATURES" side="server"/>
+                        <attribute definition="WRONG_CODE_ENTRY_LIMIT" side="server"/>
+                        <attribute definition="USER_CODE_TEMPORARY_DISABLE_TIME" side="server"/>
+                        <attribute definition="SEND_PIN_OVER_THE_AIR" side="server"/>
+                        <attribute definition="REQUIRE_PIN_FOR_REMOTE_OPERATION" side="server"/>
+                        <attribute definition="EXPIRING_USER_TIMEOUT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>258</id>
+                <hexId>0x0102</hexId>
+                <definition>MTR_WINDOW_COVERING</definition>
+                <name>Window Covering</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="WC_TYPE" side="server"/>
+                        <attribute definition="WC_PHYSICAL_CLOSED_LIMIT_LIFT" side="server"/>
+                        <attribute definition="WC_PHYSICAL_CLOSED_LIMIT_TILT" side="server"/>
+                        <attribute definition="WC_CURRENT_POSITION_LIFT" side="server"/>
+                        <attribute definition="WC_CURRENT_POSITION_TILT" side="server"/>
+                        <attribute definition="WC_NUMBER_OF_ACTUATIONS_LIFT" side="server"/>
+                        <attribute definition="WC_NUMBER_OF_ACTUATIONS_TILT" side="server"/>
+                        <attribute definition="WC_CONFIG_STATUS" side="server"/>
+                        <attribute definition="WC_CURRENT_POSITION_LIFT_PERCENTAGE" side="server"/>
+                        <attribute definition="WC_CURRENT_POSITION_TILT_PERCENTAGE" side="server"/>
+                        <attribute definition="WC_OPERATIONAL_STATUS" side="server"/>
+                        <attribute definition="WC_TARGET_POSITION_LIFT_PERCENT100THS" side="server"/>
+                        <attribute definition="WC_TARGET_POSITION_TILT_PERCENT100THS" side="server"/>
+                        <attribute definition="WC_END_PRODUCT_TYPE" side="server"/>
+                        <attribute definition="WC_CURRENT_POSITION_LIFT_PERCENT100THS" side="server"/>
+                        <attribute definition="WC_CURRENT_POSITION_TILT_PERCENT100THS" side="server"/>
+                        <attribute definition="WC_INSTALLED_OPEN_LIMIT_LIFT" side="server"/>
+                        <attribute definition="WC_INSTALLED_CLOSED_LIMIT_LIFT" side="server"/>
+                        <attribute definition="WC_INSTALLED_OPEN_LIMIT_TILT" side="server"/>
+                        <attribute definition="WC_INSTALLED_CLOSED_LIMIT_TILT" side="server"/>
+                        <attribute definition="WC_MODE" side="server"/>
+                        <attribute definition="WC_SAFETY_STATUS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>259</id>
+                <hexId>0x0103</hexId>
+                <definition>MTR_BARRIER_CONTROL</definition>
+                <name>Barrier Control</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="BARRIER_MOVING_STATE" side="server"/>
+                        <attribute definition="BARRIER_SAFETY_STATUS" side="server"/>
+                        <attribute definition="BARRIER_CAPABILITIES" side="server"/>
+                        <attribute definition="BARRIER_OPEN_EVENTS" side="server"/>
+                        <attribute definition="BARRIER_CLOSE_EVENTS" side="server"/>
+                        <attribute definition="BARRIER_COMMAND_OPEN_EVENTS" side="server"/>
+                        <attribute definition="BARRIER_COMMAND_CLOSE_EVENTS" side="server"/>
+                        <attribute definition="BARRIER_OPEN_PERIOD" side="server"/>
+                        <attribute definition="BARRIER_CLOSE_PERIOD" side="server"/>
+                        <attribute definition="BARRIER_POSITION" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>512</id>
+                <hexId>0x0200</hexId>
+                <definition>MTR_PUMP_CONFIG_CONTROL</definition>
+                <name>Pump Configuration and Control</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MAX_PRESSURE" side="server"/>
+                        <attribute definition="MAX_SPEED" side="server"/>
+                        <attribute definition="MAX_FLOW" side="server"/>
+                        <attribute definition="MIN_CONST_PRESSURE" side="server"/>
+                        <attribute definition="MAX_CONST_PRESSURE" side="server"/>
+                        <attribute definition="MIN_COMP_PRESSURE" side="server"/>
+                        <attribute definition="MAX_COMP_PRESSURE" side="server"/>
+                        <attribute definition="MIN_CONST_SPEED" side="server"/>
+                        <attribute definition="MAX_CONST_SPEED" side="server"/>
+                        <attribute definition="MIN_CONST_FLOW" side="server"/>
+                        <attribute definition="MAX_CONST_FLOW" side="server"/>
+                        <attribute definition="MIN_CONST_TEMP" side="server"/>
+                        <attribute definition="MAX_CONST_TEMP" side="server"/>
+                        <attribute definition="PUMP_STATUS" side="server"/>
+                        <attribute definition="EFFECTIVE_OPERATION_MODE" side="server"/>
+                        <attribute definition="EFFECTIVE_CONTROL_MODE" side="server"/>
+                        <attribute definition="CAPACITY" side="server"/>
+                        <attribute definition="SPEED" side="server"/>
+                        <attribute definition="LIFETIME_RUNNING_HOURS" side="server"/>
+                        <attribute definition="PUMP_POWER" side="server"/>
+                        <attribute definition="LIFETIME_ENERGY_CONSUMED" side="server"/>
+                        <attribute definition="OPERATION_MODE" side="server"/>
+                        <attribute definition="CONTROL_MODE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>513</id>
+                <hexId>0x0201</hexId>
+                <definition>MTR_THERMOSTAT</definition>
+                <name>Thermostat</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="LOCAL_TEMPERATURE" side="server"/>
+                        <attribute definition="OUTDOOR_TEMPERATURE" side="server"/>
+                        <attribute definition="THERMOSTAT_OCCUPANCY" side="server"/>
+                        <attribute definition="ABS_MIN_HEAT_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="ABS_MAX_HEAT_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="ABS_MIN_COOL_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="ABS_MAX_COOL_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="PI_COOLING_DEMAND" side="server"/>
+                        <attribute definition="PI_HEATING_DEMAND" side="server"/>
+                        <attribute definition="HVAC_SYSTEM_TYPE_CONFIGURATION" side="server"/>
+                        <attribute definition="LOCAL_TEMPERATURE_CALIBRATION" side="server"/>
+                        <attribute definition="OCCUPIED_COOLING_SETPOINT" side="server"/>
+                        <attribute definition="OCCUPIED_HEATING_SETPOINT" side="server"/>
+                        <attribute definition="UNOCCUPIED_COOLING_SETPOINT" side="server"/>
+                        <attribute definition="UNOCCUPIED_HEATING_SETPOINT" side="server"/>
+                        <attribute definition="MIN_HEAT_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="MAX_HEAT_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="MIN_COOL_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="MAX_COOL_SETPOINT_LIMIT" side="server"/>
+                        <attribute definition="MIN_SETPOINT_DEAD_BAND" side="server"/>
+                        <attribute definition="REMOTE_SENSING" side="server"/>
+                        <attribute definition="CONTROL_SEQUENCE_OF_OPERATION" side="server"/>
+                        <attribute definition="SYSTEM_MODE" side="server"/>
+                        <attribute definition="THERMOSTAT_RUNNING_MODE" side="server"/>
+                        <attribute definition="START_OF_WEEK" side="server"/>
+                        <attribute definition="NUMBER_OF_WEEKLY_TRANSITIONS" side="server"/>
+                        <attribute definition="NUMBER_OF_DAILY_TRANSITIONS" side="server"/>
+                        <attribute definition="TEMPERATURE_SETPOINT_HOLD" side="server"/>
+                        <attribute definition="TEMPERATURE_SETPOINT_HOLD_DURATION" side="server"/>
+                        <attribute definition="THERMOSTAT_PROGRAMMING_OPERATION_MODE" side="server"/>
+                        <attribute definition="THERMOSTAT_RUNNING_STATE" side="server"/>
+                        <attribute definition="SETPOINT_CHANGE_SOURCE" side="server"/>
+                        <attribute definition="SETPOINT_CHANGE_AMOUNT" side="server"/>
+                        <attribute definition="SETPOINT_CHANGE_SOURCE_TIMESTAMP" side="server"/>
+                        <attribute definition="OCCUPIED_SETBACK" side="server"/>
+                        <attribute definition="OCCUPIED_SETBACK_MIN" side="server"/>
+                        <attribute definition="OCCUPIED_SETBACK_MAX" side="server"/>
+                        <attribute definition="UNOCCUPIED_SETBACK" side="server"/>
+                        <attribute definition="UNOCCUPIED_SETBACK_MIN" side="server"/>
+                        <attribute definition="UNOCCUPIED_SETBACK_MAX" side="server"/>
+                        <attribute definition="EMERGENCY_HEAT_DELTA" side="server"/>
+                        <attribute definition="AC_TYPE" side="server"/>
+                        <attribute definition="AC_CAPACITY" side="server"/>
+                        <attribute definition="AC_REFRIGERANT_TYPE" side="server"/>
+                        <attribute definition="AC_COMPRESSOR_TYPE" side="server"/>
+                        <attribute definition="AC_ERROR_CODE" side="server"/>
+                        <attribute definition="AC_LOUVER_POSITION" side="server"/>
+                        <attribute definition="AC_COIL_TEMPERATURE" side="server"/>
+                        <attribute definition="AC_CAPACITY_FORMAT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>514</id>
+                <hexId>0x0202</hexId>
+                <definition>MTR_FAN_CONTROL</definition>
+                <name>Fan Control</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="FAN_MODE" side="server"/>
+                        <attribute definition="FAN_MODE_SEQUENCE" side="server"/>
+                        <attribute definition="PERCENT_SETTING" side="server"/>
+                        <attribute definition="PERCENT_CURRENT" side="server"/>
+                        <attribute definition="SPEED_MAX" side="server"/>
+                        <attribute definition="SPEED_SETTING" side="server"/>
+                        <attribute definition="SPEED_CURRENT" side="server"/>
+                        <attribute definition="ROCK_SUPPORT" side="server"/>
+                        <attribute definition="ROCK_SETTING" side="server"/>
+                        <attribute definition="WIND_SUPPORT" side="server"/>
+                        <attribute definition="WIND_SETTING" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>516</id>
+                <hexId>0x0204</hexId>
+                <definition>MTR_THERMOSTAT_UI_CONFIG</definition>
+                <name>Thermostat User Interface Configuration</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="TEMPERATURE_DISPLAY_MODE" side="server"/>
+                        <attribute definition="KEYPAD_LOCKOUT" side="server"/>
+                        <attribute definition="SCHEDULE_PROGRAMMING_VISIBILITY" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>768</id>
+                <hexId>0x0300</hexId>
+                <definition>MTR_COLOR_CONTROL</definition>
+                <name>Color Control</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="COLOR_CONTROL_COLOR_MODE" side="server"/>
+                        <attribute definition="COLOR_CONTROL_OPTIONS" side="server"/>
+                        <attribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="COLOR_CONTROL_CURRENT_HUE" side="server"/>
+                        <attribute definition="COLOR_CONTROL_CURRENT_SATURATION" side="server"/>
+                        <attribute definition="COLOR_CONTROL_REMAINING_TIME" side="server"/>
+                        <attribute definition="COLOR_CONTROL_CURRENT_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_CURRENT_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_DRIFT_COMPENSATION" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COMPENSATION_TEXT" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_TEMPERATURE" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_1_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_1_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_2_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_2_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_3_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_3_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_4_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_4_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_5_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_5_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_6_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_6_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_WHITE_POINT_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_WHITE_POINT_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_R_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_R_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_R_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_G_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_G_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_G_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_B_X" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_B_Y" side="server"/>
+                        <attribute definition="COLOR_CONTROL_COLOR_POINT_B_INTENSITY" side="server"/>
+                        <attribute definition="COLOR_CONTROL_TEMPERATURE_LEVEL_MIN_MIREDS" side="server"/>
+                        <attribute definition="START_UP_COLOR_TEMPERATURE_MIREDS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>769</id>
+                <hexId>0x0301</hexId>
+                <definition>MTR_BALLAST_CONFIGURATION</definition>
+                <name>Ballast Configuration</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="PHYSICAL_MIN_LEVEL" side="server"/>
+                        <attribute definition="PHYSICAL_MAX_LEVEL" side="server"/>
+                        <attribute definition="BALLAST_STATUS" side="server"/>
+                        <attribute definition="MIN_LEVEL" side="server"/>
+                        <attribute definition="MAX_LEVEL" side="server"/>
+                        <attribute definition="INTRINSIC_BALLAST_FACTOR" side="server"/>
+                        <attribute definition="BALLAST_FACTOR_ADJUSTMENT" side="server"/>
+                        <attribute definition="LAMP_QUANTITY" side="server"/>
+                        <attribute definition="LAMP_TYPE" side="server"/>
+                        <attribute definition="LAMP_MANUFACTURER" side="server"/>
+                        <attribute definition="LAMP_RATED_HOURS" side="server"/>
+                        <attribute definition="LAMP_BURN_HOURS" side="server"/>
+                        <attribute definition="LAMP_ALARM_MODE" side="server"/>
+                        <attribute definition="LAMP_BURN_HOURS_TRIP_POINT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1024</id>
+                <hexId>0x0400</hexId>
+                <definition>MTR_ILLUMINANCE_MEASUREMENT</definition>
+                <name>Illuminance Measurement</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="ILLUM_MEASURED_VALUE" side="server"/>
+                        <attribute definition="ILLUM_MIN_MEASURED_VALUE" side="server"/>
+                        <attribute definition="ILLUM_MAX_MEASURED_VALUE" side="server"/>
+                        <attribute definition="ILLUM_TOLERANCE" side="server"/>
+                        <attribute definition="ILLUM_LIGHT_SENSOR_TYPE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1026</id>
+                <hexId>0x0402</hexId>
+                <definition>MTR_TEMP_MEASUREMENT</definition>
+                <name>Temperature Measurement</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="TEMP_MEASURED_VALUE" side="server"/>
+                        <attribute definition="TEMP_MIN_MEASURED_VALUE" side="server"/>
+                        <attribute definition="TEMP_MAX_MEASURED_VALUE" side="server"/>
+                        <attribute definition="TEMP_TOLERANCE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1027</id>
+                <hexId>0x0403</hexId>
+                <definition>MTR_PRESSURE_MEASUREMENT</definition>
+                <name>Pressure Measurement</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="PRESSURE_MEASURED_VALUE" side="server"/>
+                        <attribute definition="PRESSURE_MIN_MEASURED_VALUE" side="server"/>
+                        <attribute definition="PRESSURE_MAX_MEASURED_VALUE" side="server"/>
+                        <attribute definition="PRESSURE_TOLERANCE" side="server"/>
+                        <attribute definition="PRESSURE_SCALED_VALUE" side="server"/>
+                        <attribute definition="PRESSURE_MIN_SCALED_VALUE" side="server"/>
+                        <attribute definition="PRESSURE_MAX_SCALED_VALUE" side="server"/>
+                        <attribute definition="PRESSURE_SCALED_TOLERANCE" side="server"/>
+                        <attribute definition="PRESSURE_SCALE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1028</id>
+                <hexId>0x0404</hexId>
+                <definition>MTR_FLOW_MEASUREMENT</definition>
+                <name>Flow Measurement</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="FLOW_MEASURED_VALUE" side="server"/>
+                        <attribute definition="FLOW_MIN_MEASURED_VALUE" side="server"/>
+                        <attribute definition="FLOW_MAX_MEASURED_VALUE" side="server"/>
+                        <attribute definition="FLOW_TOLERANCE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1029</id>
+                <hexId>0x0405</hexId>
+                <definition>MTR_RELATIVE_HUMIDITY_MEASUREMENT</definition>
+                <name>Relative Humidity Measurement</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="RELATIVE_HUMIDITY_MEASURED_VALUE" side="server"/>
+                        <attribute definition="RELATIVE_HUMIDITY_MIN_MEASURED_VALUE" side="server"/>
+                        <attribute definition="RELATIVE_HUMIDITY_MAX_MEASURED_VALUE" side="server"/>
+                        <attribute definition="RELATIVE_HUMIDITY_TOLERANCE" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1030</id>
+                <hexId>0x0406</hexId>
+                <definition>MTR_OCCUPANCY_SENSING</definition>
+                <name>Occupancy Sensing</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="OCCUPANCY" side="server"/>
+                        <attribute definition="OCCUPANCY_SENSOR_TYPE" side="server"/>
+                        <attribute definition="OCCUPANCY_SENSOR_TYPE_BITMAP" side="server"/>
+                        <attribute definition="PIR_OCCUPIED_TO_UNOCCUPIED_DELAY" side="server"/>
+                        <attribute definition="PIR_UNOCCUPIED_TO_OCCUPIED_DELAY" side="server"/>
+                        <attribute definition="PIR_UNOCCUPIED_TO_OCCUPIED_THRESHOLD" side="server"/>
+                        <attribute definition="ULTRASONIC_OCCUPIED_TO_UNOCCUPIED_DELAY" side="server"/>
+                        <attribute definition="ULTRASONIC_UNOCCUPIED_TO_OCCUPIED_DELAY" side="server"/>
+                        <attribute definition="ULTRASONIC_UNOCCUPIED_TO_OCCUPIED_THRESHOLD" side="server"/>
+                        <attribute definition="PHYSICAL_CONTACT_OCCUPIED_TO_UNOCCUPIED_DELAY" side="server"/>
+                        <attribute definition="PHYSICAL_CONTACT_UNOCCUPIED_TO_OCCUPIED_DELAY" side="server"/>
+                        <attribute definition="PHYSICAL_CONTACT_UNOCCUPIED_TO_OCCUPIED_THRESHOLD" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1283</id>
+                <hexId>0x0503</hexId>
+                <definition>MTR_WAKE_ON_LAN</definition>
+                <name>Wake on LAN</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="WAKE_ON_LAN_MAC_ADDRESS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1284</id>
+                <hexId>0x0504</hexId>
+                <definition>MTR_CHANNEL</definition>
+                <name>Channel</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="CHANNEL_LIST" side="server"/>
+                        <attribute definition="CHANNEL_LINEUP" side="server"/>
+                        <attribute definition="CHANNEL_CURRENT_CHANNEL" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1285</id>
+                <hexId>0x0505</hexId>
+                <definition>MTR_TARGET_NAVIGATOR</definition>
+                <name>Target Navigator</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="TARGET_NAVIGATOR_LIST" side="server"/>
+                        <attribute definition="TARGET_NAVIGATOR_CURRENT_TARGET" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1286</id>
+                <hexId>0x0506</hexId>
+                <definition>MTR_MEDIA_PLAYBACK</definition>
+                <name>Media Playback</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MEDIA_PLAYBACK_STATE" side="server"/>
+                        <attribute definition="MEDIA_PLAYBACK_START_TIME" side="server"/>
+                        <attribute definition="MEDIA_PLAYBACK_DURATION" side="server"/>
+                        <attribute definition="MEDIA_PLAYBACK_PLAYBACK_POSITION" side="server"/>
+                        <attribute definition="MEDIA_PLAYBACK_PLAYBACK_SPEED" side="server"/>
+                        <attribute definition="MEDIA_PLAYBACK_PLAYBACK_SEEK_RANGE_END" side="server"/>
+                        <attribute definition="MEDIA_PLAYBACK_PLAYBACK_SEEK_RANGE_START" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1287</id>
+                <hexId>0x0507</hexId>
+                <definition>MTR_MEDIA_INPUT</definition>
+                <name>Media Input</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MEDIA_INPUT_LIST" side="server"/>
+                        <attribute definition="MEDIA_INPUT_CURRENT_INPUT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1288</id>
+                <hexId>0x0508</hexId>
+                <definition>MTR_LOW_POWER</definition>
+                <name>Low Power</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1289</id>
+                <hexId>0x0509</hexId>
+                <definition>MTR_KEYPAD_INPUT</definition>
+                <name>Keypad Input</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1290</id>
+                <hexId>0x050a</hexId>
+                <definition>MTR_CONTENT_LAUNCH</definition>
+                <name>Content Launcher</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="CONTENT_LAUNCHER_ACCEPT_HEADER" side="server"/>
+                        <attribute definition="CONTENT_LAUNCHER_SUPPORTED_STREAMING_PROTOCOLS" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1291</id>
+                <hexId>0x050b</hexId>
+                <definition>MTR_AUDIO_OUTPUT</definition>
+                <name>Audio Output</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="AUDIO_OUTPUT_LIST" side="server"/>
+                        <attribute definition="AUDIO_OUTPUT_CURRENT_OUTPUT" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1292</id>
+                <hexId>0x050c</hexId>
+                <definition>MTR_APPLICATION_LAUNCHER</definition>
+                <name>Application Launcher</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="APPLICATION_LAUNCHER_LIST" side="server"/>
+                        <attribute definition="APPLICATION_LAUNCHER_CURRENT_APP" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1293</id>
+                <hexId>0x050d</hexId>
+                <definition>MTR_APPLICATION_BASIC</definition>
+                <name>Application Basic</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="APPLICATION_VENDOR_NAME" side="server"/>
+                        <attribute definition="APPLICATION_VENDOR_ID" side="server"/>
+                        <attribute definition="APPLICATION_NAME" side="server"/>
+                        <attribute definition="APPLICATION_PRODUCT_ID" side="server"/>
+                        <attribute definition="APPLICATION_APP" side="server"/>
+                        <attribute definition="APPLICATION_STATUS" side="server"/>
+                        <attribute definition="APPLICATION_VERSION" side="server"/>
+                        <attribute definition="APPLICATION_ALLOWED_VENDOR_LIST" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>1294</id>
+                <hexId>0x050e</hexId>
+                <definition>MTR_ACCOUNT_LOGIN</definition>
+                <name>Account Login</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>2820</id>
+                <hexId>0x0B04</hexId>
+                <definition>MTR_ELECTRICAL_MEASUREMENT</definition>
+                <name>Electrical Measurement</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                        <attribute definition="MEASUREMENT_TYPE" side="server"/>
+                        <attribute definition="DC_VOLTAGE" side="server"/>
+                        <attribute definition="DC_VOLTAGE_MIN" side="server"/>
+                        <attribute definition="DC_VOLTAGE_MAX" side="server"/>
+                        <attribute definition="DC_CURRENT" side="server"/>
+                        <attribute definition="DC_CURRENT_MIN" side="server"/>
+                        <attribute definition="DC_CURRENT_MAX" side="server"/>
+                        <attribute definition="DC_POWER" side="server"/>
+                        <attribute definition="DC_POWER_MIN" side="server"/>
+                        <attribute definition="DC_POWER_MAX" side="server"/>
+                        <attribute definition="DC_VOLTAGE_MULTIPLIER" side="server"/>
+                        <attribute definition="DC_VOLTAGE_DIVISOR" side="server"/>
+                        <attribute definition="DC_CURRENT_MULTIPLIER" side="server"/>
+                        <attribute definition="DC_CURRENT_DIVISOR" side="server"/>
+                        <attribute definition="DC_POWER_MULTIPLIER" side="server"/>
+                        <attribute definition="DC_POWER_DIVISOR" side="server"/>
+                        <attribute definition="AC_FREQUENCY" side="server"/>
+                        <attribute definition="AC_FREQUENCY_MIN" side="server"/>
+                        <attribute definition="AC_FREQUENCY_MAX" side="server"/>
+                        <attribute definition="NEUTRAL_CURRENT" side="server"/>
+                        <attribute definition="TOTAL_ACTIVE_POWER" side="server"/>
+                        <attribute definition="TOTAL_REACTIVE_POWER" side="server"/>
+                        <attribute definition="TOTAL_APPARENT_POWER" side="server"/>
+                        <attribute definition="MEASURED_1ST_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_3RD_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_5TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_7TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_9TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_11TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_PHASE_1ST_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_PHASE_3RD_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_PHASE_5TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_PHASE_7TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_PHASE_9TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="MEASURED_PHASE_11TH_HARMONIC_CURRENT" side="server"/>
+                        <attribute definition="AC_FREQUENCY_MULTIPLIER" side="server"/>
+                        <attribute definition="AC_FREQUENCY_DIVISOR" side="server"/>
+                        <attribute definition="POWER_MULTIPLIER" side="server"/>
+                        <attribute definition="POWER_DIVISOR" side="server"/>
+                        <attribute definition="HARMONIC_CURRENT_MULTIPLIER" side="server"/>
+                        <attribute definition="PHASE_HARMONIC_CURRENT_MULTIPLIER" side="server"/>
+                        <attribute definition="INSTANTANEOUS_VOLTAGE" side="server"/>
+                        <attribute definition="INSTANTANEOUS_LINE_CURRENT" side="server"/>
+                        <attribute definition="INSTANTANEOUS_ACTIVE_CURRENT" side="server"/>
+                        <attribute definition="INSTANTANEOUS_REACTIVE_CURRENT" side="server"/>
+                        <attribute definition="INSTANTANEOUS_POWER" side="server"/>
+                        <attribute definition="RMS_VOLTAGE" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_MIN" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_MAX" side="server"/>
+                        <attribute definition="RMS_CURRENT" side="server"/>
+                        <attribute definition="RMS_CURRENT_MIN" side="server"/>
+                        <attribute definition="RMS_CURRENT_MAX" side="server"/>
+                        <attribute definition="ACTIVE_POWER" side="server"/>
+                        <attribute definition="ACTIVE_POWER_MIN" side="server"/>
+                        <attribute definition="ACTIVE_POWER_MAX" side="server"/>
+                        <attribute definition="REACTIVE_POWER" side="server"/>
+                        <attribute definition="APPARENT_POWER" side="server"/>
+                        <attribute definition="AC_POWER_FACTOR" side="server"/>
+                        <attribute definition="AVERAGE_RMS_VOLTAGE_MEASUREMENT_PERIOD" side="server"/>
+                        <attribute definition="AVERAGE_RMS_UNDER_VOLTAGE_COUNTER" side="server"/>
+                        <attribute definition="RMS_EXTREME_OVER_VOLTAGE_PERIOD" side="server"/>
+                        <attribute definition="RMS_EXTREME_UNDER_VOLTAGE_PERIOD" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SAG_PERIOD" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SWELL_PERIOD" side="server"/>
+                        <attribute definition="AC_VOLTAGE_MULTIPLIER" side="server"/>
+                        <attribute definition="AC_VOLTAGE_DIVISOR" side="server"/>
+                        <attribute definition="AC_CURRENT_MULTIPLIER" side="server"/>
+                        <attribute definition="AC_CURRENT_DIVISOR" side="server"/>
+                        <attribute definition="AC_POWER_MULTIPLIER" side="server"/>
+                        <attribute definition="AC_POWER_DIVISOR" side="server"/>
+                        <attribute definition="DC_OVERLOAD_ALARMS_MASK" side="server"/>
+                        <attribute definition="DC_VOLTAGE_OVERLOAD" side="server"/>
+                        <attribute definition="DC_CURRENT_OVERLOAD" side="server"/>
+                        <attribute definition="AC_OVERLOAD_ALARMS_MASK" side="server"/>
+                        <attribute definition="AC_VOLTAGE_OVERLOAD" side="server"/>
+                        <attribute definition="AC_CURRENT_OVERLOAD" side="server"/>
+                        <attribute definition="AC_POWER_OVERLOAD" side="server"/>
+                        <attribute definition="AC_REACTIVE_POWER_OVERLOAD" side="server"/>
+                        <attribute definition="AVERAGE_RMS_OVER_VOLTAGE" side="server"/>
+                        <attribute definition="AVERAGE_RMS_UNDER_VOLTAGE" side="server"/>
+                        <attribute definition="RMS_EXTREME_OVER_VOLTAGE" side="server"/>
+                        <attribute definition="RMS_EXTREME_UNDER_VOLTAGE" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SAG" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SWELL" side="server"/>
+                        <attribute definition="LINE_CURRENT_PHASE_B" side="server"/>
+                        <attribute definition="ACTIVE_CURRENT_PHASE_B" side="server"/>
+                        <attribute definition="REACTIVE_CURRENT_PHASE_B" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_PHASE_B" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_MIN_PHASE_B" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_MAX_PHASE_B" side="server"/>
+                        <attribute definition="RMS_CURRENT_PHASE_B" side="server"/>
+                        <attribute definition="RMS_CURRENT_MIN_PHASE_B" side="server"/>
+                        <attribute definition="RMS_CURRENT_MAX_PHASE_B" side="server"/>
+                        <attribute definition="ACTIVE_POWER_PHASE_B" side="server"/>
+                        <attribute definition="ACTIVE_POWER_MIN_PHASE_B" side="server"/>
+                        <attribute definition="ACTIVE_POWER_MAX_PHASE_B" side="server"/>
+                        <attribute definition="REACTIVE_POWER_PHASE_B" side="server"/>
+                        <attribute definition="APPARENT_POWER_PHASE_B" side="server"/>
+                        <attribute definition="POWER_FACTOR_PHASE_B" side="server"/>
+                        <attribute definition="AVERAGE_RMS_VOLTAGE_MEASUREMENT_PERIOD_PHASE_B" side="server"/>
+                        <attribute definition="AVERAGE_RMS_OVER_VOLTAGE_COUNTER_PHASE_B" side="server"/>
+                        <attribute definition="AVERAGE_RMS_UNDER_VOLTAGE_COUNTER_PHASE_B" side="server"/>
+                        <attribute definition="RMS_EXTREME_OVER_VOLTAGE_PERIOD_PHASE_B" side="server"/>
+                        <attribute definition="RMS_EXTREME_UNDER_VOLTAGE_PERIOD_PHASE_B" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SAG_PERIOD_PHASE_B" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SWELL_PERIOD_PHASE_B" side="server"/>
+                        <attribute definition="LINE_CURRENT_PHASE_C" side="server"/>
+                        <attribute definition="ACTIVE_CURRENT_PHASE_C" side="server"/>
+                        <attribute definition="REACTIVE_CURRENT_PHASE_C" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_PHASE_C" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_MIN_PHASE_C" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_MAX_PHASE_C" side="server"/>
+                        <attribute definition="RMS_CURRENT_PHASE_C" side="server"/>
+                        <attribute definition="RMS_CURRENT_MIN_PHASE_C" side="server"/>
+                        <attribute definition="RMS_CURRENT_MAX_PHASE_C" side="server"/>
+                        <attribute definition="ACTIVE_POWER_PHASE_C" side="server"/>
+                        <attribute definition="ACTIVE_POWER_MIN_PHASE_C" side="server"/>
+                        <attribute definition="ACTIVE_POWER_MAX_PHASE_C" side="server"/>
+                        <attribute definition="REACTIVE_POWER_PHASE_C" side="server"/>
+                        <attribute definition="APPARENT_POWER_PHASE_C" side="server"/>
+                        <attribute definition="POWER_FACTOR_PHASE_C" side="server"/>
+                        <attribute definition="AVERAGE_RMS_VOLTAGE_MEASUREMENT_PERIOD_PHASE_C" side="server"/>
+                        <attribute definition="AVERAGE_RMS_OVER_VOLTAGE_COUNTER_PHASE_C" side="server"/>
+                        <attribute definition="AVERAGE_RMS_UNDER_VOLTAGE_COUNTER_PHASE_C" side="server"/>
+                        <attribute definition="RMS_EXTREME_OVER_VOLTAGE_PERIOD_PHASE_C" side="server"/>
+                        <attribute definition="RMS_EXTREME_UNDER_VOLTAGE_PERIOD_PHASE_C" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SAG_PERIOD_PHASE_C" side="server"/>
+                        <attribute definition="RMS_VOLTAGE_SWELL_PERIOD_PHASE_C" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>4294048773</id>
+                <hexId>0xFFF1FC05</hexId>
+                <definition>MTR_TEST</definition>
+                <name>Test Cluster</name>
+                <mtrAttributes>
+                    <required>
+                        <attribute definition="TIMED_WRITE_BOOLEAN" side="server"/>
+                    </required>
+
+                    <optional>
+                        <attribute definition="BOOLEAN" side="server"/>
+                        <attribute definition="BITMAP8" side="server"/>
+                        <attribute definition="BITMAP16" side="server"/>
+                        <attribute definition="BITMAP32" side="server"/>
+                        <attribute definition="BITMAP64" side="server"/>
+                        <attribute definition="INT8U" side="server"/>
+                        <attribute definition="INT16U" side="server"/>
+                        <attribute definition="INT24U" side="server"/>
+                        <attribute definition="INT32U" side="server"/>
+                        <attribute definition="INT40U" side="server"/>
+                        <attribute definition="INT48U" side="server"/>
+                        <attribute definition="INT56U" side="server"/>
+                        <attribute definition="INT64U" side="server"/>
+                        <attribute definition="INT8S" side="server"/>
+                        <attribute definition="INT16S" side="server"/>
+                        <attribute definition="INT24S" side="server"/>
+                        <attribute definition="INT32S" side="server"/>
+                        <attribute definition="INT40S" side="server"/>
+                        <attribute definition="INT48S" side="server"/>
+                        <attribute definition="INT56S" side="server"/>
+                        <attribute definition="INT64S" side="server"/>
+                        <attribute definition="ENUM8" side="server"/>
+                        <attribute definition="ENUM16" side="server"/>
+                        <attribute definition="FLOAT_SINGLE" side="server"/>
+                        <attribute definition="FLOAT_DOUBLE" side="server"/>
+                        <attribute definition="OCTET_STRING" side="server"/>
+                        <attribute definition="LIST" side="server"/>
+                        <attribute definition="LIST_OCTET_STRING" side="server"/>
+                        <attribute definition="LIST_STRUCT_OCTET_STRING" side="server"/>
+                        <attribute definition="LONG_OCTET_STRING" side="server"/>
+                        <attribute definition="CHAR_STRING" side="server"/>
+                        <attribute definition="LONG_CHAR_STRING" side="server"/>
+                        <attribute definition="EPOCH_US" side="server"/>
+                        <attribute definition="EPOCH_S" side="server"/>
+                        <attribute definition="TEST_VENDOR_ID" side="server"/>
+                        <attribute definition="LIST_OF_STRUCTS_WITH_OPTIONALS" side="server"/>
+                        <attribute definition="SIMPLE_ENUM" side="server"/>
+                        <attribute definition="STRUCT" side="server"/>
+                        <attribute definition="RANGE_RESTRICTED_INT8U" side="server"/>
+                        <attribute definition="RANGE_RESTRICTED_INT8s" side="server"/>
+                        <attribute definition="RANGE_RESTRICTED_INT16U" side="server"/>
+                        <attribute definition="RANGE_RESTRICTED_INT16s" side="server"/>
+                        <attribute definition="LIST_LONG_OCTET_STRING" side="server"/>
+                        <attribute definition="LIST_FABRIC_SCOPED" side="server"/>
+                        <attribute definition="GENERAL_ERROR_BOOLEAN" side="server"/>
+                        <attribute definition="CLUSTER_ERROR_BOOLEAN" side="server"/>
+                        <attribute definition="NULLABLE_BOOLEAN" side="server"/>
+                        <attribute definition="NULLABLE_BITMAP8" side="server"/>
+                        <attribute definition="NULLABLE_BITMAP16" side="server"/>
+                        <attribute definition="NULLABLE_BITMAP32" side="server"/>
+                        <attribute definition="NULLABLE_BITMAP64" side="server"/>
+                        <attribute definition="NULLABLE_INT8U" side="server"/>
+                        <attribute definition="NULLABLE_INT16U" side="server"/>
+                        <attribute definition="NULLABLE_INT24U" side="server"/>
+                        <attribute definition="NULLABLE_INT32U" side="server"/>
+                        <attribute definition="NULLABLE_INT40U" side="server"/>
+                        <attribute definition="NULLABLE_INT48U" side="server"/>
+                        <attribute definition="NULLABLE_INT56U" side="server"/>
+                        <attribute definition="NULLABLE_INT64U" side="server"/>
+                        <attribute definition="NULLABLE_INT8S" side="server"/>
+                        <attribute definition="NULLABLE_INT16S" side="server"/>
+                        <attribute definition="NULLABLE_INT24S" side="server"/>
+                        <attribute definition="NULLABLE_INT32S" side="server"/>
+                        <attribute definition="NULLABLE_INT40S" side="server"/>
+                        <attribute definition="NULLABLE_INT48S" side="server"/>
+                        <attribute definition="NULLABLE_INT56S" side="server"/>
+                        <attribute definition="NULLABLE_INT64S" side="server"/>
+                        <attribute definition="NULLABLE_ENUM8" side="server"/>
+                        <attribute definition="NULLABLE_ENUM16" side="server"/>
+                        <attribute definition="NULLABLE_FLOAT_SINGLE" side="server"/>
+                        <attribute definition="NULLABLE_FLOAT_DOUBLE" side="server"/>
+                        <attribute definition="NULLABLE_OCTET_STRING" side="server"/>
+                        <attribute definition="NULLABLE_CHAR_STRING" side="server"/>
+                        <attribute definition="NULLABLE_SIMPLE_ENUM" side="server"/>
+                        <attribute definition="NULLABLE_STRUCT" side="server"/>
+                        <attribute definition="NULLABLE_RANGE_RESTRICTED_INT8U" side="server"/>
+                        <attribute definition="NULLABLE_RANGE_RESTRICTED_INT8s" side="server"/>
+                        <attribute definition="NULLABLE_RANGE_RESTRICTED_INT16U" side="server"/>
+                        <attribute definition="NULLABLE_RANGE_RESTRICTED_INT16S" side="server"/>
+                        <attribute definition="UNSUPPORTED" side="server"/>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+            <type>
+                <id>4294048774</id>
+                <hexId>0xFFF1FC06</hexId>
+                <definition>MTR_FAULT_INJECTION</definition>
+                <name>Fault Injection</name>
+                <mtrAttributes>
+                    <required>
+                    </required>
+
+                    <optional>
+                    </optional>
+                </mtrAttributes>
+            </type>
+        
+    </mtrClusters>
+</root>

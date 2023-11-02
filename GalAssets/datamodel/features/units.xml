@@ -1,0 +1,122 @@
+<!--
+idType: UInt16
+
+-->
+
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <units>
+        <unit> <!-- a unit typed NO_UNIT -->
+            <id>0</id>
+            <definition>NO_UNIT</definition>
+            <name>No Unit</name>
+            <unitType>
+                <definition>NO_UNIT</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+        </unit>
+
+        <unit>
+            <id>1</id>
+            <definition>PERCENTAGE</definition>
+            <name>Percentage</name>
+            <unitType>
+                <definition>PERCENTAGE</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+        </unit>
+        <unit> <!-- Unit types under the same unit should be convertable -->
+            <id>2</id>
+            <definition>LIGHT_INTENSITY</definition>
+            <name>Light Intensity</name>
+            <unitType>
+                <definition>LUMENS</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+
+            <unitType>
+                <definition>CANDELAS</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+        </unit>
+
+        <unit>
+            <id>3</id>
+            <definition>ANGLE</definition>
+            <name>Angle</name>
+            <unitType>
+                <definition>DEGREES</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+        </unit>
+
+        <unit>
+            <id>4</id>
+            <definition>TEMPERATURE</definition>
+            <name>Temperature</name>
+            <unitType>
+                <definition>DEGREES_CELSIUS</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+
+            <unitType>
+                <definition>DEGREES_FAHRENHEIT</definition>
+                <bases>
+                    <base exponent="0">
+                        <definition>BASE</definition>
+                    </base>
+                </bases>
+            </unitType>
+        </unit>
+
+        <unit>
+            <id>5</id>
+            <definition>DISTANCE</definition>
+            <name>Distance</name>
+            <unitType>
+                <definition>METER</definition>
+                <bases>
+                    <base exponent="-3"> <!-- * 10^-3 -->
+                        <definition>MILLI</definition>
+                    </base>
+
+                    <base exponent="-2"> <!-- * 10^-2 -->
+                        <definition>CENTI</definition>
+                    </base>
+
+                    <base exponent="0"> <!-- * 10^0 -->
+                        <definition>BASE</definition>
+                    </base>
+
+                    <base exponent="3"> <!-- * 10^0 -->
+                        <definition>KILO</definition>
+                    </base>
+                </bases>
+            </unitType>
+        </unit>
+    </units>
+</root>

@@ -1,0 +1,28 @@
+server:
+  port: 0
+
+galsie:
+  microservice: # configuration required by microservice-common (you can expect that all microservices have these configuration keys)
+    name: "cert-auth-service"
+    password: "galsie123" # password in GCS-Sentry
+    version: "0.0.1"
+    version-required: true
+  thisservice: # configuration required by this service
+    some-config: 'some config'
+
+spring:
+  application:
+    name: "cert-auth-service"
+  config:
+    import: 'configserver:http://localhost:4060'
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/galCertAuthDB'
+    username: 'galsie'
+    password: 'galsie123'
+    #driver-class-name: 'com.mysql.jdbc.Driver' Warning popped out indicating this is Unnecessary
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka/'

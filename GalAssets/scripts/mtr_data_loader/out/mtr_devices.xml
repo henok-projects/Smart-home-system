@@ -1,0 +1,3697 @@
+<!-- GENERATED FROM SCRIPT --> 
+
+ <mtrDevices>
+
+<!-- IDS: 0 -> 2  |  defaultID 0 |  3 devices -->
+
+        <type>
+            <id>0</id> <!-- The unique id given by galsie -->
+            <defaultId>0</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0000</defaultIdHex>
+            <definition>MTR_ALL_CLUSTERS_APP_SERVER_EXAMPLE</definition>
+            <name>Matter All-clusters-app Server Example</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_DRIFT_COMPENSATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_COMPENSATION_TEXT"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_OPTIONS"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_WHITE_POINT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_WHITE_POINT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_R_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_R_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_R_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_G_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_G_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_G_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_B_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_B_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_POINT_B_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_TEMPERATURE_LEVEL_MIN_MIREDS"/>
+						<requiredAttribute definition="START_UP_COLOR_TEMPERATURE_MIREDS"/></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_BARRIER_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>1</id> <!-- The unique id given by galsie -->
+            <defaultId>0</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0000</defaultIdHex>
+            <definition>HA_ON_OFF_SWITCH</definition>
+            <name>HA On/Off Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>2</id> <!-- The unique id given by galsie -->
+            <defaultId>0</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0000</defaultIdHex>
+            <definition>ZLL_ON_OFF_LIGHT</definition>
+            <name>ZLL On/Off Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 3 -> 3  |  defaultID 1 |  1 device -->
+
+        <type>
+            <id>3</id> <!-- The unique id given by galsie -->
+            <defaultId>1</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0001</defaultIdHex>
+            <definition>HA_LEVEL_CONTROL_SWITCH</definition>
+            <name>HA Level Control Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 4 -> 4  |  defaultID 2 |  1 device -->
+
+        <type>
+            <id>4</id> <!-- The unique id given by galsie -->
+            <defaultId>2</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0002</defaultIdHex>
+            <definition>HA_ON_OFF_OUTPUT</definition>
+            <name>HA On/Off Output</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 5 -> 5  |  defaultID 3 |  1 device -->
+
+        <type>
+            <id>5</id> <!-- The unique id given by galsie -->
+            <defaultId>3</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0003</defaultIdHex>
+            <definition>HA_LEVEL_CONTROLLABLE_OUTPUT</definition>
+            <name>HA Level Controllable Output</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 6 -> 6  |  defaultID 4 |  1 device -->
+
+        <type>
+            <id>6</id> <!-- The unique id given by galsie -->
+            <defaultId>4</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0004</defaultIdHex>
+            <definition>HA_SCENE_SELECTOR</definition>
+            <name>HA Scene Selector</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 7 -> 7  |  defaultID 5 |  1 device -->
+
+        <type>
+            <id>7</id> <!-- The unique id given by galsie -->
+            <defaultId>5</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0005</defaultIdHex>
+            <definition>HA_CONFIGURATION_TOOL</definition>
+            <name>HA Configuration Tool</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PRESSURE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FLOW_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PUMP_CONFIG_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT_UI_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 8 -> 8  |  defaultID 6 |  1 device -->
+
+        <type>
+            <id>8</id> <!-- The unique id given by galsie -->
+            <defaultId>6</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0006</defaultIdHex>
+            <definition>HA_REMOTE_CONTROL</definition>
+            <name>HA Remote Control</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PUMP_CONFIG_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WINDOW_COVERING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 9 -> 9  |  defaultID 7 |  1 device -->
+
+        <type>
+            <id>9</id> <!-- The unique id given by galsie -->
+            <defaultId>7</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0007</defaultIdHex>
+            <definition>HA_COMBINED_INTERFACE</definition>
+            <name>HA Combined Interface</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PUMP_CONFIG_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT_UI_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WINDOW_COVERING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 10 -> 10  |  defaultID 8 |  1 device -->
+
+        <type>
+            <id>10</id> <!-- The unique id given by galsie -->
+            <defaultId>8</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0008</defaultIdHex>
+            <definition>HA_RANGE_EXTENDER</definition>
+            <name>HA Range Extender</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 11 -> 11  |  defaultID 9 |  1 device -->
+
+        <type>
+            <id>11</id> <!-- The unique id given by galsie -->
+            <defaultId>9</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0009</defaultIdHex>
+            <definition>HA_MAINS_POWER_OUTLET</definition>
+            <name>HA Mains Power Outlet</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 12 -> 13  |  defaultID 10 |  2 devices -->
+
+        <type>
+            <id>12</id> <!-- The unique id given by galsie -->
+            <defaultId>10</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000A</defaultIdHex>
+            <definition>MTR_DOOR_LOCK</definition>
+            <name>Matter Door Lock</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TIME_SYNCHRONIZATION"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>13</id> <!-- The unique id given by galsie -->
+            <defaultId>10</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000A</defaultIdHex>
+            <definition>HA_DOOR_LOCK</definition>
+            <name>HA Door Lock</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 14 -> 15  |  defaultID 11 |  2 devices -->
+
+        <type>
+            <id>14</id> <!-- The unique id given by galsie -->
+            <defaultId>11</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000B</defaultIdHex>
+            <definition>MTR_DOOR_LOCK_CONTROLLER</definition>
+            <name>Matter Door Lock Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TIME_SYNCHRONIZATION"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>15</id> <!-- The unique id given by galsie -->
+            <defaultId>11</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000B</defaultIdHex>
+            <definition>HA_DOOR_LOCK_CONTROLLER</definition>
+            <name>HA Door Lock Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_DOOR_LOCK"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 16 -> 16  |  defaultID 12 |  1 device -->
+
+        <type>
+            <id>16</id> <!-- The unique id given by galsie -->
+            <defaultId>12</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000C</defaultIdHex>
+            <definition>HA_SIMPLE_SENSOR</definition>
+            <name>HA Simple Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_BINARY_INPUT_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 17 -> 17  |  defaultID 13 |  1 device -->
+
+        <type>
+            <id>17</id> <!-- The unique id given by galsie -->
+            <defaultId>13</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000D</defaultIdHex>
+            <definition>HA_CONSUMPTION_AWARENESS_DEVICE</definition>
+            <name>HA Consumption Awareness Device</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 18 -> 18  |  defaultID 14 |  1 device -->
+
+        <type>
+            <id>18</id> <!-- The unique id given by galsie -->
+            <defaultId>14</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000e</defaultIdHex>
+            <definition>MTR_AGGREGATOR</definition>
+            <name>Matter Aggregator</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_ACTIONS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 19 -> 19  |  defaultID 15 |  1 device -->
+
+        <type>
+            <id>19</id> <!-- The unique id given by galsie -->
+            <defaultId>15</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x000f</defaultIdHex>
+            <definition>MTR_GENERIC_SWITCH</definition>
+            <name>Matter Generic Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_SWITCH"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FIXED_LABEL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_USER_LABEL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 20 -> 20  |  defaultID 16 |  1 device -->
+
+        <type>
+            <id>20</id> <!-- The unique id given by galsie -->
+            <defaultId>16</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0010</defaultIdHex>
+            <definition>ZLL_ON_OFF_PLUG_IN_UNIT</definition>
+            <name>ZLL On/Off Plug-in Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 21 -> 21  |  defaultID 17 |  1 device -->
+
+        <type>
+            <id>21</id> <!-- The unique id given by galsie -->
+            <defaultId>17</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0011</defaultIdHex>
+            <definition>MTR_POWER_SOURCE</definition>
+            <name>Matter Power Source</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_POWER_SOURCE"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 22 -> 22  |  defaultID 18 |  1 device -->
+
+        <type>
+            <id>22</id> <!-- The unique id given by galsie -->
+            <defaultId>18</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0012</defaultIdHex>
+            <definition>MTR_OTA_REQUESTOR</definition>
+            <name>Matter OTA Requestor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_OTA_REQUESTOR"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OTA_PROVIDER"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 23 -> 23  |  defaultID 19 |  1 device -->
+
+        <type>
+            <id>23</id> <!-- The unique id given by galsie -->
+            <defaultId>19</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0013</defaultIdHex>
+            <definition>MTR_BRIDGED_DEVICE</definition>
+            <name>Matter Bridged Device</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_BRIDGED_DEVICE_BASIC">
+						<requiredAttribute definition="REACHABLE"/></cluster>
+					<cluster definition="MTR_POWER_SOURCE"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_POWER_SOURCE_CONFIGURATION"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 24 -> 24  |  defaultID 20 |  1 device -->
+
+        <type>
+            <id>24</id> <!-- The unique id given by galsie -->
+            <defaultId>20</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0014</defaultIdHex>
+            <definition>MTR_OTA_PROVIDER</definition>
+            <name>Matter OTA Provider</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_OTA_PROVIDER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OTA_REQUESTOR"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 25 -> 25  |  defaultID 21 |  1 device -->
+
+        <type>
+            <id>25</id> <!-- The unique id given by galsie -->
+            <defaultId>21</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0015</defaultIdHex>
+            <definition>MTR_CONTACT_SENSOR</definition>
+            <name>Matter Contact Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_BOOLEAN_STATE">
+						<requiredAttribute definition="STATE_VALUE"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 26 -> 26  |  defaultID 22 |  1 device -->
+
+        <type>
+            <id>26</id> <!-- The unique id given by galsie -->
+            <defaultId>22</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0016</defaultIdHex>
+            <definition>MTR_ROOT_NODE</definition>
+            <name>Matter Root Node</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_ACCESS_CONTROL">
+						<requiredAttribute definition="ACL"/>
+						<requiredAttribute definition="EXTENSION"/></cluster>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="DATA_MODEL_REVISION"/>
+						<requiredAttribute definition="VENDOR_NAME"/>
+						<requiredAttribute definition="VENDOR_ID"/>
+						<requiredAttribute definition="PRODUCT_NAME"/>
+						<requiredAttribute definition="PRODUCT_ID"/>
+						<requiredAttribute definition="NODE_LABEL"/>
+						<requiredAttribute definition="LOCATION"/>
+						<requiredAttribute definition="HARDWARE_VERSION"/>
+						<requiredAttribute definition="HARDWARE_VERSION_STRING"/>
+						<requiredAttribute definition="SOFTWARE_VERSION"/>
+						<requiredAttribute definition="SOFTWARE_VERSION_STRING"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_LOCALIZATION_CONFIGURATION">
+						<requiredAttribute definition="ACTIVE_LOCALE"/>
+						<requiredAttribute definition="SUPPORTED_LOCALES"/></cluster>
+					<cluster definition="MTR_TIME_FORMAT_LOCALIZATION">
+						<requiredAttribute definition="HOUR_FORMAT"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GENERAL_COMMISSIONING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_POWER_SOURCE_CONFIGURATION"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TIME_SYNCHRONIZATION"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUP_KEY_MANAGEMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_NETWORK_COMMISSIONING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OPERATIONAL_CREDENTIALS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_UNIT_LOCALIZATION"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GENERAL_DIAGNOSTICS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_DIAGNOSTIC_LOGS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SOFTWARE_DIAGNOSTICS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ETHERNET_NETWORK_DIAGNOSTICS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WIFI_NETWORK_DIAGNOSTICS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THREAD_NETWORK_DIAGNOSTICS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 27 -> 27  |  defaultID 34 |  1 device -->
+
+        <type>
+            <id>27</id> <!-- The unique id given by galsie -->
+            <defaultId>34</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0022</defaultIdHex>
+            <definition>MTR_SPEAKER</definition>
+            <name>Matter Speaker</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 28 -> 28  |  defaultID 35 |  1 device -->
+
+        <type>
+            <id>28</id> <!-- The unique id given by galsie -->
+            <defaultId>35</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0023</defaultIdHex>
+            <definition>MTR_CASTING_VIDEO_PLAYER</definition>
+            <name>Matter Casting Video Player</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_MEDIA_PLAYBACK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_KEYPAD_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_APPLICATION_LAUNCHER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CHANNEL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_AUDIO_OUTPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LOW_POWER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WAKE_ON_LAN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TARGET_NAVIGATOR"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ACCOUNT_LOGIN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CONTENT_LAUNCH"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 29 -> 29  |  defaultID 36 |  1 device -->
+
+        <type>
+            <id>29</id> <!-- The unique id given by galsie -->
+            <defaultId>36</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0024</defaultIdHex>
+            <definition>MTR_CONTENT_APP</definition>
+            <name>Matter Content App</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_APPLICATION_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_KEYPAD_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_APPLICATION_LAUNCHER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ACCOUNT_LOGIN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CONTENT_LAUNCH"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_PLAYBACK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TARGET_NAVIGATOR"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CHANNEL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 30 -> 30  |  defaultID 39 |  1 device -->
+
+        <type>
+            <id>30</id> <!-- The unique id given by galsie -->
+            <defaultId>39</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0027</defaultIdHex>
+            <definition>MTR_MODE_SELECT</definition>
+            <name>Matter Mode Select</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MODE_SELECT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 31 -> 31  |  defaultID 40 |  1 device -->
+
+        <type>
+            <id>31</id> <!-- The unique id given by galsie -->
+            <defaultId>40</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0028</defaultIdHex>
+            <definition>MTR_BASIC_VIDEO_PLAYER</definition>
+            <name>Matter Basic Video Player</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_MEDIA_PLAYBACK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_KEYPAD_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CHANNEL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_AUDIO_OUTPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LOW_POWER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WAKE_ON_LAN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TARGET_NAVIGATOR"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 32 -> 32  |  defaultID 41 |  1 device -->
+
+        <type>
+            <id>32</id> <!-- The unique id given by galsie -->
+            <defaultId>41</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0029</defaultIdHex>
+            <definition>MTR_CASTING_VIDEO_CLIENT</definition>
+            <name>Matter Casting Video Client</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_PLAYBACK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CONTENT_LAUNCH"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_KEYPAD_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ACCOUNT_LOGIN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WAKE_ON_LAN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CHANNEL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TARGET_NAVIGATOR"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LOW_POWER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_AUDIO_OUTPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_APPLICATION_LAUNCHER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_APPLICATION_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 33 -> 33  |  defaultID 42 |  1 device -->
+
+        <type>
+            <id>33</id> <!-- The unique id given by galsie -->
+            <defaultId>42</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x002A</defaultIdHex>
+            <definition>MTR_VIDEO_REMOTE_CONTROL</definition>
+            <name>Matter Video Remote Control</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_PLAYBACK"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CONTENT_LAUNCH"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_KEYPAD_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ACCOUNT_LOGIN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WAKE_ON_LAN"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_CHANNEL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TARGET_NAVIGATOR"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_MEDIA_INPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LOW_POWER"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_AUDIO_OUTPUT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_APPLICATION_LAUNCHER"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 34 -> 34  |  defaultID 43 |  1 device -->
+
+        <type>
+            <id>34</id> <!-- The unique id given by galsie -->
+            <defaultId>43</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x002B</defaultIdHex>
+            <definition>MTR_FAN</definition>
+            <name>Matter Fan</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_FAN_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 35 -> 35  |  defaultID 80 |  1 device -->
+
+        <type>
+            <id>35</id> <!-- The unique id given by galsie -->
+            <defaultId>80</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0050</defaultIdHex>
+            <definition>HA_HOME_GATEWAY___ENERGY_MANAGEMENT_SYSTEM</definition>
+            <name>HA Home Gateway / Energy Management System</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 36 -> 36  |  defaultID 81 |  1 device -->
+
+        <type>
+            <id>36</id> <!-- The unique id given by galsie -->
+            <defaultId>81</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0051</defaultIdHex>
+            <definition>HA_SMART_PLUG</definition>
+            <name>HA Smart Plug</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 37 -> 37  |  defaultID 82 |  1 device -->
+
+        <type>
+            <id>37</id> <!-- The unique id given by galsie -->
+            <defaultId>82</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0052</defaultIdHex>
+            <definition>HA_WHITE_GOODS</definition>
+            <name>HA White Goods</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 38 -> 38  |  defaultID 83 |  1 device -->
+
+        <type>
+            <id>38</id> <!-- The unique id given by galsie -->
+            <defaultId>83</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0053</defaultIdHex>
+            <definition>HA_METER_INTERFACE</definition>
+            <name>HA Meter Interface</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 39 -> 42  |  defaultID 256 |  4 devices -->
+
+        <type>
+            <id>39</id> <!-- The unique id given by galsie -->
+            <defaultId>256</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0100</defaultIdHex>
+            <definition>MTR_ON_OFF_LIGHT</definition>
+            <name>Matter On/Off Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>40</id> <!-- The unique id given by galsie -->
+            <defaultId>256</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0100</defaultIdHex>
+            <definition>HA_ON_OFF_LIGHT</definition>
+            <name>HA On/Off Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>41</id> <!-- The unique id given by galsie -->
+            <defaultId>256</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0100</defaultIdHex>
+            <definition>LO_ON_OFF_LIGHT</definition>
+            <name>LO On/Off Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>42</id> <!-- The unique id given by galsie -->
+            <defaultId>256</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0100</defaultIdHex>
+            <definition>ZLL_DIMMABLE_LIGHT</definition>
+            <name>ZLL Dimmable Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 43 -> 45  |  defaultID 257 |  3 devices -->
+
+        <type>
+            <id>43</id> <!-- The unique id given by galsie -->
+            <defaultId>257</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0101</defaultIdHex>
+            <definition>MTR_DIMMABLE_LIGHT</definition>
+            <name>Matter Dimmable Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>44</id> <!-- The unique id given by galsie -->
+            <defaultId>257</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0101</defaultIdHex>
+            <definition>HA_DIMMABLE_LIGHT</definition>
+            <name>HA Dimmable Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>45</id> <!-- The unique id given by galsie -->
+            <defaultId>257</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0101</defaultIdHex>
+            <definition>LO_DIMMABLE_LIGHT</definition>
+            <name>LO Dimmable Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 46 -> 47  |  defaultID 258 |  2 devices -->
+
+        <type>
+            <id>46</id> <!-- The unique id given by galsie -->
+            <defaultId>258</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0102</defaultIdHex>
+            <definition>HA_COLOR_DIMMABLE_LIGHT</definition>
+            <name>HA Color Dimmable Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>47</id> <!-- The unique id given by galsie -->
+            <defaultId>258</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0102</defaultIdHex>
+            <definition>LO_COLOR_DIMMABLE_LIGHT</definition>
+            <name>LO Color Dimmable Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_OPTIONS"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 48 -> 50  |  defaultID 259 |  3 devices -->
+
+        <type>
+            <id>48</id> <!-- The unique id given by galsie -->
+            <defaultId>259</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0103</defaultIdHex>
+            <definition>MTR_ON_OFF_LIGHT_SWITCH</definition>
+            <name>Matter On/Off Light Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>49</id> <!-- The unique id given by galsie -->
+            <defaultId>259</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0103</defaultIdHex>
+            <definition>HA_ON_OFF_LIGHT_SWITCH</definition>
+            <name>HA On/Off Light Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>50</id> <!-- The unique id given by galsie -->
+            <defaultId>259</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0103</defaultIdHex>
+            <definition>LO_ON_OFF_LIGHT_SWITCH</definition>
+            <name>LO On/Off Light Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 51 -> 53  |  defaultID 260 |  3 devices -->
+
+        <type>
+            <id>51</id> <!-- The unique id given by galsie -->
+            <defaultId>260</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0104</defaultIdHex>
+            <definition>MTR_DIMMER_SWITCH</definition>
+            <name>Matter Dimmer Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>52</id> <!-- The unique id given by galsie -->
+            <defaultId>260</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0104</defaultIdHex>
+            <definition>HA_DIMMER_SWITCH</definition>
+            <name>HA Dimmer Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>53</id> <!-- The unique id given by galsie -->
+            <defaultId>260</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0104</defaultIdHex>
+            <definition>LO_DIMMER_SWITCH</definition>
+            <name>LO Dimmer Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 54 -> 56  |  defaultID 261 |  3 devices -->
+
+        <type>
+            <id>54</id> <!-- The unique id given by galsie -->
+            <defaultId>261</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0105</defaultIdHex>
+            <definition>MTR_COLOR_DIMMER_SWITCH</definition>
+            <name>Matter Color Dimmer Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>55</id> <!-- The unique id given by galsie -->
+            <defaultId>261</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0105</defaultIdHex>
+            <definition>HA_COLOR_DIMMER_SWITCH</definition>
+            <name>HA Color Dimmer Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>56</id> <!-- The unique id given by galsie -->
+            <defaultId>261</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0105</defaultIdHex>
+            <definition>LO_COLOR_DIMMER_SWITCH</definition>
+            <name>LO Color Dimmer Switch</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF_SWITCH_CONFIG"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 57 -> 59  |  defaultID 262 |  3 devices -->
+
+        <type>
+            <id>57</id> <!-- The unique id given by galsie -->
+            <defaultId>262</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0106</defaultIdHex>
+            <definition>MTR_LIGHT_SENSOR</definition>
+            <name>Matter Light Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT">
+						<requiredAttribute definition="ILLUM_MEASURED_VALUE"/>
+						<requiredAttribute definition="ILLUM_MIN_MEASURED_VALUE"/>
+						<requiredAttribute definition="ILLUM_MAX_MEASURED_VALUE"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>58</id> <!-- The unique id given by galsie -->
+            <defaultId>262</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0106</defaultIdHex>
+            <definition>HA_LIGHT_SENSOR</definition>
+            <name>HA Light Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>59</id> <!-- The unique id given by galsie -->
+            <defaultId>262</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0106</defaultIdHex>
+            <definition>LO_LIGHT_SENSOR</definition>
+            <name>LO Light Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT">
+						<requiredAttribute definition="ILLUM_MEASURED_VALUE"/>
+						<requiredAttribute definition="ILLUM_MIN_MEASURED_VALUE"/>
+						<requiredAttribute definition="ILLUM_MAX_MEASURED_VALUE"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 60 -> 62  |  defaultID 263 |  3 devices -->
+
+        <type>
+            <id>60</id> <!-- The unique id given by galsie -->
+            <defaultId>263</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0107</defaultIdHex>
+            <definition>MTR_OCCUPANCY_SENSOR</definition>
+            <name>Matter Occupancy Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING">
+						<requiredAttribute definition="OCCUPANCY"/>
+						<requiredAttribute definition="OCCUPANCY_SENSOR_TYPE"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>61</id> <!-- The unique id given by galsie -->
+            <defaultId>263</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0107</defaultIdHex>
+            <definition>HA_OCCUPANCY_SENSOR</definition>
+            <name>HA Occupancy Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>62</id> <!-- The unique id given by galsie -->
+            <defaultId>263</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0107</defaultIdHex>
+            <definition>LO_OCCUPANCY_SENSOR</definition>
+            <name>LO Occupancy Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING">
+						<requiredAttribute definition="OCCUPANCY"/>
+						<requiredAttribute definition="OCCUPANCY_SENSOR_TYPE"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 63 -> 63  |  defaultID 264 |  1 device -->
+
+        <type>
+            <id>63</id> <!-- The unique id given by galsie -->
+            <defaultId>264</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0108</defaultIdHex>
+            <definition>LO_ON_OFF_BALAST</definition>
+            <name>LO On/Off Balast</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_BALLAST_CONFIGURATION">
+						<requiredAttribute definition="BALLAST_STATUS"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 64 -> 64  |  defaultID 265 |  1 device -->
+
+        <type>
+            <id>64</id> <!-- The unique id given by galsie -->
+            <defaultId>265</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0109</defaultIdHex>
+            <definition>LO_DIMMABLE_BALAST</definition>
+            <name>LO Dimmable Balast</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_BALLAST_CONFIGURATION">
+						<requiredAttribute definition="BALLAST_STATUS"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 65 -> 66  |  defaultID 266 |  2 devices -->
+
+        <type>
+            <id>65</id> <!-- The unique id given by galsie -->
+            <defaultId>266</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010A</defaultIdHex>
+            <definition>MTR_ON_OFF_PLUG_IN_UNIT</definition>
+            <name>Matter On/Off Plug-in Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>66</id> <!-- The unique id given by galsie -->
+            <defaultId>266</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010A</defaultIdHex>
+            <definition>LO_ON_OFF_PLUG_IN_UNIT</definition>
+            <name>LO On/Off Plug-in Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 67 -> 68  |  defaultID 267 |  2 devices -->
+
+        <type>
+            <id>67</id> <!-- The unique id given by galsie -->
+            <defaultId>267</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010B</defaultIdHex>
+            <definition>MTR_DIMMABLE_PLUG_IN_UNIT</definition>
+            <name>Matter Dimmable Plug-in Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>68</id> <!-- The unique id given by galsie -->
+            <defaultId>267</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010B</defaultIdHex>
+            <definition>LO_DIMMABLE_PLUG_IN_UNIT</definition>
+            <name>LO Dimmable Plug-in Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 69 -> 70  |  defaultID 268 |  2 devices -->
+
+        <type>
+            <id>69</id> <!-- The unique id given by galsie -->
+            <defaultId>268</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010C</defaultIdHex>
+            <definition>MTR_COLOR_TEMPERATURE_LIGHT</definition>
+            <name>Matter Color Temperature Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_OPTIONS"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_TEMPERATURE_LEVEL_MIN_MIREDS"/>
+						<requiredAttribute definition="START_UP_COLOR_TEMPERATURE_MIREDS"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>70</id> <!-- The unique id given by galsie -->
+            <defaultId>268</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010C</defaultIdHex>
+            <definition>LO_COLOR_TEMPERATURE_LIGHT</definition>
+            <name>LO Color Temperature Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_OPTIONS"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_TEMPERATURE_LEVEL_MIN_MIREDS"/>
+						<requiredAttribute definition="START_UP_COLOR_TEMPERATURE_MIREDS"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 71 -> 72  |  defaultID 269 |  2 devices -->
+
+        <type>
+            <id>71</id> <!-- The unique id given by galsie -->
+            <defaultId>269</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010D</defaultIdHex>
+            <definition>MTR_EXTENDED_COLOR_LIGHT</definition>
+            <name>Matter Extended Color Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_OPTIONS"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_TEMPERATURE_LEVEL_MIN_MIREDS"/>
+						<requiredAttribute definition="START_UP_COLOR_TEMPERATURE_MIREDS"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>72</id> <!-- The unique id given by galsie -->
+            <defaultId>269</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010D</defaultIdHex>
+            <definition>LO_EXTENDED_COLOR_LIGHT</definition>
+            <name>LO Extended Color Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/>
+						<requiredAttribute definition="START_UP_ON_OFF"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="OPTIONS"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="START_UP_CURRENT_LEVEL"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_OPTIONS"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_TEMPERATURE_LEVEL_MIN_MIREDS"/>
+						<requiredAttribute definition="START_UP_COLOR_TEMPERATURE_MIREDS"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 73 -> 73  |  defaultID 270 |  1 device -->
+
+        <type>
+            <id>73</id> <!-- The unique id given by galsie -->
+            <defaultId>270</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x010E</defaultIdHex>
+            <definition>LO_LIGHT_LEVEL_SENSOR</definition>
+            <name>LO Light Level Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 74 -> 74  |  defaultID 272 |  1 device -->
+
+        <type>
+            <id>74</id> <!-- The unique id given by galsie -->
+            <defaultId>272</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0110</defaultIdHex>
+            <definition>ZLL_DIMMABLE_PLUG_IN_UNIT</definition>
+            <name>ZLL Dimmable Plug-in Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 75 -> 76  |  defaultID 512 |  2 devices -->
+
+        <type>
+            <id>75</id> <!-- The unique id given by galsie -->
+            <defaultId>512</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0200</defaultIdHex>
+            <definition>HA_SHADE</definition>
+            <name>HA Shade</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>76</id> <!-- The unique id given by galsie -->
+            <defaultId>512</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0200</defaultIdHex>
+            <definition>ZLL_COLOR_LIGHT</definition>
+            <name>ZLL Color Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 77 -> 77  |  defaultID 513 |  1 device -->
+
+        <type>
+            <id>77</id> <!-- The unique id given by galsie -->
+            <defaultId>513</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0201</defaultIdHex>
+            <definition>HA_SHADE_CONTROLLER</definition>
+            <name>HA Shade Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 78 -> 79  |  defaultID 514 |  2 devices -->
+
+        <type>
+            <id>78</id> <!-- The unique id given by galsie -->
+            <defaultId>514</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0202</defaultIdHex>
+            <definition>MTR_WINDOW_COVERING</definition>
+            <name>Matter Window Covering</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_WINDOW_COVERING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>79</id> <!-- The unique id given by galsie -->
+            <defaultId>514</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0202</defaultIdHex>
+            <definition>HA_WINDOW_COVERING</definition>
+            <name>HA Window Covering</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WINDOW_COVERING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 80 -> 81  |  defaultID 515 |  2 devices -->
+
+        <type>
+            <id>80</id> <!-- The unique id given by galsie -->
+            <defaultId>515</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0203</defaultIdHex>
+            <definition>MTR_WINDOW_COVERING_CONTROLLER</definition>
+            <name>Matter Window Covering Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WINDOW_COVERING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>81</id> <!-- The unique id given by galsie -->
+            <defaultId>515</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0203</defaultIdHex>
+            <definition>HA_WINDOW_COVERING_CONTROLLER</definition>
+            <name>HA Window Covering Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_WINDOW_COVERING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 82 -> 82  |  defaultID 528 |  1 device -->
+
+        <type>
+            <id>82</id> <!-- The unique id given by galsie -->
+            <defaultId>528</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0210</defaultIdHex>
+            <definition>ZLL_EXTENDED_COLOR_LIGHT</definition>
+            <name>ZLL Extended Color Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 83 -> 83  |  defaultID 544 |  1 device -->
+
+        <type>
+            <id>83</id> <!-- The unique id given by galsie -->
+            <defaultId>544</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0220</defaultIdHex>
+            <definition>ZLL_COLOR_TEMPERATURE_LIGHT</definition>
+            <name>ZLL Color Temperature Light</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/>
+						<requiredAttribute definition="GLOBAL_SCENE_CONTROL"/>
+						<requiredAttribute definition="ON_TIME"/>
+						<requiredAttribute definition="OFF_WAIT_TIME"/></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL">
+						<requiredAttribute definition="CURRENT_LEVEL"/>
+						<requiredAttribute definition="LEVEL_CONTROL_REMAINING_TIME"/></cluster>
+					<cluster definition="MTR_COLOR_CONTROL">
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_HUE"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_SATURATION"/>
+						<requiredAttribute definition="COLOR_CONTROL_REMAINING_TIME"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_CURRENT_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_TEMPERATURE"/>
+						<requiredAttribute definition="COLOR_CONTROL_COLOR_MODE"/>
+						<requiredAttribute definition="COLOR_CONTROL_NUMBER_OF_PRIMARIES"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_1_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_2_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_3_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_4_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_5_INTENSITY"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_X"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_Y"/>
+						<requiredAttribute definition="COLOR_CONTROL_PRIMARY_6_INTENSITY"/></cluster>
+                </required>
+
+                <optional>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 84 -> 85  |  defaultID 768 |  2 devices -->
+
+        <type>
+            <id>84</id> <!-- The unique id given by galsie -->
+            <defaultId>768</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0300</defaultIdHex>
+            <definition>MTR_HEATING_COOLING_UNIT</definition>
+            <name>Matter Heating/Cooling Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FAN_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>85</id> <!-- The unique id given by galsie -->
+            <defaultId>768</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0300</defaultIdHex>
+            <definition>HA_HEATING_COOLING_UNIT</definition>
+            <name>HA Heating Cooling Unit</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FAN_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 86 -> 87  |  defaultID 769 |  2 devices -->
+
+        <type>
+            <id>86</id> <!-- The unique id given by galsie -->
+            <defaultId>769</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0301</defaultIdHex>
+            <definition>MTR_THERMOSTAT</definition>
+            <name>Matter Thermostat</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TIME_SYNCHRONIZATION"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT_UI_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FAN_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_RELATIVE_HUMIDITY_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>87</id> <!-- The unique id given by galsie -->
+            <defaultId>769</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0301</defaultIdHex>
+            <definition>HA_THERMOSTAT</definition>
+            <name>HA Thermostat</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_THERMOSTAT_UI_CONFIG"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FAN_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_RELATIVE_HUMIDITY_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 88 -> 89  |  defaultID 770 |  2 devices -->
+
+        <type>
+            <id>88</id> <!-- The unique id given by galsie -->
+            <defaultId>770</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0302</defaultIdHex>
+            <definition>MTR_TEMPERATURE_SENSOR</definition>
+            <name>Matter Temperature Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>89</id> <!-- The unique id given by galsie -->
+            <defaultId>770</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0302</defaultIdHex>
+            <definition>HA_TEMPERATURE_SENSOR</definition>
+            <name>HA Temperature Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 90 -> 90  |  defaultID 771 |  1 device -->
+
+        <type>
+            <id>90</id> <!-- The unique id given by galsie -->
+            <defaultId>771</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0303</defaultIdHex>
+            <definition>MTR_PUMP</definition>
+            <name>Matter Pump</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF">
+						<requiredAttribute definition="ON_OFF"/></cluster>
+					<cluster definition="MTR_PUMP_CONFIG_CONTROL">
+						<requiredAttribute definition="MAX_PRESSURE"/>
+						<requiredAttribute definition="MAX_SPEED"/>
+						<requiredAttribute definition="MAX_FLOW"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PRESSURE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FLOW_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 91 -> 91  |  defaultID 772 |  1 device -->
+
+        <type>
+            <id>91</id> <!-- The unique id given by galsie -->
+            <defaultId>772</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0304</defaultIdHex>
+            <definition>MTR_PUMP_CONTROLLER</definition>
+            <name>Matter Pump Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_GROUPS">
+						<requiredAttribute definition="GROUP_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_SCENES">
+						<requiredAttribute definition="SCENE_COUNT"/>
+						<requiredAttribute definition="CURRENT_SCENE"/>
+						<requiredAttribute definition="CURRENT_GROUP"/>
+						<requiredAttribute definition="SCENE_VALID"/>
+						<requiredAttribute definition="SCENE_NAME_SUPPORT"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PUMP_CONFIG_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_TEMP_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PRESSURE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FLOW_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 92 -> 93  |  defaultID 773 |  2 devices -->
+
+        <type>
+            <id>92</id> <!-- The unique id given by galsie -->
+            <defaultId>773</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0305</defaultIdHex>
+            <definition>MTR_PRESSURE_SENSOR</definition>
+            <name>Matter Pressure Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_PRESSURE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>93</id> <!-- The unique id given by galsie -->
+            <defaultId>773</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0305</defaultIdHex>
+            <definition>HA_PRESSURE_SENSOR</definition>
+            <name>HA Pressure Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PRESSURE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 94 -> 95  |  defaultID 774 |  2 devices -->
+
+        <type>
+            <id>94</id> <!-- The unique id given by galsie -->
+            <defaultId>774</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0306</defaultIdHex>
+            <definition>MTR_FLOW_SENSOR</definition>
+            <name>Matter Flow Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_FLOW_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>95</id> <!-- The unique id given by galsie -->
+            <defaultId>774</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0306</defaultIdHex>
+            <definition>HA_FLOW_SENSOR</definition>
+            <name>HA Flow Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_FLOW_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 96 -> 96  |  defaultID 775 |  1 device -->
+
+        <type>
+            <id>96</id> <!-- The unique id given by galsie -->
+            <defaultId>775</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0307</defaultIdHex>
+            <definition>MTR_HUMIDITY_SENSOR</definition>
+            <name>Matter Humidity Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_RELATIVE_HUMIDITY_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 97 -> 97  |  defaultID 1024 |  1 device -->
+
+        <type>
+            <id>97</id> <!-- The unique id given by galsie -->
+            <defaultId>1024</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0400</defaultIdHex>
+            <definition>HA_IAS_CONTROL_AND_INDICATION_EQUIPMENT</definition>
+            <name>HA IAS Control and Indication Equipment</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 98 -> 98  |  defaultID 1025 |  1 device -->
+
+        <type>
+            <id>98</id> <!-- The unique id given by galsie -->
+            <defaultId>1025</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0401</defaultIdHex>
+            <definition>HA_IAS_ANCILLARY_CONTROL_EQUIPMENT</definition>
+            <name>HA IAS Ancillary Control Equipment</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 99 -> 99  |  defaultID 1026 |  1 device -->
+
+        <type>
+            <id>99</id> <!-- The unique id given by galsie -->
+            <defaultId>1026</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0402</defaultIdHex>
+            <definition>HA_IAS_ZONE</definition>
+            <name>HA IAS Zone</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 100 -> 100  |  defaultID 1027 |  1 device -->
+
+        <type>
+            <id>100</id> <!-- The unique id given by galsie -->
+            <defaultId>1027</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0403</defaultIdHex>
+            <definition>HA_IAS_WARNING_DEVICE</definition>
+            <name>HA IAS Warning Device</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ELECTRICAL_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 101 -> 102  |  defaultID 2048 |  2 devices -->
+
+        <type>
+            <id>101</id> <!-- The unique id given by galsie -->
+            <defaultId>2048</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0800</defaultIdHex>
+            <definition>LO_COLOR_CONTROLLER</definition>
+            <name>LO Color Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>102</id> <!-- The unique id given by galsie -->
+            <defaultId>2048</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0800</defaultIdHex>
+            <definition>ZLL_COLOR_CONTROLLER</definition>
+            <name>ZLL Color Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 103 -> 104  |  defaultID 2064 |  2 devices -->
+
+        <type>
+            <id>103</id> <!-- The unique id given by galsie -->
+            <defaultId>2064</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0810</defaultIdHex>
+            <definition>LO_COLOR_SCENE_CONTROLLER</definition>
+            <name>LO Color Scene Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>104</id> <!-- The unique id given by galsie -->
+            <defaultId>2064</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0810</defaultIdHex>
+            <definition>ZLL_COLOR_SCENE_CONTROLLER</definition>
+            <name>ZLL Color Scene Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 105 -> 106  |  defaultID 2080 |  2 devices -->
+
+        <type>
+            <id>105</id> <!-- The unique id given by galsie -->
+            <defaultId>2080</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0820</defaultIdHex>
+            <definition>LO_NON_COLOR_CONTROLLER</definition>
+            <name>LO Non Color Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>106</id> <!-- The unique id given by galsie -->
+            <defaultId>2080</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0820</defaultIdHex>
+            <definition>ZLL_NON_COLOR_CONTROLLER</definition>
+            <name>ZLL Non-color Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 107 -> 108  |  defaultID 2096 |  2 devices -->
+
+        <type>
+            <id>107</id> <!-- The unique id given by galsie -->
+            <defaultId>2096</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0830</defaultIdHex>
+            <definition>LO_NON_COLOR_SCENE_CONTROLLER</definition>
+            <name>LO Non Color Scene Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>108</id> <!-- The unique id given by galsie -->
+            <defaultId>2096</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0830</defaultIdHex>
+            <definition>ZLL_NON_COLOR_SCENE_CONTROLLER</definition>
+            <name>ZLL Non-color Scene Controller</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 109 -> 111  |  defaultID 2112 |  3 devices -->
+
+        <type>
+            <id>109</id> <!-- The unique id given by galsie -->
+            <defaultId>2112</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0840</defaultIdHex>
+            <definition>MTR_CONTROL_BRIDGE</definition>
+            <name>Matter Control Bridge</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>110</id> <!-- The unique id given by galsie -->
+            <defaultId>2112</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0840</defaultIdHex>
+            <definition>LO_CONTROL_BRIDGE</definition>
+            <name>LO Control Bridge</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ILLUMINANCE_MEASUREMENT"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_OCCUPANCY_SENSING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>111</id> <!-- The unique id given by galsie -->
+            <defaultId>2112</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0840</defaultIdHex>
+            <definition>ZLL_CONTROL_BRIDGE</definition>
+            <name>ZLL Control Bridge</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 112 -> 114  |  defaultID 2128 |  3 devices -->
+
+        <type>
+            <id>112</id> <!-- The unique id given by galsie -->
+            <defaultId>2128</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0850</defaultIdHex>
+            <definition>MTR_ON_OFF_SENSOR</definition>
+            <name>Matter On/Off Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/>
+						<requiredAttribute definition="IDENTIFY_TYPE"/></cluster>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_BINDING"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>113</id> <!-- The unique id given by galsie -->
+            <defaultId>2128</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0850</defaultIdHex>
+            <definition>LO_ON_OFF_SENSOR</definition>
+            <name>LO On/off Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC">
+						<requiredAttribute definition="PRODUCT_URL"/></cluster>
+					<cluster definition="MTR_IDENTIFY">
+						<requiredAttribute definition="IDENTIFY_TIME"/></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+        <type>
+            <id>114</id> <!-- The unique id given by galsie -->
+            <defaultId>2128</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0x0850</defaultIdHex>
+            <definition>ZLL_ON_OFF_SENSOR</definition>
+            <name>ZLL On/Off Sensor</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_BASIC"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_ON_OFF"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_COLOR_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_IDENTIFY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_GROUPS"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_SCENES"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_LEVEL_CONTROL"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 115 -> 115  |  defaultID 61441 |  1 device -->
+
+        <type>
+            <id>115</id> <!-- The unique id given by galsie -->
+            <defaultId>61441</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0xF001</defaultIdHex>
+            <definition>MTR_ORPHAN_CLUSTERS</definition>
+            <name>Matter Orphan Clusters</name>
+
+            <clusters>
+                <required>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_PROXY_CONFIGURATION"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PROXY_DISCOVERY"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PROXY_VALID"><!-- No Device specific required Attributes --></cluster>
+					<cluster definition="MTR_PWM"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+<!-- IDS: 116 -> 116  |  defaultID 61442 |  1 device -->
+
+        <type>
+            <id>116</id> <!-- The unique id given by galsie -->
+            <defaultId>61442</defaultId> <!-- The default id given by the matter model-->
+            <defaultIdHex>0xF002</defaultIdHex>
+            <definition>MTR_SECONDARY_NETWORK_COMMISSIONING_DEVICE_TYPE</definition>
+            <name>Matter Secondary Network Commissioning Device Type</name>
+
+            <clusters>
+                <required>
+					<cluster definition="MTR_DESCRIPTOR">
+						<requiredAttribute definition="SERVER_LIST"/>
+						<requiredAttribute definition="CLIENT_LIST"/>
+						<requiredAttribute definition="PARTS_LIST"/></cluster>
+                </required>
+
+                <optional>
+					<cluster definition="MTR_NETWORK_COMMISSIONING"><!-- No Device specific required Attributes --></cluster>
+                </optional>
+            </clusters>
+        </type>
+    
+</mtrDevices>

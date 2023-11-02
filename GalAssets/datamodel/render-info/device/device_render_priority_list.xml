@@ -1,0 +1,76 @@
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <!-- define the main widget priorities of nodes.
+    When a physical device is loaded with multiple nodes, the node with highest priority is rendered in the header
+    Other nodes are rendered as contributors
+    -->
+
+
+    <priorityList priorityOrder="LOWEST_TO_HIGHEST">
+        <definition>NODE_MAIN_WIDGET_RENDER_PRIORITY_LIST</definition> <!-- priroty list definition  -->
+           <!---
+           Render priorities:
+
+           if a physical device is loaded with multiple node types, the bottom most node takes the highest priority, its contributors take the next priority, and other nodes are rendered as contributors
+           That unless a specific rendering is defined for when those nodes of different types are together
+
+           - Switch
+           -->
+           <node definition="LIGHT_SENSOR"/>
+           <!--
+           - PM2.5
+           - PM4
+           - VOC
+           - CO2
+           - O2
+           - NH2
+           - CO
+           - NG
+           - LPG
+           - Geiger
+           - Safety gasses sensor
+
+           - Pressure
+           - Wind Speed
+           - UV Index
+           - Humidity
+           - Temperature
+           - Indoor feel sensor
+           - Water Leak
+           - Outdoor feel sensor
+
+           - Motion sensor
+           -->
+
+        <node definition="LED_LIGHT_STRIP"/>
+
+
+        <node definition="LIGHT_SOCKET"/>
+        <node definition="LIGHT" priorityEquivelantTo="LIGHT_SOCKET"/>
+        <!--
+        When 2 nodes have equivalent priorities, they are rendered merged in the header, if both of them exist for a physical device.
+        - They usually have shared features that are rendered, if thats not the case, a render error occurs, and the device with a higher priority is rendered
+        -->
+        <!--
+        Having equivalent priorities doesn't mean they are equal.
+        - Depending on the order of the priority list (lowest to highest/highest to lowest), the element holding the priorityEquivelantTo atribute might be of higher/lower priority than the element its referencing
+        - In this case, the element with the higher priority is used as fallback for render errors
+        - Additionally, the contributors of the element wit the higher priority are shown first
+        -->
+
+        <!--
+           - Camera
+           - shatter detector
+           - Open-close
+           - Linear controller
+           - Door Lock
+           - Door bell
+
+           - Radiator Controller
+           - Radiator
+           - AC IR controller
+           - AC
+           - Thermostat
+           -->
+    </priorityList>
+</root>

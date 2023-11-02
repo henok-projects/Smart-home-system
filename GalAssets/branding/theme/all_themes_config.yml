@@ -1,0 +1,7 @@
+
+defaultTheme: 'MATCH_OS_ENVIRONMENT' # the default theme that applies. Possible: LIGHT, DARK, MATCH_OS_ENVIRONMENT
+
+## Note that the themes are loaded based on the directory name irrespective of the mapping here.
+## The mapping is only used to have a more solid definition describing where the ligh and dark theme are stored. It is only needed for these 2 themes are they are natively supported. Other themes needn't have a mapping here since it would all be dynamic
+lightTheme: 'light' # sets that the name of the light theme (must match directory) NOTE: not case sensitive
+darkTheme: 'dark' # sets that the name of the dark theme (must match directory) NOTE: not case sensitive

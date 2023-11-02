@@ -1,0 +1,12 @@
+#### THIS FILE IS FOR CONFIGURATION INFORMATION ABOUT THE LANGUAGE. NO TRANSLATIONS
+# If a translation doesn't have a locale, fallback to the one above it.
+assets_file_version: "0.0"
+languageConfig:
+    name: "Arabic"
+    direction: 1 # 1 is right to left, 0 is left to right
+    fontFamilyName: "Vazirmatn" # The possible font names are the first level directories in branding/font
+    localeFallbackOrder:
+        - ae # UAE
+        - sa # Saudi Arabia
+        - kw # Kuwait
+        - lb # Lebanon

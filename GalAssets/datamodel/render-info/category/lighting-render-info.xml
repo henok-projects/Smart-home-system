@@ -1,0 +1,76 @@
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <renderInfo forCategory="LIGHTING"> <!-- variable generated: {CATEGORY} -->
+
+        <area> <!-- when viewed from an area -->
+            <mainWidget> <!-- the main category widget -->
+                <optionalView name="Main"> <!-- optionalView allows users to select one of the views, through a filter -->
+
+                </optionalView>
+
+                <optionalView name="Node Type">
+
+                </optionalView>
+
+                <optionalView name="Nodes">
+
+                </optionalView>
+
+            </mainWidget>
+        </area>
+
+        <home> <!-- when viewed from the home -->
+            <mainPageWidget> <!-- the main category widget -->
+                <optionalView name="Main"> <!-- optionalView allows users to select one of the views, through a filter -->
+                    <generalWidgetContent> <!-- the general widget content is the one that has the header, primary controls, ... -->
+                        <header>
+                            <h1>
+
+                            </h1>
+
+                            <h2>
+
+                            </h2>
+
+                            <h3>
+
+                            </h3>
+
+                            <squareBtn>
+
+                            </squareBtn>
+                        </header>
+
+                        <primaryControl>
+
+                        </primaryControl>
+                        <secondaryControl>
+
+                        </secondaryControl>
+
+                        <contributors>
+
+                        </contributors>
+                    </generalWidgetContent>
+                </optionalView>
+
+                <optionalView name="Areas">
+                    <verticalListWidgetContent forAreas="true">
+                        <forCategory>{CATEGORY}</forCategory>
+                    </verticalListWidgetContent>
+                </optionalView>
+
+                <optionalView name="Node Type">
+                    <verticalListWidgetContent forNodeTypes="true">
+                        <forCategory>{CATEGORY}</forCategory>
+                    </verticalListWidgetContent>
+                </optionalView>
+
+                <optionalView name="Nodes">
+
+                </optionalView>
+
+            </mainPageWidget>
+        </home>
+    </renderInfo>
+</root>

@@ -1,0 +1,5 @@
+assets_file_version: "0.0"
+formatting:
+     date:
+        - us: 'mm/dd/yyyy'
+        - ca: 'dd/mm/yyyy'

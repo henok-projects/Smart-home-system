@@ -1,0 +1,337 @@
+<!-- idType: UInt16 -->
+
+<!--
+A device type can be abstract, children inherit the feature types & mtr device types
+- An abstract device type's category is ignored. Non-abstract children must define the category
+
+GENERAL NOTES:
+- Can extend non abstract device type, but a warning will be shown.
+- In that case, the category is also ignored
+
+LOADING NOTES:
+- Loaders of device types load them sequentially
+- Be sure that abstract device types are defined before they are extended
+-->
+
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <deviceTypes>
+        <!-- Main 0 -> 5 -->
+        <type>
+            <id>0</id>
+            <definition>OTHER</definition>
+            <name>Other</name>
+            
+            <category definition="MISC"/>
+            
+            <possibleMTRDeviceTypes> <!-- the node must match one of the possible mtr device types to match this galsie device type -->
+            </possibleMTRDeviceTypes>
+
+            <possibleFeaturesTypes> <!-- the node must have at least one of these possible galsie features to match the device type -->
+            </possibleFeaturesTypes> 
+        </type>
+
+        <type abstract="true"> <!-- an abstract type is used by other type for shared features -->
+            <id>1</id>
+            <definition>BASE_ACTUATOR</definition>
+            <name>Base Actuator</name>
+            
+            <possibleMTRDeviceTypes>
+
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <!-- All actuators MAY support ONOFF control -->
+                <featureType definition="ACTUATOR_CONTROL_ONOFF"/><!-- linked by definition -->
+
+            </possibleFeaturesTypes>
+        </type>
+
+        <type abstract="true">
+            
+            <id>2</id>
+            <definition>BASE_SENSOR</definition>
+            <name>Base Sensor</name>
+            
+            <possibleMTRDeviceTypes>
+                
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                
+            </possibleFeaturesTypes>
+            
+        </type>
+        
+        <!--- LIGHTING IDS: 6 -> 20 -->
+        <type extends="BASE_SENSOR">
+            <id>6</id>
+            <definition>LIGHT_SENSOR</definition>
+            <name>Light Sensor</name>
+
+            <category definition="LIGHTING"/>
+            
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_LIGHT_SENSOR"/>
+            </possibleMTRDeviceTypes>
+
+            <possibleFeaturesTypes> <!-- the node must have at least one of these possible galsie features to match the device type -->
+                <featureType definition="LIGHT_LUMINOSITY_DETECTION"/>
+                <featureType definition="LIGHT_AMBIANCE_DETECTION"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <type abstract="true" extends="BASE_ACTUATOR">
+            <id>7</id>
+            <definition>BASE_LIGHT_ACTUATOR</definition>
+            <name>Base Light Actuator</name>
+
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_ON_OFF_LIGHT"/>
+                <mtrDevice definition="MTR_DIMMABLE_LIGHT"/>
+            </possibleMTRDeviceTypes>
+
+            <possibleFeaturesTypes>
+                <featureType definition="LIGHT_CONTROL_BRIGHTNESS"/>
+            </possibleFeaturesTypes>
+            
+        </type>
+
+        <type extends="BASE_LIGHT_ACTUATOR">
+            
+            <id>8</id>
+            <definition>LIGHT_SOCKET</definition>
+            <name>Light Socket</name>
+            <category definition='LIGHTING'/>
+
+            <possibleMTRDeviceTypes> <!-- inherited from BASE_LIGHT_ACTUATOR -->
+
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes> <!-- inherited from BASE_LIGHT_ACTUATOR -->
+                <featureType definition="ACTUATOR_PLUGIN_DETECTOR"/>
+            </possibleFeaturesTypes>
+            
+        </type>
+
+        <type extends="BASE_LIGHT_ACTUATOR">
+            
+            <id>9</id>
+            <definition>LIGHT</definition>
+            <name>Light</name>
+            <category definition='LIGHTING'/>
+            
+            <possibleMTRDeviceTypes> <!-- inherited from BASE_LIGHT_ACTUATOR -->
+                <mtrDevice definition="MTR_COLOR_TEMPERATURE_LIGHT"/>
+                <mtrDevice definition="MTR_EXTENDED_COLOR_LIGHT"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="LIGHT_CONTROL_COLOR"/>
+            </possibleFeaturesTypes>
+            
+        </type>
+
+        <!--
+        <type extends="BASE_LIGHT_ACTUATOR">
+            <id>4</id>
+            <name>Led Light strip</name>
+        </type>
+        -->
+        <type> <!-- no base actuator features - assumed it cant be turned on off -->
+            
+            <id>10</id>
+            <definition>WINDOW_COVERING</definition>
+            <name>Window Covering</name>
+            <category definition='LIGHTING'/>
+
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_WINDOW_COVERING_CONTROLLER"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="WINDOW_COVERING_CONTROL"/>
+            </possibleFeaturesTypes>
+            
+        </type>
+
+        <!-- PLUG IDS: 21->40 -->
+        <type extends="BASE_ACTUATOR">
+            
+            <id>21</id>
+            <definition>PLUG</definition>
+            <name>Plug</name>
+            <category definition='PLUGS_AND_APPLIANCES'/>
+            
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_ON_OFF_PLUG_IN_UNIT"/>
+                <mtrDevice definition="MTR_DIMMABLE_PLUG_IN_UNIT"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes> <!-- remember: inherits on off -->
+                <featureType definition="PLUG_CONTROL_SUPPLY"/>
+            </possibleFeaturesTypes>
+        </type>
+
+
+        <!-- SECURITY IDS 41->60 -->
+        <type extends="BASE_SENSOR">
+            
+            <id>41</id>
+            <definition>MOTION_SENSOR</definition>
+            <name>Motion Sensor</name>
+            <category definition='SECURITY'/>
+
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_OCCUPANCY_SENSOR"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="MOTION_DETECTION"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <type>
+            
+            <id>42</id>
+            <definition>DOOR_LOCK</definition>
+            <name>Door Lock</name>
+            <category definition='SECURITY'/>
+
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_DOOR_LOCK"/>
+                <mtrDevice definition="MTR_DOOR_LOCK_CONTROLLER"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="LOCK_OPERATE"/>
+                <featureType definition="LOCK_PASSWORD"/>
+                <featureType definition="LOCK_FINGERPRINT"/>
+                <featureType definition="LOCK_RFID"/>
+                <featureType definition="LOCK_NFC"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <!--
+        static let CAMERA = GalDeviceType("camera")
+
+        static let SECURITY_HUB = GalDeviceType("security_hub")
+        static let DOOR_BELL = GalDeviceType("door_bell")
+        static let GLASS_SHATTER_DETECTOR = GalDeviceType("glass_shatter_detector")
+        -->
+        <!-- Feel IDS: 61->80 -->
+        <type>
+            
+            <id>61</id>
+            <definition>TEMP_SENSOR</definition>
+            <name>Temperature Sensor</name>
+            <category definition="FEEL"/> <!-- TEMP_SENSOR may be INDOOR_FEEL or ATMOS_FEEL -->
+            
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_TEMPERATURE_SENSOR"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="TEMPERATURE_VALUE_DETECT"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <type>
+            
+            <id>62</id>
+            <definition>HUMIDITY_SENSOR</definition>
+            <name>Humidity Sensor</name>
+            <category definition="FEEL"/><!-- HUMIDITY_SENSOR may be INDOOR_FEEL or ATMOS_FEEL -->
+                
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_HUMIDITY_SENSOR"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="HUMIDITY_VALUE_DETECT"/>
+            </possibleFeaturesTypes>
+            
+        </type>
+        
+        <type>
+            <id>63</id>
+            <definition>PRESSURE_SENSOR</definition>
+            <name>Pressure Sensor</name>
+            <category definition="FEEL"/><!-- PRESSURE_SENSOR may be INDOOR_FEEL or ATMOS_FEEL -->
+            
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_PRESSURE_SENSOR"/>
+            </possibleMTRDeviceTypes>
+            
+            <possibleFeaturesTypes>
+                <featureType definition="PRESSURE_VALUE_DETECT"/>
+            </possibleFeaturesTypes>
+            
+        </type>
+
+        <type abstract="true">
+            <id>64</id>
+            <definition>BASE_HEAT_COOL_UNIT</definition>
+            <name>Base Heat Cool Unit</name>
+            
+            <possibleMTRDeviceTypes>
+                
+            </possibleMTRDeviceTypes>
+
+            <possibleFeaturesTypes>
+                <featureType definition="TEMPERATURE_VALUE_CONTROL"/>
+                <featureType definition="TEMPERATURE_VALUE_DETECT"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <type extends="BASE_HEAT_COOL_UNIT">
+            <id>65</id>
+            <definition>TEMPERATURE_CONDITIONER</definition>
+            <name>Temperature Conditioner</name>
+            <category definition="INDOOR_FEEL"/>
+
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_HEATING_COOLING_UNIT"/>
+            </possibleMTRDeviceTypes>
+
+            <possibleFeaturesTypes>
+                <featureType definition="FAN_CONTROL"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <type extends="BASE_HEAT_COOL_UNIT">
+            <id>66</id>
+            <definition>THERMOSTAT</definition>
+            <name>Thermostat</name>
+            <category definition='INDOOR_FEEL'/>
+
+            <possibleMTRDeviceTypes>
+                <mtrDevice definition="MTR_THERMOSTAT"/>
+            </possibleMTRDeviceTypes>
+            <possibleFeaturesTypes>
+                <featureType definition="THERMOSTAT"/>
+            </possibleFeaturesTypes>
+        </type>
+
+        <!--
+        static let HUMIDITY_CONDITIONER = GalDeviceType( "humidity_conditioner")
+        static let VENTILATOR = GalDeviceType( "ventilator")
+        static let PURIFIER = GalDeviceType("purifier")
+
+        static let INDOOR_FEEL_DETECTOR = GalDeviceType("indoor_feel_detector")
+        // Outdoor feel
+        static let OUTDOOR_FEEL_DETECTOR = GalDeviceType("outdoor_feel_detector")
+        -->
+        <!--
+        // Safety
+        static let SAFETY_GAS_SENSOR = GalDeviceType("safety_gas_sensor")
+        static let WATER_LEAK_DETECTOR = GalDeviceType("water_leak_detector")
+
+        // Entertainment
+        static let TV = GalDeviceType("tv")
+        static let SPEAKER = GalDeviceType("speaker")
+
+        // MISC
+        -->
+    </deviceTypes>
+</root>

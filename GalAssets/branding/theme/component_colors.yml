@@ -1,0 +1,1575 @@
+# The app references these colors, they automatically map onto the theme
+# this allows updating any color of the theme, and it being directly reflected here
+# this also allows adding new colors to the theme, and referencing them here, without updating the app
+# This also allows adding new themes, without any issues caused!
+
+# NOTE: the theme type name is case insensitive on ios
+
+# Format:
+# compomnentColorName:
+#    themeType: dotJoinedColorPath#opacity
+#    otherThemeType: dotJoinedColorPath#opacity
+# example:
+#    testColor:
+#       light: 'primary.blue'
+#       dark: 'primary.blue30'
+#    testColor2:
+#       light: 'primary.blue#0.3'
+#       dark: 'secondary.blue#0.5'
+# Noting that dotJoinedColorPath is in the form of themeColorGroupName.themeColorName
+
+##############################################################################################
+############################### NEEEDS FIXING ################################################
+##############################################################################################
+# TODO: These are very general and do not follow the component color requirement, they must ALL be de-referenced
+
+#####################
+######used by ios###
+###################
+primaryBlackColor:
+  light: 'primary.black'
+  dark: 'primary.white'
+primaryWhite:
+  light: 'primary.white'
+  dark: 'primary.black'
+successStatusColor1:
+  light: 'secondary.greenSuccess'
+  dark: 'secondary.greenSuccess'
+successStatusColor:
+  light: 'status.success'
+  dark: 'status.success2'
+errorStatusColor:
+  light: 'status.error'
+  dark: 'status.error2'
+infoTextForegroundColor:
+  light: 'secondary.greyShade3'
+  dark: 'primary.white60'
+ButtonEnabledTextLightColor:
+  light: 'primary.lightBlueColor'
+  dark: 'primary.lightBlueColor'
+
+### Gradient Loading
+widgetedGradientLoadingBoxColor:
+  light: 'secondary.lightGreyShade'
+  dark: 'secondary.lightGreyShade'
+gradientLoadingBoxesColor:
+  light: 'primary.darkGray'
+  dark: 'primary.darkGray'
+
+subtitleTextColor1:
+  light: 'secondary.greyShade1'
+  dark: 'primary.white60'
+###########################
+###### USED BY  ANDROID ###
+###########################
+
+##############################################################################################
+###################################### SHARED ################################################
+##############################################################################################
+
+
+#########################
+###bottom sheet title###
+#######################
+bottomSheetTitleTextColor:
+  light: 'secondary.greyShade1'
+  dark: 'secondary.greyShade1'
+
+bottomSheetTextPlaceholderColor:
+  light: 'secondary.greyShade2'
+  dark: 'secondary.greyShade1'
+
+#Add Home Button sheet input widget
+# TODO: Move to the Add Home section
+addHomePlaceholderFocusedTextColor:
+  light: 'primary.brandBlack'
+  dark: 'primary.brandBlack'
+
+addHomePlaceholderUnFocusedTextColor:
+  light: 'secondary.greyShade2'
+  dark: 'secondary.greyShade1'
+
+
+###########################
+######BOTTOM BAR##########
+#########################
+# TODO: Some are called bottomBar, some buttomToolbar. Make consistent
+bottomBarSelectedIconColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+bottomBarUnselectedIconColor:
+  light: 'secondary.disabled1'
+  dark: 'secondary.disabled3'
+bottomBarSelectedTextColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+bottomBarBackgroundColor:
+  light: 'primary.white'
+  dark: 'primary.brandBlack'
+bottomToolbarBackgroundColor:
+  light: 'primary.white'
+  dark: 'primary.black'
+bottomToolbarDisableColor:
+  light: 'primary.lightGrey'
+  dark: 'secondary.white30'
+# TODO: Move to the below to the home list section, prefix with homelist
+bottomToolbarArchiveButtonColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+bottomToolbarLeaveHomeButtonColor:
+  light: 'status.error'
+  dark: 'status.overlayError'
+bottomToolbarSelectedHomesLabelColor:
+  light: 'primary.black'
+  dark: 'primary.white'
+bottomBarArchiveHomeTextColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+bottomBarLeaveHomeTextColor:
+  light: 'status.error'
+  dark: 'status.error'
+
+
+#################################
+##### DROPDOWN COMPONENTS ######
+###############################
+# TODO: dropdown is a component, all colors should not have homeList in them
+dropDownBackgroundColor:
+  light: 'primary.white'
+  dark: 'primary.black'
+homelistDropDownBackgroundColor:
+  light: 'primary.white'
+  dark: 'primary.black'
+homelistDropDownLineSeparatorColor:
+  light: 'secondary.lightBlue50'
+  dark: 'primary.brandBlack'
+homelistDropDownArchivedHomesButtonColor:
+  light: 'primary.black'
+  dark: 'primary.white'
+homelistDropDownDefaultButtonsColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+homelistDropDownSelectedItemBackgroundFillColor:
+  light: 'secondary.lightBlue20'
+  dark: 'secondary.disabled4'
+
+################
+##### MISC #####
+################
+transparent:
+    light: 'other.transparent'
+    dark: 'other.transparent'
+
+#######################
+##### Backgrounds #####
+#######################
+generalbackgroundcolor: # TODO: Rename to have capital 'b'
+    light: 'primary.offwhite'
+    dark: 'background.black' #TODO i think ios uses primary.black
+
+####################
+##### SHADOWS ######
+####################
+# shadow
+commonShadowColor:
+    light: 'primary.black' # opacity is defined in the shadow. TODO: create a branding file for shadows OR a component color for each shado
+    dark: 'other.transparent' # no shadows in dark
+
+
+############################
+##### GENERAL BUTTONS ######
+############################
+    
+### PRIMARY
+# enabled
+primaryButtonEnabledFillColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+primaryButtonEnabledPressedFillColor:
+    light: 'primary.pressedBlue'
+    dark: 'primary.pressedBlue'
+primaryButtonEnabledTextColor:
+    light: 'primary.white'
+    dark: 'primary.darkBlue'
+# disabled
+primaryButtonDisabledFillColor:
+    light: 'secondary.disabled1'
+    dark: 'secondary.blue30'
+primaryButtonDisabledTextColor:
+    light: 'secondary.disabled0'
+    dark: 'secondary.disabled3'
+
+### APPLE
+appleButtonEnabledFillColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+appleButtonEnabledTextColor:
+    light: 'primary.white'
+    dark: 'primary.pitchBlack'
+appleButtonDisabledFillColor: # TODO: validate with rony
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+appleButtonDisabledTextColor: # TODO: validate with rony
+    light: 'secondary.disabled2'
+    dark: 'secondary.disabled3'
+
+### SECONDARY
+# enabled
+secondaryButtonEnabledFillColor:
+    light: 'secondary.lightBlue'
+    dark: 'secondary.grey'
+secondaryButtonEnabledPressedFillColor:
+    light: 'secondary.pressedBlue'
+    dark: 'secondary.pressedBlue'
+secondaryButtonEnabledTextColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+# disabled
+secondaryButtonDisabledFillColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.disabled4'
+secondaryButtonDisabledTextColor:
+    light: 'secondary.disabled1'
+    dark: 'secondary.disabled3'
+
+### OUTLINE
+# enabled
+outlineButtonEnabledStrokeColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+outlineButtonEnabledTextColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+# disabled
+outlineButtonDisabledStrokeColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.disabled4'
+outlineButtonDisabledTextColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.disabled4'
+
+### TEXT ONLY
+textOnlyButtonEnabledTextColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+textOnlyButtonDisabledTextColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.disabled4'
+
+############################
+###### OTHER BUTTONS #######
+############################
+
+### Clickable Text (Note: Unlike TextOnlyButton, does not have the bounds of all other buttons, bounds are the text)
+clickableTextColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+clickableTextDisabledColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.grey'
+
+### Widgeted Button (A widget that is a button -- like button in the home list for archived homes)
+# Background:
+widgetedButtonDefaultBackgroundColor:
+    light: 'primary.white'
+    dark: 'primary.brandBlack'
+# Icon:
+widgetedButtonIconColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+# Text:
+widgetedButtonTextColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+# Chevron:
+widgetedButtonChevronColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+    
+#######################
+####### Toggles #######
+#######################
+# TODO: NEED TO FIX DISABLED COLORS
+
+### Switch toggle (just on-off)
+## enabled
+# knob
+switchToggleKnobOnFillColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+switchToggleKnobOffFillColor:
+    light: 'primary.white'
+    dark: 'secondary.grey'
+# track
+switchToggleTrackOnFillColor:
+    light: 'secondary.blue50'
+    dark: 'secondary.blue50'
+switchToggleTrackOffFillColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+## disabled
+# knob
+switchToggleKnobOnDisabledFillColor: # rony needs to fig out
+    light: 'secondary.disabled1'
+    dark: 'secondary.disabled3'
+switchToggleKnobOffDisabledFillColor: # same color as above since rony needs to figure out
+    light: 'secondary.disabled1'
+    dark: 'secondary.disabled3'
+# track
+switchToggleTrackOnDisabledFillColor: # rony needs to fig out
+    light: 'secondary.disabled0'
+    dark: 'secondary.blue30'
+switchToggleTrackOffDisabledFillColor: # same color as above since rony needs to figure out
+    light: 'secondary.disabled1'
+    dark: 'secondary.disabled3'
+# knob inner stroke 1
+switchToggleKnobEnabledInnerStroke1:
+    light: 'primary.white'
+    dark: 'primary.white'
+switchToggleKnobDisabledInnerStroke1:
+    light: 'primary.white'
+    dark: 'primary.white'
+# knob inner stroke 2
+switchToggleKnobEnabledInnerStroke2:
+    light: 'primary.black'
+    dark: 'primary.pitchBlack'
+switchToggleKnobDisabledInnerStroke2:
+    light: 'primary.black'
+    dark: 'primary.pitchBlack'
+# knob shadow
+switchToggleKnobShadow:
+    light: 'primary.black'
+    dark: 'other.transparent'
+
+########################
+######### Forms ########
+########################
+unwidgetedFormInputDisabledFillColor:
+    light: 'secondary.greyShade4'
+    dark: 'primary.brandBlack'
+unwidgetedFormInputDisabledForegroundColor: # used for label icon and content
+    light: 'secondary.greyShade3'
+    dark: 'secondary.white15'
+# unfocused
+unwidgetedFormInputUnfocusedFillColor:
+    light: 'secondary.lightBlue50'
+    dark: 'primary.brandBlack'
+unwidgetedFormInputUnfocusedLabelColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+# focused
+unwidgetedFormInputFocusedFillColor:
+    light: 'primary.white'
+    dark: 'background.black'
+unwidgetedFormInputFocusedForegroundColor: # icon and content without hint
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+unwidgetedFormInputFocusedStrokeColor: # icon and content without hint
+    light: 'secondary.disabled1'
+    dark: 'primary.blue'
+
+unwidgetedFormInputValidatedFillColor: # when validated and not neutral (whether focused or not)
+    light: 'primary.white'
+    dark: 'background.black'
+unwidgetedFormInputValidatedForegroundColor: # when not neutral/idle and unfocused
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+unwidgetedFormInputValidatedErrorColor:
+    light: 'status.error'
+    dark: 'status.error2'
+unwidgetedFormInputValidatedSuccessColor:
+    light: 'status.success'
+    dark: 'status.success2'
+unwidgetedFormInputValidatingColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+# text Input
+unwidgetedFormTextInputDisabledHintColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+unwidgetedFormTextInputUnfocusedHintColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+unwidgetedFormTextInputFocusedHintColor:
+    light: 'primary.lightGrey'
+    dark: 'secondary.white15'
+unwidgetedFormInputTextColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+
+### Widgeted form
+widgetedFormContainerFillColor:
+    light: 'primary.white'
+    dark: 'secondary.disabled4'
+widgetedFormContainerTitleColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white87'
+
+# All inputs
+widgetedFormInputLabelColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+widgetedFormInputDisabledForegroundColor: # color of all icons and text
+    light: 'primary.lightGrey'
+    dark: 'secondary.grey'
+widgetedFormInputBottomBorderColor:
+    light: 'secondary.lightBlueIdk'
+    dark: 'secondary.white15'
+widgetedFormInputValidatedErrorColor: # for icons
+    light: 'status.error'
+    dark: 'status.error2'
+widgetedFormInputValidatedSuccessColor:
+    light: 'status.success'
+    dark: 'status.success2'
+widgetedFormInputValidatingColor:
+    light: 'status.success'
+    dark: 'status.success2'
+# Text Input
+widgetedFormTextInputUnfocusedHintColor:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white60'
+widgetedFormTextInputFocusedHintColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.grey'
+widgetedFormTextInputContentColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+
+# TODO: Check this, name better
+widgetedFormRedirInputColor:
+    light: 'secondary.disabled2'
+    dark: 'secondary.grey'
+
+#######################
+####### Overlays ######
+#######################
+
+overlayDimmerBackgroundColor: # when an overlay opens, the background is dimmed with this color
+    light: 'primary.black#0.4' # 40% opacity
+    dark: 'primary.pitchBlack#0.4'
+
+## Sheet
+sheetOverlayBackgroundColor:
+    light: 'primary.white'
+    dark: 'primary.brandBlack'
+
+sheetOverlaySashColor:
+    light: 'primary.black' # todo: ask rony if should be brand black
+    dark: 'primary.white'
+
+sheetGeneralSubtitleColor:
+  light: 'primary.darkGrey'
+  dark: 'primary.whiteTransparent60'
+
+
+################################
+##### Tooolbar & its items #####
+################################
+
+## TODO: See and asses how these can be merged
+
+## Widgeted Clickable label in the toolbar (used in onboarding for the language, and in the home dashbaord to link to the home list and user profile
+
+toolbarWidgetedClickableLabelBackgroundColor:
+    light: 'secondary.greyShade5'
+    dark: 'primary.brandBlack'
+toolbarWidgetedClickableLabelTextColor:
+    light: 'primary.darkGrey'
+    dark:  'primary.white60'
+toolbarWidgetedClickableLabelLeadingIconStrokeColor:
+    light: 'primary.black#0.1' # 10% opacity
+    dark: 'primary.pitchBlack#0.1' # 10% opacity
+toolbarWidgetedClickableLabelTrailingIconColor: ## The arrow
+    light: 'secondary.greyShade3'
+    dark: 'primary.white60'
+    
+##Sheet Toolbar Component
+
+# Sheet Toolbar Title:
+sheetToolbarComponentTitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+
+# Sheet Toolbar Enabled Button:
+sheetToolbarComponentButtonEnabledColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+    
+# Sheet Toolbar Disabled Button:
+sheetToolbarComponentButtonDisabledColor:
+    light: 'primary.lightGrey'
+    dark: 'secondary.white15'
+    
+# Sheet Toollbar Close Icon Color
+sheetToolbarComponentCloseButtonColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+
+################################
+##### Big & Small Toasts   #####
+################################
+# TODO: Fix light & dark colors
+# Neutral
+toastContentNeutralPrimary:
+    light: 'primary.brandBlack'
+    dark: 'primary.white'
+toastContentNeutralSecondary:
+    light: 'primary.white'
+    dark: 'primary.white15'
+# Success
+toastContentSuccessPrimary:
+    light: 'status.success'
+    dark: 'status.success2'
+toastContentSuccessSecondary:
+    light: 'status.success'
+    dark: 'status.success2' # Fix color
+
+# Warning
+toastContentWarningPrimary:
+    light: 'status.warning'
+    dark: 'status.warning'
+toastContentWarningSecondary:
+    light: 'status.warning'
+    dark: 'status.warning'
+
+# Alert
+toastContentAlertPrimary:
+    light: 'status.alert'
+    dark: 'status.alert'
+toastContentAlertSecondary:
+    light: 'status.alert'
+    dark: 'status.alert' # Fix color
+
+# Error
+toastContentErrorPrimary:
+    light: 'status.error'
+    dark: 'status.overlayError' # Fix color
+toastContentErrorSecondary:
+    light: 'status.error'
+    dark: 'primary.overlayError' # Fix color
+
+### Small Toast
+toastBackgroundColor:
+    light: 'primary.white'
+    dark: 'secondary.white15' # Fix color
+
+### Big Toast
+bigToastTextColor:
+    light: 'primary.black'
+    dark: 'secondary.grey' # Fix color
+
+###########################
+######     Calendar  ######
+###########################
+calendarBorderColor:
+    light: 'secondary.greyShade4'
+    dark: 'secondary.white15'
+calendarNotInRangeDayTextColor:
+    light: 'secondary.greyShade4'
+    dark: 'secondary.white30'
+calendarUnselectedDayTextColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+calendarSelectedDayTextColor:
+    light: 'primary.blue'
+    dark: 'primary.darkBlue'
+calendarSelectedDayBackgroundColor:
+    light: 'primary.lightBlueColor'
+    dark: 'primary.blue'
+calendarArrowsColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+calendarYearsTextColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+calendarWeekDayTextColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+
+calendarTimeTextColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+calendarTimeBackgroundColor:
+    light: 'secondary.greyShade4'
+    dark: 'other.transparent'
+calendarTimeBorderColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+calendarAmPmSelectedBackgroundColor:
+    light: 'primary.white'
+    dark: 'secondary.grey'
+calendarAmPmUnselectedBackgroundColor:
+    light: 'secondary.greyShade4'
+    dark: 'secondary.disabled4'
+
+#########################################
+######     LIST VIEW COMPONENT     ######
+#########################################
+# ListView main label box 
+listViewMainLabelBackgroundFillColor: 
+    light: 'secondary.lightBlue20'
+    dark: 'secondary.blue30'
+listViewMainLabelForegroundColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+# ListView item title
+listViewItemTitleLabelTextColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+# ListView item subtitle
+listViewItemSubtitleLabelTextColor:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white60'
+# ListView item separator
+listViewItemSeparatorColor:
+     light:  'secondary.lightBlue50'
+     dark:  'secondary.white15'
+# ListView item disabled
+listViewItemDisabledColor:
+    light: 'primary.darkGrey'
+    dark: 'primary.darkGrey'
+
+##CHECKMARKS
+checkMarkSelectedBackground:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+checkMarkNotSelectedEnabledBackground:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white87'
+checkMarkNotSelectedDisabledBackground:
+    light: 'secondary.disabled2'
+    dark: 'secondary.white30'
+checkMarkSelectedIconColor:
+    light: 'primary.white'
+    dark: 'primary.darkBlue'
+## RADIOS
+# TODO: what about radios?
+
+###################################
+#####   SEARCH VIEW COMPONENT  ####
+###################################
+
+#Background:
+searchViewComponentBackground:
+    light: 'primary.white'
+    dark: 'primary.black'
+#Stroke:
+searchViewComponentOutlineStrokeColor:
+    light: 'primary.gray'
+    dark: 'primary.white'
+#Text:
+searchViewComponentTextColor:
+    light: 'secondary.greyShade3'
+    dark: 'primary.white60'
+
+searchHomesButtonOutlineStroke:
+  light: 'primary.lightGrey'
+  dark: 'primary.white'
+searchFieldStrokeColor:
+  light: 'primary.gray'
+  dark: 'primary.white'
+searchFocusedOutlineStrokeColor:
+  light: 'secondary.disabled1'
+  dark: 'primary.blue'
+searchUnfocusedOutlineStrokeColor:
+  light: 'primary.lightGrey'
+  dark: 'primary.white60'
+searchFocusedPlaceholderColor:
+  light: 'secondary.greyShade4'
+  dark: 'secondary.grey'
+searchUnfocusedPlaceholderColor:
+  light: 'secondary.greyShade3'
+  dark: 'primary.white60'
+searchViewTextColor: ## The arrow
+  light: 'secondary.greyShade3'
+  dark: 'primary.white60'
+    
+#########################################
+#####   SEARCH USER VIEW SEARCHBAR   ####
+#########################################
+
+#Background:
+searchUserViewSearchBarBackgroundColor:
+    light: 'primary.white'
+    dark: 'primary.black'
+#Placeholder:
+searchUserViewSearchBarPlaceholderColor:
+    light: 'secondary.greyShade3'
+    dark: 'primary.white60'
+#Text:
+searchUserViewSearchBarTextColor:
+    light: 'secondary.brandBlack'
+    dark: 'primary.white87'
+
+#Active Stroke:
+searchUserViewSearchBarActiveStrokeColor:
+    light: 'secondary.disabled1'
+    dark: 'primary.blue'
+#Error Stroke:
+searchUserViewSearchBarErrorStrokeColor:
+    light: 'status.error'
+    dark: 'status.error2'
+#Inactive Stroke:
+searchUserViewSearchBarInactiveStrokeColor:
+    light: 'secondary.greyShade3'
+    dark: 'primary.white60'
+#Active Icon:
+searchUserViewSearchBarActiveIconColor:
+    light: 'secondary.disabled1'
+    dark: 'primary.blue'
+#Inactive Icon
+searchUserViewSearchBarInactiveIconColor:
+    light: 'secondary.greyShade3'
+    dark: 'primary.white60'
+
+
+##########################################
+#####  SHEET WARNING VIEW COMPONENT  #####
+##########################################
+
+#title
+sheetWarningComponentTitleColor:  
+    light: 'primary.black'
+    dark: 'primary.white'
+#subtitle
+sheetWarningComponentSubTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+################################################
+##### REQUEST OS PERMISSION VIEW COMPONENT #####
+################################################
+
+#title
+requestOSPermissionTitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+#subtitle
+requestOSPermissionSubTitleColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+    
+###############################################################################################
+###################################### SCREENS ################################################
+###############################################################################################
+
+
+#################################
+###Registration Intro Screen#####
+################################
+registrationIntroScreenBigTextColor:
+  light: 'primary.brandBlack'
+  dark: 'primary.white87'
+
+registrationIntroScreenSubtitleTextColor:
+  light: 'primary.darkGrey'
+  dark: 'primary.white'
+
+registrationScreenScreenGoogleBtnOutline:
+  light: 'primary.blue'
+  dark: 'primary.primaryBlue'
+
+
+##########################
+###HOME CATEGORY CARD####
+########################
+homeCategoryCardBackgroundColor:
+  light: 'primary.white'
+  dark: 'secondary.disabled4'
+homeCategoryNeutralStatusTextColor:
+  light: 'secondary.greyShade2'
+  dark: 'primary.white60'
+homeCategoryWarningStatusTextColor:
+  light: 'status.warning'
+  dark: 'status.warning'
+homeCategoryAlertStatusTextColor:
+  light: 'status.alert'
+  dark: 'status.alert'
+homeCategoryBreachStatusTextColor:
+  light: 'status.error'
+  dark: 'status.error'
+homeCategoryTitleTextColor:
+  light: 'secondary.disabled1'
+  dark: 'secondary.disabled1'
+homeCategorySubtitleTextColor:
+  light: 'primary.brandBlack'
+  dark: 'primary.brandBlack'
+
+
+###################################
+##### OMBOARDING INTRODUCTION ##### 
+#####         SCREEN          #####
+###################################
+
+onboardingIntroCircleIndicatorColor:
+    light: 'secondary.greyShade5'
+    dark: 'primary.white60'
+onboardingIntroCircleIndicatorActiveColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+    
+################################
+#####   HOME LIST SCREEN   #####
+################################
+
+#background
+homelistBackgroundColor:
+    light: 'primary.offwhite'
+    dark: 'background.black'
+#welcome message
+homelistWelcomeMessageColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+
+#suggesstions
+homelistSuggesstionsColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+    
+### TOOLBAR:
+#Scrolled Toolbar Background:
+homelistScrollToolbarBackgroundColor:
+    light: 'primary.white'
+    dark: 'primary.black'
+#Welcome Message Color:
+homelistWelcomMessageColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#No Scroll Toolbar Background:
+homelistNoScrollToolbarBackgroundColor:
+    light: 'primary.offwhite'
+    dark: 'primary.black'
+#More Option Icon:
+homelistMoreOptionsIconColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+
+#Warning Icon:
+homelistWarningIconColor:
+  light: 'status.error'
+  dark: 'status.overlayError'
+
+# Done Button Color:
+homelistToolbarDoneButtonColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+### WIDGETS:
+## ADD HOME WIDGET
+homelistAddHomeWidgetColor:
+    light: 'primary.violet'
+    dark: 'primary.purple'
+#Text:
+homelistAddHomeWidgetTextColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#Button:
+homelistAddHomeWidgetButtonColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#Button Text:
+homelistAddHomeWidgetButtonTextColor:
+    light: 'primary.white'
+    dark: 'primary.darkBlue'
+
+
+## WATCH TUTORIAL WIDGET:
+#video icon
+homelistWatchTutorialInsideIcon:
+    light: 'primary.yellowOrange'
+    dark: 'primary.lightGold'
+#video widget
+homelistVideoWidgetColor:
+    light: 'other.lightYellow'
+    dark: 'other.brown'
+
+homeListWatchTutorialInsideIcon:
+  light: 'primary.yellowOrange'
+  dark: 'primary.lightGold'
+#Text:
+homelistWatchTutorialWidgetTextColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#Arrow Icon
+homelistWatchTutorialWidgetArrowIconColor:
+    light: 'other.darkYellow'
+    dark: 'other.lightBrown'
+
+#suggestionLabel
+homeListSuggestionsLabelColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+
+## READ PDF WIDGET
+#Background:
+homelistReadPDFWidgetColor:
+    light: 'other.skin'
+    dark: 'other.darkFushia'
+#PDF Icon:
+homelistReadPDFWidgetIconColor:
+    light: 'primary.lightRed'
+    dark: 'primary.lightGold'
+#Text:
+homelistReadPdfWidgetTextColor: # TODO: change 'Pdf' to 'PDF'
+    light: 'primary.black'
+    dark: 'primary.white'
+#Arrow Icon:
+homelistReadPDFWidgetArrowIconColor:
+    light: 'other.darkSkin'
+    dark: 'other.lightFushia'
+
+## ADDED HOME WIDGET
+
+#Background:
+homelistAddedHomeWidgetColor:
+    light: 'primary.white'
+    dark: 'primary.brandBlack'
+
+#Home Container Box:
+homelistAddedHomeWidgetHomeContainerBoxColor:
+    light: 'secondary.lightBlue'
+    dark: 'secondary.blue30'
+#Home Icon:
+homelistAddedHomeWidgetHomeIconColor:
+    light: 'secondary.disabled1'
+    dark: 'primary.blue'
+#House Name Text:
+homelistAddedHomeWidgetHouseNameTextColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#Address Text:
+homelistAddedHomeWidgetAddressTextColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+#Residents Count
+homelistAddedHomeWidgetResidentsCountColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+#Bell Icon:
+homelistAddedHomeWidgetBellIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#Checkmark Label:
+homelistAddedHomeWidgetCheckmarkLabelColor:
+    light: 'primary.white'
+    dark: 'primary.black'
+#Checkmark Container:
+homelistAddedHomeWidgetCheckmarkContainerColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#Checkmark Empty Container:
+homelistAddedHomeWidgetCheckmarkContainerEmptyColor:
+    light: 'primary.white'
+    dark: 'primary.black'
+#Checkmark Container Stroke:
+homelistAddedHomeWidgetCheckmarkContainerStrokeColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+#Drag Icon:
+homelistAddedHomeWidgetDragIconColor:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white60'
+#Overview Title:
+homelistAddedHomeWidgetOverviewColor:
+    light: 'primary.darkGrey'
+    dark: 'primary.white60'
+#Overview Card:
+homelistAddedHomeWidgetOverviewCardColor:
+    light: 'secondary.lightBlue20'
+    dark: 'secondary.blue30'
+#Overview Card Text Title:
+homelistAddedHomeWidgetOverviewCardTextTitleColor:
+    light: 'secondary.disabled1'
+    dark: 'secondary.blue70'
+#Overview Card Text Subtitle:
+homelistAddedHomeWidgetOverviewCardTextSubtitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+    
+################################
+#######  Invite Users   ########
+################################
+inviteUsersAcceptedColor:
+  light: 'secondary.greenSuccess'
+  dark: 'secondary.greenSuccess'
+
+inviteUsersRejectedColor:
+  light: 'status.error'
+  dark: 'status.error2'
+
+inviteUsersWaitingColor:
+  light: 'secondary.greyShade2'
+  dark: 'secondary.disabled4'
+
+inviteUsersViewAllTextColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+
+inviteUsersBackgroundColor:
+    light: 'primary.offwhite'
+    dark: 'background.black'
+ 
+# TODO: Make a general button
+inviteUsersDeleteInvitationButtonTextColor:
+    light:  'status.error'
+    dark:  'primary.blue'
+inviteUsersDeleteInvitationButtonStrokeColor:
+    light:  'status.error'
+    dark:  'other.transparent'
+inviteUsersDeleteInvitationButtonIconColor:
+    light:  'status.error'
+    dark:  'status.error2'
+## Invite users entry view
+inviteUsersEntryViewTitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+
+inviteUsersEntryViewSubtitleColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white60'
+### Invite with qr code view
+
+inviteWithQRCodeCalendarIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+inviteWithQRCodeArrowIconColor:
+    light:  'primary.brandBlack'
+    dark:  'primary.white60'
+
+## QR text color in invitation details
+inviteUsersQrCodeLinkTextColor:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+
+## QR container background color in invitation details
+inviteUsersQrCodeLinkBackgroundColor:
+  light: 'secondary.lightBlue20'
+  dark: 'background.black'
+    
+### Invite users calendar view
+inviteUsersCalendarAccessNeverEndsLabelColor:
+    light:  'primary.brandBlack'
+    dark:  'primary.white87'
+### Invite users roles and perms views
+inviteUsersRolesAndPermsViewListHeaderLabelColor:
+    light:  'secondary.greyShade2'
+    dark:  'primary.white60'
+### Invitation link view
+invitationLinkViewLinkEnabledForegroundColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+invitationLinkViewLinkEnabledBackgroundColor:
+    light: 'secondary.lightBlue20'
+    dark: 'secondary.disabled4'
+    
+invitationLinkViewEnabledCopyIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+invitationLinkViewLinkDisabledForegroundColor:
+    light:  'secondary.greyShade3'
+    dark:  'secondary.grey'
+    
+invitationLinkViewLinkDisabledBackgroundColor:
+    light:  'secondary.greyShade4'
+    dark:  'secondary.disabled4'
+    
+invitationLinkViewDisabledCopyIconColor:
+    light:  'secondary.greyShade3'
+    dark:  'secondary.grey'
+    
+invitationLinkViewListTitleAndIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+invitationLinkViewListExpiredTitleAndIconColor:
+    light: 'status.error'
+    dark: 'status.overlayError'
+    
+invitationLinkViewListFirstSubtitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+
+invitationLinkViewListSecondSubtitleColor:
+    light:  'secondary.greyShade2'
+    dark:  'primary.white60'
+invitationLinkViewViewButtonTextColor:
+    light:  'primary.blue'
+    dark:  'primary.blue'
+invitationLinkViewCreatedByLabelColor:
+    light:  'primary.brandBlack'
+    dark:  'primary.white87'
+## Invite with guest information view 
+inviteWithGuestInformationCalendarIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+inviteWithGuestInformationArrowIconColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white60'
+### Invite users user details view
+inviteUsersUserDetailsViewListHeaderLabelColor:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white60'
+inviteUsersUserDetailsViewInviteStatusTextColor:
+    light:  'secondary.greyShade1'
+    dark:  'primary.white60'
+### Invitation details view
+invitationDetailsViewTitleColor:
+    light:  'primary.brandBlack'
+    dark:  'primary.white87'
+invitationDetailsViewSubtitleColor:
+    light:  'secondary.greyShade1'
+    dark:  'primary.white60'
+invitationDetailsViewListTitleAndIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+invitationDetailsViewListFirstSubtitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+    
+invitationDetailsViewListSecondSubtitleColor:
+    light:  'secondary.greyShade2'
+    dark:  'primary.white60'
+### Invitation details roles and perms view
+invitationDetailsRolesAndPermsViewTitleAndIconColor:
+    light:  'primary.blue'
+    dark:  'other.transparent'
+invitationDetailsRolesAndPermsViewSubtitleColor:
+    light:  'primary.brandBlack'
+    dark:  'primary.white87'
+###  Invite users existing invites view
+
+inviteUsersExistingInvitesViewCategoryTitleColor:
+    light: 'primary.brandBlack'
+    dark: 'primary.white87'
+inviteUsersExistingInvitesViewActiveExpiryDateColor:
+    light: 'status.error'
+    dark: 'background.black'
+inviteUsersExistingInvitesViewRecentExpiryDateColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.white30'
+    
+### Invite users users joined view
+inviteUsersUsersJoinedViewNameLabelColor:
+    light:  'primary.brandBlack'
+    dark:  'primary.white87'
+inviteUsersUsersJoinedViewDateAndTimeLabelColor:
+    light:  'secondary.greyShade2'
+    dark:  'primary.white60'
+
+
+################################
+#####  SETUP HOME SCREEN   #####
+################################
+### Setup Home Intro View:
+# Setup Home Intro Title:
+setupHomeIntroTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+# Setup Home Intro Subtitle:
+setupHomeIntroSubTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+### ADD HOME VIEW:
+#edit button:
+setupHomeAddHomeEditButtonColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#done button:
+setupHomeAddHomeDoneButtonColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#read guide labbel:
+setupHomeAddFloorReadGuideLabelColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#confused label:
+setupHomeAreYouConfusedAddingFloorsLabelColor:
+    light: 'secondary.greyShade3'
+    dark: 'primary.white60'
+#trash icon:
+setupHomeDeleteFloorTrashIconColor:
+    light: 'primary.mediumLightRedColor'
+    dark: 'primary.mediumLightRedColor'
+
+### HOME TYPE SELECTION VIEW
+#option
+setupHomeHomeTypeSelectionOptionColor:
+    light: 'primary.white'
+    dark: 'primary.black'
+ 
+### ADDRESS FILLING VIEW
+#detect location button
+setupHomeDetectLocationButtonColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+    
+## AUTO SEARCH LOCATION VIEW
+#line separator:
+setupHomeAutoSearchLocationLineSeparatorColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#title:
+setupHomeAutoSearchLocationTitleColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+#subtitle:
+setupHomeAutoSearchLocationSubTitleColor:
+    light: 'primary.lightRed'
+    dark: 'primary.lightGold'
+#location name:
+setupHomeAutoSearchLocationNameColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#location details:
+setupHomeAutoSearchLocationLocationDetailsColor:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white60'
+#search location failed:
+setupHomeAutoSearchLocationSearchFailedColor:
+    light: 'status.error'
+    dark: 'status.error2'
+setupHomeAutoSearchLocationSearchFailedIconColor:
+    light: 'primary.white'
+    dark: 'primary.white'
+setupHomeAutoSearchViewBackgroundColor:
+    light: 'primary.offwhite'
+    dark: 'primary.black'
+#select your address toolbar color
+setupHomeAutoSearchViewSelectAddressBackgroundColor:
+    light: 'primary.white'
+    dark: 'primary.white'
+#address icon box
+setupHomeAddressCellViewBoxColor:
+    light: 'secondary.lightBlue20'
+    dark: 'secondary.blue30'
+
+
+################################
+######## Home dashboard ########
+################################
+homeDashboardProfilePicBackgroundColor:
+    light: 'secondary.greyShade5'
+    dark: 'secondary.disabled4'
+homeDashboardRecommendationsLabelTextColor:
+    light: 'secondary.greyShade2'
+    dark: 'primary.white60'
+
+homeDashboardCreateAreaRecommendationBackgroundColor:
+    light: 'primary.skin'
+    dark: 'other.darkFushia'
+homeDashboardAddDeviceRecommendationBackgroundColor:
+    light: 'primary.violet'
+    dark: 'other.indigo'
+homeDashboardInviteGuestsRecommendationBackgroundColor:
+    light: 'other.lightGreen'
+    dark: 'other.darkGreen'
+
+    
+
+################################
+#####   ADD AREA SCREEN    #####
+################################
+
+###AREA COMMON
+# TODO: all initial colors would be in ajson model
+areaCommonInitialsBackground:
+  light: 'secondary.greyShade4'
+  dark: 'secondary.white15'
+areaCommonInitialsBackgroundOne:
+  light: 'primary.blue'
+  dark: 'primary.blue'
+areaCommonInitialsBackgroundTwo:
+  light: 'primary.darkGrey'
+  dark: 'primary.darkGrey'
+areaCommonInitialsBackgroundThree:
+  light: 'primary.lightGrey'
+  dark: 'primary.lightGrey'
+areaCommonInitialsBackgroundFour:
+  light: 'secondary.disabled1'
+  dark: 'secondary.disabled1'
+areaCommonInitialsBackgroundFive:
+  light: 'secondary.greyShade2'
+  dark: 'secondary.greyShade2'
+areaCommonInitialsBackgroundSix:
+  light: 'primary.black'
+  dark: 'primary.black'
+
+addAreaAreaInitialsColor:
+  light: 'primary.white'
+  dark: 'primary.white'
+
+addAreaInitialsBackGroundColor: # TODO: Rename to background
+  light: 'secondary.lightBlue20'
+  dark: 'secondary.lightBlue20'
+
+
+### ADD AREA INTRO VIEW:
+# title
+addAreaTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+# subtitle
+addAreaSubTitleColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+    
+### AREA TYPE VIEW:
+#container:
+addAreaAreaTypeContainerColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+#title
+addAreaAreaTypeTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#subtitle
+addAreaAreaTypeSubTitleColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+#area type text
+addAreaTypeTextColor:
+    light: 'secondary.greyShade1'
+    dark: 'primary.white'  
+
+### AREA FLOOR SELECTION VIEW:
+#selection option color
+addAreaAreaFloorSelectionOptionColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+### AREA DOORS & WINDOWS VIEW:
+# TODO: Create one component for form inputs with a trash icon
+#trash icon:
+addAreaDeleteDoorTrashIconColor:
+    light: 'primary.mediumLightRedColor'
+    dark: 'primary.mediumLightRedColor'
+# door default example color
+addAreaAreaDoorsAndWindowsDefaultExampleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+################################
+#####  ADD DEVICE SCREEN   #####
+################################
+
+### ADD DEVICE INTRO VIEW:
+#title:
+addDeviceIntroTitle: # Add Color at the end of the name
+    light: 'primary.black'
+    dark: 'primary.white'
+#subtitle:
+addDeviceIntroSubTitle: # Add Color at the end of the name
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+
+
+### ENTER CODE MANUALLY VIEW:
+#title:
+addDeviceEnterCodeManuallyTitleColor:   
+    light: 'primary.black'
+    dark: 'primary.white'
+#subtitle:
+addDeviceEnterCodeManuallySubTitleColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+
+### SETUP DEVICE NETWORK VIEW:
+#title:
+addDeviceSetupDeviceNetworkTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#subtitle:
+addDeviceSetupDeviceNetworkSubTitleColor:
+    light: 'secondary.greyShade2'
+    dark: 'secondary.disabled4'
+    
+### BRING NEAR DEVICE VIEW:
+#error
+addDeviceScanningFailedErrorColor:
+    light: 'primary.semiLightRed'
+    dark: 'primary.semiLightRed'
+#inside error color
+addDeviceScanningFailedInsideErrorColor:
+    light: 'primary.white'
+    dark: 'primary.white'
+#container color
+addDeviceBringNearDeviceContainerColor:
+    light: 'primary.lightBlueColor'
+    dark: 'primary.lightBlueColor'
+# Animation wave color
+addDeviceBringNearDeviceAnimationWaveColor:
+    light: 'secondary.lightBlue20'
+    dark: 'secondary.disabled4'
+    
+### CONFIGURING DEVICE VIEW:
+#error
+addDeviceConfiguringDeviceErrorColor:
+    light: 'primary.semiLightRed'
+    dark: 'primary.semiLightRed'
+#initiate protocol
+addDeviceConfiguringDeviceInitiateProtocolColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#unconnected icon color
+addDeviceConfiguringDeviceUnconnectedIconColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#connected icon color
+addDeviceConfiguringDeviceConnectedIconColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+
+### DEVICE BLUETOOTH PAIRING VIEW:
+#error
+addDeviceDeviceBluetoothPairingFailedErrorColor:
+    light: 'primary.semiLightRed'
+    dark: 'primary.semiLightRed'
+#initiate pairing
+addDeviceDeviceBluetoothPairingInitiatePairingColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+
+### ADD DEVICE METHODS VIEW:
+#title
+addDeviceAddDeviceMethodsTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+### SCAN ON NETWORK VIEW:
+#error
+addDeviceScanOnNetworkErrorColor:
+    light: 'primary.semiLightRed'
+    dark: 'primary.semiLightRed'
+#inside error icon color
+addDeviceScanOnNetworkInsideErrorColor:
+    light: 'primary.white'
+    dark: 'primary.white'
+#container color
+addDeviceScanOnNetworkContainerColor:
+    light: 'primary.lightBlueColor'
+    dark: 'primary.lightBlueColor'
+# Animation wave color
+addDeviceScanOnNetworkAnimationWaveColor:
+    light: 'secondary.lightBlue20'
+    dark: 'secondary.disabled4'
+    
+### SCANNED DEVICE DETAILS VIEW:
+#title
+addDeviceScannedDeviceDetailsTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+#subtitle
+addDeviceScannedDeviceDetailsSubTitleColor:
+    light: 'primary.darkGrey'
+    dark: 'primary.darkGrey'
+#info title
+addDeviceScannedDeviceDetailsInfoTitleColor:
+    light: 'primary.blue'
+    dark: 'primary.blue'
+#info subtitle
+addDeviceScannedDeviceDetailsInfoSubTitleColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+    
+### NETWORK CREDENTIALS VIEW:
+# wifi name
+addDeviceNetworkCredentialsWifiNameColor:
+    light: 'primary.black'
+    dark: 'primary.white'
+
+################################
+##### User Profile Screen ######
+################################
+# User Profile Entry Configuration
+
+# Colors for the top section back arrow in light and dark themes
+userProfileEntryTopSectionBackArrowColor:
+  light: 'primary.white'
+  dark: 'primary.primaryBlue'
+
+# Background colors for the top section in light and dark themes
+userProfileEntryTopSectionBackgroundColor:
+  light: 'primary.blue'
+  dark: 'secondary.disabled3'
+
+# Text color beside the user's profile image in light and dark themes
+userProfileEntryTopSectionTextBesideProfileColor:
+  light: 'primary.white'
+  dark: 'primary.blue'
+
+# Border color for the user's profile image in light and dark themes
+userProfileEntryTopSectionProfileImageBorderColor:
+  light: 'secondary.disabled1'
+  dark: 'secondary.disabled3'
+
+# Color for the info box in the top section in light and dark themes
+userProfileEntryTopSectionInfoBoxColor:
+  light: 'secondary.lightBlue20'
+  dark: 'secondary.disabled4'
+
+# Text color for content within the info box in light and dark themes
+userProfileEntryTopSectionInfoBoxText:
+  light: 'primary.brandBlack'
+  dark: 'primary.blue'
+
+# Color for user actions disabled list items when they are not active in light and dark themes
+userProfileEntryUserActionsListNotActive:
+  light: 'primary.lightGrey'
+  dark: 'secondary.white30'
+
+# Text color for notification items in user actions in light and dark themes
+userProfileEntryUserActionsNotificationTextColor:
+  light: 'primary.white'
+  dark: 'primary.white'
+
+# Background color for notification items in user actions in light and dark themes
+userProfileEntryUserActionsNotificationBoxColor:
+  light: 'status.error'
+  dark: 'status.lightError'
+
+### User profile Invites view
+# Title color above a group of widgets
+userProfileInvitesWidgetGroupTitleColor:
+  light: 'secondary.greyShade2'
+  dark: 'primary.white60'
+
+# Background color for widgets
+userProfileInvitesWidgetBackgroundColor:
+  light: 'primary.white'
+  dark: 'secondary.disabled4'
+
+# Text color for house invitees
+userProfileInvitesWidgetHouseInviteeTextColor:
+  light: 'secondary.greyShade2'
+  dark: 'primary.white'
+
+# Text color for dates
+userProfileInvitesWidgetDateColor:
+  light: 'primary.gray'
+  dark: 'primary.white60'
+
+# Text color for "Learn More" link
+userProfileInvitesWidgetLearnMoreTextColor:
+  light: 'primary.blue'
+  dark: 'primary.primaryBlue'
+
+# Text color for invite access status
+userProfileInvitesWidgetAccessStatusColor:
+  light: 'secondary.greyShade2'
+  dark: 'primary.white87'
+
+# Background color for the accept box
+userProfileInvitesWidgetAcceptBoxBgColor:
+  light: 'secondary.greenSuccess'
+  dark: 'status.success2'
+
+# Background color for the reject box
+userProfileInvitesWidgetRejectBoxBgColor:
+  light: 'status.error'
+  dark: 'status.error'

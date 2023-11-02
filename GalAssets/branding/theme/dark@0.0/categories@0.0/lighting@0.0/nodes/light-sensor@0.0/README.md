@@ -1,0 +1,1 @@
+One and Many are not considered for the light sensor

@@ -1,0 +1,13 @@
+#### THIS FILE IS FOR CONFIGURATION INFORMATION ABOUT THE LANGUAGE. NO TRANSLATIONS
+# If a translation doesn't have a locale, fallback to the one above it.  // TODO: Implement
+# NOTE: the langCode is the name of the directory and needn't be added here
+assets_file_version: "0.0"
+languageConfig:
+    name: "English"
+    direction: 0 # 0 is left to right, 1 is right to left
+    fontFamilyName: "Lato" # The possible font names are the first level directories in branding/font
+    localeFallbackOrder: # the available locale codes should match those in ios and android
+        - us # united states
+        - ca # canada
+        - gb # united kingdom
+        - ie # Ireland

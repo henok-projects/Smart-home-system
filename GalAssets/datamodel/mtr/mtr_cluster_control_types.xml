@@ -1,0 +1,31 @@
+<!--
+idType: UInt8
+-->
+
+<root>
+    
+    <assets_file_version>1.0</assets_file_version>
+
+    <!-- A cluster, when applied to an endpoint may be applied with the following control types below. This is not generated, since it relatively easy to write haha -->
+    
+    <clusterControlTypes>
+        <type>
+            <id>0</id>
+            <name>Server</name>
+            <definition>SERVER</definition>
+        </type>
+
+        <type>
+            <id>1</id>
+            <name>Client</name>
+            <definition>CLIENT</definition>
+        </type>
+
+        <type>
+            <id>2</id>
+            <name>Server and Client</name>
+            <definition>SERVER</definition>
+        </type>
+
+    </clusterControlTypes>
+</root>

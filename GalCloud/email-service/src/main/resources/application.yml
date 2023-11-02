@@ -1,0 +1,37 @@
+server:
+  port: 0
+galsie:
+  microservice:
+      name: "email-service"
+      instance-unique-id: "0"
+      password: "galsie123" # password in GCS-Sentry
+      version: "0.0.1"
+      version-required: true
+  email:
+    smtp:
+      host: 'mail.privateemail.com'
+      port: '465'
+    username: 'yosef.girma@galsie.com'
+    password: 'A!NGALOUTE'
+spring:
+  application:
+    name: "email-service"
+  config:
+    import: 'configserver:http://localhost:4060'
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/galEmailDb'
+    username: 'galsie'
+    password: 'galsie123'
+    #driver-class-name: 'com.mysql.jdbc.Driver' Warning popped out indicating this is Unnecessary
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: "galEmailService"
+    password: "galsie123"
+    virtual-host: "/galsie-development"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka/'

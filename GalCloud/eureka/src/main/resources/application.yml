@@ -1,0 +1,11 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: "Galsie's Eureka Server"
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      default-zone: "localhost:4061/eureka"

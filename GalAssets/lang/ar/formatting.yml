@@ -1,0 +1,4 @@
+assets_file_version: "0.0"
+formatting:
+    date:
+        - ae: 'yyyy/mm/dd'

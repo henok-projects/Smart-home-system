@@ -1,0 +1,188 @@
+#
+# Note: Floating point values are supported for all values
+#
+# Line Height:
+# - Unit: Only % supported
+#
+# Size:
+# - Unit: Only px supported
+# NOTE: can easily support other units, but need to update BrandThemeFontStyles
+bigHeading:
+  weight: 'bold'
+  italic: false
+  line-height: '96%' # supports decimal
+  size: # format; width:size (doesn't support decimal)
+    - '320px:90px'
+    - '400px:96px'
+    - '600px:100px'
+    - '744px:102px' # ipad 8 and 11
+    - '1024px:104px' # ipad 12
+    - '1150px:106px'
+header1:
+  weight: 'bold'
+  italic: false
+  line-height: '100%' # supports decimal
+  size: # format; width:size (doesn't support decimal)
+    - '320px:40px'
+    - '400px:48px'
+    - '600px:52px'
+    - '744px:56px' # ipad 8 and 11
+    - '1024px:60px' # ipad 12
+    - '1150px:64px'
+header3:
+  weight: 'bold'
+  italic: false
+  line-height: '100%' # supports decimal
+  size: # format; width:size (doesn't support decimal)
+    - '320px:24px'
+    - '400px:32px'
+    - '600px:36px'
+    - '744px:40px' # ipad 8 and 11
+    - '1024px:44px' # ipad 12
+    - '1150px:44px'
+header4:
+  weight: 'bold'
+  italic: false
+  line-height: '100%' # supports decimal
+  size: # format; width:size (doesn't support decimal)
+    - '320px:22px'
+    - '400px:28px'
+    - '600px:32px'
+    - '744px:36px' # ipad 8 and 11
+    - '1024px:40px' # ipad 12
+    - '1150px:40px'
+bodyLarge:
+    weight: 'regular'
+    italic: false
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:18px'
+     - '400px:20px'
+     - '600px:22px'
+     - '744px:26px'
+     - '1024px:30px'
+     - '1150px:30px' # ipad 12
+bodyPlus:
+    weight: 'medium'
+    italic: false
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:16px'
+     - '400px:18px'
+     - '600px:20px'
+     - '744px:24px'
+     - '1024px:28px'
+bodyPlusBold:
+    weight: 'bold'
+    italic: false
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:16px'
+     - '400px:18px'
+     - '600px:20px'
+     - '744px:24px'
+     - '1024px:28px'
+bodyModerate: # this is a special case, keep on lookout for it.
+    weight: 'bold'
+    italic: false
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:14px' # same as body
+     - '400px:16px' # same as body
+     - '600px:18px' # same as body
+     - '744px:22px' # bigger than body
+     - '1024px:26px' # bigger than body
+body:
+    weight: 'regular'
+    italic: false
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:14px'
+     - '400px:16px'
+     - '600px:18px'
+     - '744px:20px'
+     - '1024px:22px'
+     - '1150px:16px' # ipad 12
+bodyBold:
+    weight: 'bold'
+    italic: false
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:14px'
+     - '400px:16px'
+     - '600px:18px'
+     - '744px:20px'
+     - '1024px:22px'
+     - '1150px:16px' # ipad 12
+bodyItalic:
+    weight: 'regular'
+    italic: false # since no italic in arabic
+    line-height: '140%'
+    size: # format; width:size
+     - '320px:14px'
+     - '400px:16px'
+     - '600px:18px'
+     - '744px:20px'
+     - '1024px:22px'
+buttonText:
+    weight: 'bold'
+    italic: false
+    line-height: '4%'
+    size: # format; width:size
+     - '320px:14px'
+     - '400px:16px'
+     - '600px:18px'
+     - '744px:20px'
+     - '1024px:22px'
+buttonTextSmall:
+    weight: 'semibold'
+    italic: false
+    line-height: '4%'
+    size: # format; width:size
+     - '320px:12px'
+     - '400px:14px'
+     - '600px:16px'
+     - '744px:18px'
+     - '1024px:20px'
+small:
+    weight: 'regular'
+    italic: false
+    line-height: '120%'
+    size: # format; width:size
+     - '320px:12px'
+     - '400px:14px'
+     - '600px:16px'
+     - '744px:18px'
+     - '1024px:20px'
+     - '1150px:20px' # ipad 12
+smallBold:
+    weight: 'bold'
+    italic: false
+    line-height: '120%'
+    size: # format; width:size
+     - '320px:12px'
+     - '400px:14px'
+     - '600px:16px'
+     - '744px:18px'
+     - '1024px:20px'
+     - '1150px:20px' # ipad 12
+smallItalic:
+    weight: 'regular'
+    italic: false # since no italic in arabic
+    line-height: '100%'
+    size: # format; width:size
+     - '320px:12px'
+     - '400px:14px'
+     - '600px:16px'
+     - '744px:18px'
+     - '1024px:20px'
+extraSmall:
+    weight: 'medium'
+    italic: false
+    line-height: '100%'
+    size: # format; width:size
+     - '320px:10px'
+     - '400px:12px'
+     - '600px:14px'
+     - '744px:16px'
+     - '1024px:18px'

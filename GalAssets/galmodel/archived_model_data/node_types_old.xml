@@ -1,0 +1,256 @@
+<?xml version="1.0" ?>
+<!--
+
+Render Variables:
+{NODE_NAME} the name of the node to be rendered
+
+-->
+<nodeTypes>
+
+    <!-- Lighting IDS: 0 -> 20 -->
+    <type>
+        <id>0</id>
+        <name>Light</name>
+        <definition>LIGHT</definition>
+        <category>LIGHTING</category>
+        <!-- One of these is required to consider a GalNode of this type. If more than one exist,
+         its more probable that the node is of this GalNodeType. When more than one exist,
+        controlling them would have the group treatment. These situations are rare though -->
+        <possiblePrimaryDeviceTypes>
+            <definition>LIGHT</definition>
+            <definition>LIGHT_SOCKET</definition>
+        </possiblePrimaryDeviceTypes>
+        <!-- // None of these are required to consider a GalNode of this type. If one or more than one exist,
+         its more probable that the node is of this GalNodeType. From a rendering perspective, there are views for each one of these being supported. IF the GalNode has multiple GalNodeDevices that are of the same secondaryDeviceTypes, they are rendered as a group -->
+        <possibleSecondaryDeviceTypes>
+            <definition>LIGHT_SENSOR</definition>
+            <definition>MOTION_DETECTOR</definition>
+        </possibleSecondaryDeviceTypes>
+
+        <renderInfo>
+            <header>
+                <heading> <!-- heading text -->
+                    <featurePathList> <!-- The heading text may hold multiple features -->
+                            <featurePath> <!-- a feature path is a feature for a specific device type -->
+                                <deviceTypes> <!-- if the feature is availabe for either of multiple device types in the node -->
+                                    <definition>LIGHT</definition>
+                                    <definition>LIGHT_SOCKET</definition>
+                                </deviceTypes>
+                                <featureDefinition>ACTUATOR_CONTROL_ONOFF</featureDefinition>
+                                <featureAttributeDefinition>ON_OFF_ATTR</featureAttributeDefinition> <!-- when unset, its up to the front-end renderer to determine which attribute is rendered -->
+                            </featurePath>
+                    </featurePathList>
+                </heading>
+
+                <subheading1>
+                    <featurePathList>
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>LIGHT_SENSOR</definition>
+                            </deviceTypes>
+                            <featureDefinition>LIGHT_LUMINOSITY_DETECTOR</featureDefinition>
+                            <featureAttributeDefinition>LUMINOSITY_RATING_ATTR</featureAttributeDefinition>
+                        </featurePath>
+
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>LIGHT_SENSOR</definition>
+                            </deviceTypes>
+                            <featureDefinition>LIGHT_AMBIANCE_DETECTOR</featureDefinition>
+                            <featureAttributeDefinition attrNameInStruct="COLOR_NAME">LIGHT_AMBIANCE_ATTR</featureAttributeDefinition> <!-- If the attribute is a structure, its optional to select which attribute in the structure is rendered through "attrNameInStruct". If unset, its up to the front-end renderer to determine -->
+                        </featurePath>
+                    </featurePathList>
+                </subheading1>
+
+                <subheading2>
+                    <featurePathList>
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>MOTION_DETECTOR</definition>
+                            </deviceTypes>
+                            <featureDefinition>MOTION_DETECTOR</featureDefinition>
+                            <featureAttributeDefinition>MOTION_DETECTION_ATTR</featureAttributeDefinition>
+                        </featurePath>
+                    </featurePathList>
+
+                </subheading2>
+
+                <headerBtn>
+                    <featurePath>
+                        <deviceTypes>
+                            <definition>LIGHT</definition>
+                            <definition>LIGHT_SOCKET</definition>
+                        </deviceTypes>
+                        <featureDefinition>ACTUATOR_CONTROL_ONOFF</featureDefinition>
+                        <featureAttributeDefinition>ON_OFF_ATTR</featureAttributeDefinition>
+                    </featurePath> <!-- button only for 1 feature -->
+                </headerBtn>
+            </header>
+
+            <primaryControl> <!-- optional -->
+                <primaryControllers>
+                    <primaryController type="SLIDER">
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>LIGHT</definition>
+                                <definition>LIGHT_SOCKET</definition>
+                            </deviceTypes>
+                            <featureDefinition>LIGHT_CONTROL_BRIGHTNESS</featureDefinition>
+                            <featureAttributeDefinition>BRIGHTNESS_ATTR</featureAttributeDefinition>
+                        </featurePath> <!-- slider only for one feature -->
+                    </primaryController>
+
+                    <primaryController type="COLOR">
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>LIGHT</definition>
+                            </deviceTypes>
+                            <featureDefinition>LIGHT_CONTROL_COLOR</featureDefinition>
+                            <featureAttributeDefinition>LIGHT_COLOR_ATTR</featureAttributeDefinition>
+                        </featurePath> <!-- slider only for one feature -->
+                    </primaryController>
+                </primaryControllers>
+
+            </primaryControl>
+
+            <controlBtns> <!-- no control btns -->
+                <controlBtn>
+                    <featurePath></featurePath>
+                </controlBtn>
+            </controlBtns>
+
+            <contributors>
+                <contributor>
+                    <line1>
+                        <featurePathList>
+                            <featurePath></featurePath>
+                        </featurePathList>
+                    </line1>
+
+                    <line2>
+                        <featurePathList>
+                            <featurePath></featurePath>
+                        </featurePathList>
+                    </line2>
+                    <label> <!-- label is show at line 3 -->
+                        Some String
+                    </label>
+
+                </contributor>
+
+                <contributor fromNode="true">MOTION_DETECTOR_NODE</contributor> <!-- Uses a nodeContributorRenderInfo to render a contributor here. Works for the device types and features in this node that match the adaptedFromNode's nodeContributorRenderInfo since the nodeContributorRenderInfo is only described in terms of device type and feature, not the node itself. -->
+                <contributor fromNode="true">LIGHT_SENSOR_NODE</contributor>
+            </contributors>
+
+            <nodeContributorRenderInfo> <!-- The render info for this node if it were rendered as a contributor -->
+                    <line1> <!-- no line 2 -->
+                        <featurePathList>
+                            <featurePath>
+                                <deviceTypes>
+                                    <definition>LIGHT</definition>
+                                    <definition>LIGHT_SOCKET</definition>
+                                </deviceTypes>
+                                <featureDefinition>ACTUATOR_CONTROL_ONOFF</featureDefinition>
+                                <featureAttributeDefinition>ON_OFF_ATTR</featureAttributeDefinition>
+                            </featurePath>
+                        </featurePathList>
+                    </line1>
+                    <line2>
+                        <featurePathList>
+                            <featurePath>
+                                <deviceTypes>
+                                    <definition>LIGHT_SENSOR</definition>
+                                </deviceTypes>
+                                <featureDefinition>LIGHT_LUMINOSITY_DETECTOR</featureDefinition>
+                                <featureAttributeDefinition>LUMINOSITY_RATING_ATTR</featureAttributeDefinition>
+                            </featurePath>
+
+                            <featurePath>
+                                <deviceTypes>
+                                    <definition>LIGHT_SENSOR</definition>
+                                </deviceTypes>
+                                <featureDefinition>LIGHT_AMBIANCE_DETECTOR</featureDefinition>
+                                <featureAttributeDefinition attrNameInStruct="COLOR_NAME">LIGHT_AMBIANCE_ATTR</featureAttributeDefinition> <!-- If the attribute is a structure, its optional to select which attribute in the structure is rendered through "attrNameInStruct". If unset, its up to the front-end renderer to determine -->
+                            </featurePath>
+                        </featurePathList>
+                    </line2>
+                    <label> <!-- label is show at line 3 -->
+                        {NODE_NAME} <!-- THE NODE NAME GIVEN BY THE USER -->
+                    </label>
+            </nodeContributorRenderInfo>
+        </renderInfo>
+    </type>
+
+    <type>
+        <id>1</id>
+        <name>Light Sensor</name>
+        <definition>LIGHT_SENSOR</definition>
+        <category>LIGHTING</category>
+
+        <possiblePrimaryDeviceTypes>
+            <definition>LIGHT_SENSOR</definition>
+        </possiblePrimaryDeviceTypes>
+
+        <possibleSecondaryDeviceTypes> <!-- None -->
+        </possibleSecondaryDeviceTypes>
+
+        <renderInfo>
+            <header>
+                <heading>
+                    <featurePathList>
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>LIGHT_SENSOR</definition>
+                            </deviceTypes>
+                            <featureDefinition>
+                                <definition>LIGHT_LUMINOSITY_DETECTOR</definition>
+                            </featureDefinition>
+                        </featurePath>
+
+                        <featurePath>
+                            <deviceTypes>
+                                <definition>LIGHT_SENSOR</definition>
+                            </deviceTypes>
+                            <featureDefinition>
+                                <definition>LIGHT_AMBIANCE_DETECTOR</definition>
+                            </featureDefinition>
+                        </featurePath>
+                    </featurePathList>
+                </heading>
+
+                <subheading1>
+
+                </subheading1>
+
+                <subheading2>
+
+                </subheading2>
+
+                <headerBtn> <!-- no header btn -->
+
+                </headerBtn>
+            </header>
+
+            <contributors>
+
+            </contributors>
+
+            <nodeContributorRenderInfo>
+                <line1>
+
+                </line1>
+                <line2>
+
+                </line2>
+                <label>
+
+                </label>
+            </nodeContributorRenderInfo>
+        </renderInfo>
+
+    </type>
+
+
+
+
+</nodeTypes>

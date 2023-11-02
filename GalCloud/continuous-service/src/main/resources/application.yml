@@ -1,0 +1,42 @@
+server:
+  port: 60420 # Perhaps change to 0 and use eureka
+
+galsie:
+  microservice:
+    name: "continuous-service"
+    password: "galsie123" # password in GCS-Sentry
+    version: "0.0.1"
+    version-required: true
+    security:
+      paths-requiring-user-auth: /*subhub/mobile/*.*
+      paths-requiring-galdevice-auth: /*subhub/galdevice/*.*
+  sockets:
+    connection-paths: #Paths to connect to sockets
+      user: "/subhub/mobile"
+      galdevice: "/subhub/galdevice"
+      test: "/test"
+    security-auth-paths: # Paths requiring security authentication
+      user: /*subhub/mobile/*.*
+      galdevice: /*subhub/galdevice/*.*
+      test: /*test/*.*
+
+spring:
+  application:
+    name: "continuous-service"
+  config:
+    import: 'configserver:http://localhost:4060'
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/galContinuousDb'
+    username: 'galsie'
+    password: 'galsie123'
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka/'
+
+#logging:
+#  level:
+#    org.springframework.web.socket: DEBUG

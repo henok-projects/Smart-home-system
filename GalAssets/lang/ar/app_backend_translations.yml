@@ -1,0 +1,14 @@
+assets_file_version: "0.0"
+backend:
+  serviceResponse:
+    errorType:
+      unknownError: "خطأ غير معروف"
+      repositoryNotFound: "المستودع غير موجود"
+      duplicateValue: "القيمة مكررة"
+      entityNotFound: "الكيان غير موجود"
+      authenticationFailed: "فشل التحقق من الصحة."
+      missingData: "البيانات مفقودة"
+      notSupport: "غير مدعوم."
+      mismatchError: "خطأ في عدم التطابق"
+      parsingError: "خطأ في التحليل"
+      typeNotFound: "النوع غير موجود"

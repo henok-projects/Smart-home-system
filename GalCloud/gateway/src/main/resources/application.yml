@@ -1,0 +1,33 @@
+server:
+  port: 4062
+
+spring:
+  application:
+    name: 'GalGateway'
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: users
+          uri: 'lb://users-service'
+          predicates:
+            - Path=/users/** # anything with this path is forwarded to the users service
+        - id: home
+          uri: 'lb://homes-service'
+          predicates:
+            - Path=/homes/** # anything with this path is forwarded to a homes service
+        - id: lang
+          uri: 'lb://lang-service'
+          predicates:
+            - Path=/lang/**
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true

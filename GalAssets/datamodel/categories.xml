@@ -1,0 +1,78 @@
+<!-- idType: UInt8 -->
+
+<!--
+
+Every type in device_types should belong to a category; however, the category of the device type may vary depending on the context of its placement
+To mitigate this, a category can be abstract and extended by another category.
+- device types can link to abstract catgories.
+- When added to a home, the actual category of the device
+
+GENERAL NOTES:
+- Can extend non abstract category type, but a warning will be shown.
+
+
+LOADING NOTES:
+- Loaders of category types load them sequentially
+- Be sure that abstract category types are defined before they are extended
+-->
+
+<root>
+    <assets_file_version>1.0</assets_file_version>
+    <categories>
+        <type>
+            <id>0</id>
+            <definition>LIGHTING</definition>
+            <name>Lighting</name>
+        </type>
+
+
+        <type>
+            <id>1</id>
+            <definition>SECURITY</definition>
+            <name>Security</name>
+        </type>
+
+        <type>
+            <id>2</id>
+            <definition>SAFETY</definition>
+            <name>Safety</name>
+        </type>
+        
+        <type abstract="true">
+            <id>3</id>
+            <definition>FEEL</definition>
+            <name>Feel</name>
+        </type>
+        
+        <type extends="FEEL">
+            <id>4</id>
+            <definition>INDOOR_FEEL</definition>
+            <name>Indoor Feel</name>
+        </type>
+
+        <type extends="FEEL">
+            <id>5</id>
+            <definition>ATMOS_FEEL</definition>
+            <name>Atmos Feel</name>
+        </type>
+
+        <type>
+            <id>6</id>
+            <definition>ENTERTAINMENT</definition>
+            <name>Entertainment</name>
+        </type>
+
+        <type>
+            <id>7</id>
+            <definition>PLUGS_AND_APPLIANCES</definition>
+            <name>Plugs &amp; Appliances</name>
+        </type>
+
+        <type>
+            <id>8</id>
+            <definition>MISC</definition>
+            <name>Miso</name>
+        </type>
+        
+    </categories>
+</root>

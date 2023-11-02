@@ -1,0 +1,823 @@
+    # Translations for text displayed in the app view
+assets_file_version: "0.0"
+testTrans: 'تست' # Used for viewing test components
+
+#######################################################################################
+############################### SHARED ################################################
+########################################################################################
+
+###################################
+####### LANGUAGE LOCALE NAMES #####
+##################################
+language: # TODO: rename to languageLocaleNames
+    name:
+        en: 'انجليلايد'
+        ar: 'عربية'
+
+#############################
+####### COMMON MESSAGES #####
+############################
+generalWarning: #TODO: rename to common messages
+    warning: 'تحذير'
+    continue: 'واصل'
+    cancel: 'إلغاء'
+    matterWarning: 'لقد لاحظنا أن هذا الجهاز يحتوي على شهادة Matter غير صالحة' # make as part of add device flow
+    learnMore: 'تعلم أكثر'
+    areYouSure: 'هل أنت متأكد أنك تريد الاستمرار؟'
+
+###########################
+####### COMMON SHEETS #####
+###########################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'commonSheets'
+languageSheet: # make this under the language object
+    title : 'إختر لغتك'
+    searchPlaceholder : 'ابحث عن لغات'
+    confirm : 'تأكيد'
+countryCodesSheet:
+    title : 'إبحث عن رمز بلدك'
+    searchPlaceholder: 'إبحث عن رمز بلدك'
+    confirm : 'تأكيد'
+
+####################################
+####### REQUEST OS PERMISSIONS #####
+####################################
+requestOSPermissionView:
+    bluetooth:
+        title: 'السماح بإذن لاستخدام البلوتوث الخاص بك'
+        subtitle: 'سيعطي هذا التطبيق إمكانية الوصول إلى البلوتوث لبدء الاقتران'
+        pairingDevice: 'إقران جهاز'
+    camera:
+        title: 'السماح بإذن لاستخدام الكاميرا الخاصة بك'
+        subtitle: 'سيعطي هذا التطبيق إمكانية الوصول إلى كاميرا هاتفك'
+    wifi:
+        title: 'السماح بإذن لاستخدام Wifi الخاص بك'
+        subtitle: 'سيعطي هذا التطبيق إمكانية الوصول إلى شبكة wifi المنزلية الخاصة بك'
+
+
+
+##############################################################################################
+############################# SCREENS & FLOWS ################################################
+##############################################################################################
+
+
+#################################
+####### ONBOARDING IMAGES #####
+################################
+onboarding:
+    next: 'التالي'
+    skip: 'تخطي'
+    finish: 'إنهاء'
+    chooseLanguage: 'اختار اللغة'
+    searchForLanguages: 'ابحث عن اللغات'
+    searchForCountryCode: 'ابحث عن رمز الدولة'
+    introItems:
+        welcomeToGalsie:
+            name: "جالسي"
+            description: "تعرف على جالسي ،مساعدة منزل ذكية مصممة لتحسين تجربة منزلك والتكيف مع احتياجاتك."
+        adaptiveAndEfficient:
+            name: "متكيفة وفعالة"
+            description: "تتكيف جالسي مع الظروف الفريدة لمنزلك ، وتقدم اقتراحات ذكية ومهام آلية لتجربة معيشية أكثر اخضرارًا وراحة."
+        safeAndSecure:
+            name: "آمنة وموثوقة"
+            description: "تعطي جالسي الأولوية للسلامة والأمن ، وتقدم تحديثات في الوقت الفعلي للمستشعر ، وتتبع المقاييس الحيوية ، وإشعارات فورية لضمان راحة بالك."
+        entertainmentAndAssistance:
+            name: "الترفيه والمساعدة"
+            description: "استمتع بمنصات دفق الصوت والفيديو المفضلة لديك مع جالسي للاستمتاع بتجربة منزلية مليئة بالمرح ، تكملها المساعدة جالسي التي تعالج المهام المتنوعة وتوفر الراحة."
+        privacyMatters:
+            name: "خصوصيتك أولاً"
+            description: "نحن نحترم خصوصيتك. تخزن جالسي بياناتك ونشاطك بشكل آمن ، بينما تمنحك تحكمًا كاملاً في الميزات المعتمدة على البيانات."
+        builtWithMatter:
+            name: "متوافقة مع بروتوكول Matter"
+            description: "تعمل جالسي مع جميع الأجهزة التي تدعم Matter ، مما يضمن تجربة منزل ذكي متماسكة وموثوقة."
+      
+#################################
+####### LOGIN & SIGNUP FLOW #####
+################################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'loginAndSignupFlow'
+loginSignup: # Login Signup View
+    heading:
+        title: 'لنقم بإنشاء حساب'
+        navTitle: 'إنشاء حساب'
+        subtitle: 'لوريم ايبسوم دولور سيت اميت '
+    body:
+        withGalsie: 'انشئ جساب باستخدام البريد الالكتروني / رقم الهاتف'
+        withApple: 'تسجيل الدخول باستخدام Apple'
+        withGoogle: 'تسجيل الدخول باستخدام Google'
+        alreadyHave: 'لدي حساب'
+registration:
+    heading:
+        title: 'مرحباً !'
+        navTitle: 'حساب جديد'
+        subtitle: 'لنقم بإدخال بياناتك.'
+    inputs:
+        fullname: 'الإسم الكامل'
+        username: 'إسم المستخدم'
+        userNameValidation: 'اسم المستخدم لابد ان يكون مكون عالاقل من ٣ احرف'
+        emailAddress: 'البريد الإلكتروني'
+        mobilenumber: 'رقم الهاتف'
+    buttons:
+        continue: 'إستمرار'
+        alreadyHave: 'لديك حساب بالفعل ؟'
+        login: 'قم بتسجيل الدخول'
+OTPview:
+    heading:
+        title: 'تحقق من حسابك'
+        navTitle: 'المصادقة الثنائية'
+        emailSubtitle: 'تم إرسال رمز سري إلى بريدك الإلكتروني ، تفضل بإدخال الرمز السري للمواصلة'
+        phoneSubtitle: 'تم إرسال رمز سري إلى رقم هاتفك ، تفضل بإدخال الرمز السري للمواصلة'
+    buttons:
+        didntrecieve: |
+            لم يصلك الرمز ؟
+               إعادة إرسال ({seconds} ث)
+        getViaSMS: 'تحقق عبر رسالة نصية'
+        getViaEmail: 'تحقق عبر البريد الإلكتروني'
+    input:
+        incorrectOtp: 'الرمز غير صحيح'
+login:
+    heading:
+        title: 'مرحباً بعودتك !'
+        navTitle: 'تسجيل الدخول'
+        subtitle: 'سعيدون برؤيتك مجدداً'
+    inputs:
+        emailAddress: 'البريد الإلكتروني'
+        emailAddressValidation: 'البريد الاكتروني غير صحيح'
+        password: 'كلمة السر'
+        mobilenumber: 'رقم الهاتف'
+        passwordValidation: 'كلمة السر لا بد ان تحتوي علي رقم و حرف وان تكون عالاقل خمس حروف'
+    buttons:
+        continue: 'إستمرار'
+        dontHave: 'ليس لديك حساب بالفعل؟'
+        signUp: 'قم بتسجيل الدخول'
+        forgotPassword: 'نسيت كلمة السر'
+setpassword: # TODO: uppercase P
+    heading:
+        title: 'أدخل كلمة السر الخاصة بك'
+        navTitle: 'كلمة السر'
+        subtitle: 'قم بإدخال كلمة سر قوية لحماية حسابك.'
+    inputs:
+        password: 'كلمة السر'
+        repassword: 'أعد إدخال كلمة السر'
+    buttons:
+        continue: 'إستمرار'
+
+setNewPassword:
+    heading:
+        title: 'أدخل كلمة السر الخاصة بك'
+        subtitle: 'قم بإدخال كلمة سر جديدة.'
+    inputs:
+        password: 'كلمة السر الجديدة'
+        repassword: 'أعد إدخال كلمة السر الجديدة'
+        confirmPasswordValidation: 'كلمة السر لا توافق كلمة السر الاصلية'
+forgotpassword: # TODO: uppercase P
+    heading:
+        title: 'نسيت كلمة السر؟'
+        navTitle: 'إستعادة كلمة السر'
+        subtitle: 'فلنقم بإستعادة حسابك'
+    inputs:
+        emailAddress: 'البريد الإلكتروني'
+        mobilenumber: 'رقم الهاتف'
+    buttons:
+        continue: 'إستمرار'
+forgotpasswordOTP: # TODO: uppercase P
+    heading:
+        title: 'نسيت كلمة السر؟'
+        navTitle: 'إستعادة كلمة السر'
+        emailSubtitle: 'تم إرسال رمز سري إلى بريدك الإلكتروني ، تفضل بإدخال الرمز السري للمواصلة'
+        phoneSubtitle: 'تم إرسال رمز سري إلى رقم هاتفك ، تفضل بإدخال الرمز السري للمواصلة'
+
+    buttons:
+        didntrecieve: |
+            لم يصلك الرمز ؟
+                                    إعادة إرسال ({seconds} ث)
+        getViaSMS: 'تحقق عبر رسالة نصية'
+        getViaEmail: 'تحقق عبر البريد الإلكتروني'
+
+validationErrors: # change the structure of this so that errors belong under their subsection above, this was done for english
+    shared:
+        emailError: "البريد الإلكتروني الذي أدخلته غير صالح"
+        mobileNumberLengthError: "رقم الهاتف الخاص بدولتك يجب أن يتكون من {phone_number_length} أرقام"
+        mobileNumberNotDigitsError: 'يجب أن يحتوي رقم الجوال على أرقام فقط'
+        passwordRangeError: "كلمة السر يجب أن تكون بين ٥ إلى ٢٠ حرف"
+        passwordInvalidError: "يجب أن تحتوي كلمة المرور على رقم واحد وحرف واحد على الأقل ويجب أن لا تتضمن الأحرف !@$*&^"
+        ###  passwordNoUppercaseError : 'يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل'
+        ###  passwordNoLowercaseError : 'يجب أن تحتوي كلمة المرور على حرف صغير على الأقل'
+        ### passwordNoNumberError : 'يجب أن تحتوي كلمة المرور على رقم واحد على الأقل'
+        passwordNotMatchingError : "كلمتا المرور اللتان أدخلتهما غير متطابقتين"
+    registration:
+        fullNameError: "الاسم الكامل يجب أن يتكون من جزئين على الأقل"
+        userNameRangeError: "اسم المستخدم يجب أن يكون بين 3 و 12 حرفًا."
+        userNameInvalidChars: "اسم المستخدم يحتوي على عناصر غير صالحة"
+#######################################
+####### INVITE USERS TO HOME FLOW #####
+#######################################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'inviteUserToHome'
+# Invite users flow
+inviteUsersEntryView:
+    heading:
+        title: 'قم بدعوة ضيوف إلى منزلك'
+        subtitle: 'Lorem ipsum dolor sit amet, consectetur lorem psum.'
+    buttons:
+        createQR: 'إنشاء رمز QR'
+        inviteWithUserInfo: 'ابحث عن مستخدم'
+        viewExistingInvites: 'الدعوات السابقة'
+inviteWithQR:
+    heading:
+        title: 'الدعوة عبر الرابط\كود QR'
+        editTitle: 'تعديل الدعوة'
+        widgetedFormTitle: 'تفاصيل الدعوة'
+    inputs:
+        accessStartLabel: 'بداية الإذن'
+        accessStartHint: 'إختر التاريخ والزمن'
+        accessEndLabel: 'نهاية الإذن'
+        accessEndHint: 'إختر التاريخ والزمن'
+        rolesLabel: 'الأدوار'
+        rolesHint: 'إختر'
+        permissionsLabel: 'الصلاحيات'
+        permissionsHint: 'إختر'
+    buttons:
+        create: 'إنشاء'
+        edit: 'تعديل'
+        deleteInvitation: 'إزالة الدعوة'
+inviteWithEmail:
+    heading:
+        title: 'تفاصيل المستخدم'
+        editTitle: 'تعديل الدعوة'
+        generalInformationFormTitle: 'المعلومات الرئيسية'
+        inviteUsersFormTitle: 'تفاصيل الدعوة'
+    inputs:
+        accessStartLabel: 'بداية الإذن'
+        accessStartHint: 'إختر التاريخ والزمن'
+        accessEndLabel: 'نهاية الإذن'
+        accessEndHint: 'إختر التاريخ والزمن'
+        rolesLabel: 'الأدوار'
+        rolesHint: 'إختر'
+        permissionsLabel: 'الصلاحيات'
+        permissionsHint: 'إختر'
+    buttons:
+        create: 'إنشاء'
+        edit: 'تعديل'
+deleteInvitationWarning:
+    heading:
+        title: 'إزالة الدعوة'
+        notice: 'تنبيه: كل المستخدمين المنضمين عبر الدعوة سيبقون متصلين بمنزلك'
+    buttons:
+        delete: 'إزالة الدعوة'
+        cancel: 'رجوع'
+calendarView:
+    heading:
+        accessStartTitle: 'بداية الإذن'
+        accessEndTitle: 'نهاية الإذن'
+        accessNeverEnd: 'إذن غير منتهي'
+    calendar:
+        timeLabel: "الوقت"
+        amLabel: "ص"
+        pmLabel: "م"
+    buttons:
+        confirm: 'تأكيد'
+rolesView: # rename to rolesSelectionView
+    heading:
+        title: 'الأدوار'
+        subtitle: 'يمكنك تحديد أي عدد تريده من الخيارات'
+        search: 'البحث عن أدوار'
+    buttons:
+        confirm: 'تأكيد'
+permissionsView:
+    heading:
+        title: 'الصلاحيات'
+        subtitle: 'يمكنك تحديد أي عدد تريده من الخيارات'
+    buttons:
+        confirm: 'تأكيد'
+InvitationLink:
+    heading:
+        title: 'رابط الدعوة\كود QR'
+    details:
+        rolesAndPermissions: 'الأدوار والصلاحيات'
+        accessStart: 'بداية الإذن'
+        accessEnd: 'نهاية الإذن'
+        usersJoined: 'المستخدمون المنضمون'
+    buttons:
+        done: 'حسناً'
+        viewUsersJoined: 'عرض'
+        share: 'مشاركة الرابط'
+        editInvite: 'تعديل الدعوة'
+        createAgain: 'إنشاء مجدداً'
+searchUserView: 
+    heading:
+        title: 'تفاصيل المستخدم'
+        recentsListTitle: 'تمت دعوتهم مؤخراً'
+        contactsListTitle: 'من جهات الإتصال الخاصة بك'
+        galUsersListTitle: 'مستخدموا جالسي'
+        search: 'الإسم، رقم الهاتف، أو البريد الإلكتروني'
+        searchError: 'الإسم أو البريد الإلكتروني غير صالح'
+        userNotFound: 'ليس موجوداً في قائمة جهات الإتصال أو مستخدم جالسي، هل أنت متأكد من صحة هذا البريد؟'
+        userNotFoundContinue: 'إستمرار'
+    buttons:
+        confirm: 'تأكيد'
+invitationDetailsView:
+    heading:
+        invitationSentTitle: 'تم إرسال الدعوة'
+        invitationSentSubtitle: 'تم إرسال الدعوة بنجاح'
+        invitationAcceptedTitle: 'تم قبول الدعوة'
+        invitationAcceptedSubtitle: 'قام المستخدم بقبول دعوتك'
+        invitationRejectedTitle: 'تم رفض الدعوة'
+        invitationRejectedSubtitle: 'قام المستخدم برفض دعوتك'
+        invitationExpiredTitle: 'إنتهت صلاحية الدعوة'
+        invitationExpiredSubtitle: 'إنتهت صلاحية الدعوة أثناء إنتظار الرج'
+    details:
+        email: 'البريد الإلكتروني'
+        rolesAndPermissions: 'الأدوار والصلاحيات'
+        accessStart: 'بداية الإذن'
+        accessEnd: 'نهاية الإذن'
+        invitationStatus: 'حالة الدعوة'
+    buttons:
+        done: 'حسناً'
+        manageUsers: 'إدارة المستخدمين'
+        editInvite: 'تعديل الدعوة'
+        createAgain: 'إنشاء مجدداً'
+existingInvitesView:
+    heading:
+        title: 'الدعوات السابقة'
+        activeInvitesTitle: 'الدعوات النشطة'
+        recentInvitesTitle: 'سجل الدعوات السابقة'
+    countdown:
+        endsIn: 'Access ends in {time_remaining}'
+        endsOn: 'Access ends on {time_remaining}'
+        endedAgo: 'Access ended {time_passed} ago'
+        endedOn: 'Access ended on {time_passed}'
+inviteQrCode:
+    heading:
+        title: 'لينك الدعوة/رمز الQR'
+    inputs:
+        done: 'تم'
+        invite: 'ادعو'
+        link: 'https://galsie.com/join/795QYDdl768'
+    label:
+        rolesAndPermissionsTitle: 'الدور والاذونات'
+        rolesAndPermissionsSubtitle: 'مستخدم، مدير امني، ادمن'
+        accessStartTitle: 'بداية الاذن'
+        accessStartSubtitle: 'Friday 19, January 2022 (10 days ago)'
+        accessEndTitle: 'نهاية الاذن'
+        accessEndSubtitle: 'Saturday 20, January 2022 (10 days ago)'
+        usersJoinedTitle: 'المستخدمين المنضمين'
+        usersJoinedSubtitle: '0 users'
+    buttons:
+        shareLink: 'شارك اللينك'
+        editInvite: 'تعديل الدعوة'
+inviteUserDetails:
+    heading:
+        title: 'بيانات المستخدم'
+    inputs:
+        confirm: 'تأكيد'
+        view: 'اظهر'
+    label:
+        recentlyInvited: 'مدعوون مؤخرا'
+        searchPlaceholder: 'الاسم، الموبايل، او الايميل'
+        emptySearch: 'غير موجود في قائمة الهاتف او مستخدم جالسي. هل انت متأكد ان الايميل صحيح؟'
+        alreadySent: 'مدعو مسبقا'
+    buttons:
+        continue: 'تكملة'
+inviteSent:
+    inputs:
+        done: 'تم'
+        invite: 'ادعو'
+    buttons:
+        editInvite: 'تعديل الدعوة'
+    label:
+        invitationSent: 'تم ارسال الدعوة'
+        invitationSentSuccessfully: 'تم ارسال الدعوة بنجاح'
+        emailTitle: 'الايميل'
+        emailSubtitle: 'Rony Jabbour'
+        emailSubtitleSmall: 'rony@galsie.com'
+        rolesAndPermissionsTitle: 'الدور والاذونات'
+        rolesAndPermissionsSubtitle: 'User,security manager, admin +3 more'
+        more: 'اخرين'
+        accessStartTitle: 'بداية الاذن'
+        accessStartSubtitle: 'Friday 19, January 2022 (10 days ago)'
+        accessEndTitle: 'نهاية الاذن'
+        accessEndSubtitle: 'Saturday 20, January 2022 (10 days ago)'
+        invitationStatusTitle: 'وضع الدعوة'
+        invitationStatusSubtitle: 'في انتظار الرد'
+        rolesTitle: 'الادوار'
+        rolesSubtitle: 'User, security manager, admin, child, another role.'
+        permissionsTitle: 'الاذونات'
+        permissionsSubtitle: 'permission 1, permission 2, permission 3, other permissions.'
+inviteAccessEnd:
+    heading:
+        title: 'نهاية الاذن'
+    inputs:
+        accessNeverEndLabel: 'السماح للابد'
+        time: 'الوقت'
+        confirm: 'تأكيد'
+inviteRoles:
+    heading:
+        title: 'الادوار'
+    inputs:
+        confirm: 'تأكيد'
+        searchPlaceholder: 'ابحث عن الادوار'
+    label:
+        selectMany: 'يمكنك اختيار اي عدد من الاختيارات'
+        fullAccessTitle: 'سماح كامل'
+        fullAccessSubtitle: 'Lorem ipsum dolor sit amet'
+        adminTitle: 'ادمن'
+        adminSubtitle: 'Lorem ipsum dolor sit amet'
+        guestAccessTitle: 'ضيف'
+        guestAccessSubtitle: 'Lorem ipsum dolor sit amet'
+invitePermissions:
+    heading:
+        title: 'الاذونات'
+    inputs:
+        confirm: 'تأكيد'
+    label:
+        selectMany: 'يمكنك اختيار اي عدد من الاختيارات'
+        permission: 'اذن'
+
+#############################
+####### JOIN HOME FLOW ######
+############################
+###### TODO: MAKE ALL THE BELOW SECTION UNDER AN OBJECT CALLED 'joinHome'
+joinHomeEntryView:
+    heading:
+        title: 'انضم الي منزل موجد بالفعل'
+        subtitle: 'لوريم ابسم'
+    buttons:
+        createQR: 'افحص رمز الQR'
+        inviteWithUserInfo: 'ادعو باستخدام بيانات الضيف'
+        userInvites: 'دعوات المستخدمين'
+joinHomeScanQr:
+    heading:
+        title: 'افحص رمز الQR'
+        subtitle: 'ضع رمز الQR في منتصف الشاشة'
+        scanDevice: 'افحص الجهاز'
+    label:
+        scanning: 'جاري الفحص...'
+        manualCode: 'رمز يدوي'
+    input:
+        label: 'Invitation ID'
+        placeholder: 'Ex. 222222'
+joinHomeCameraPermission:
+    heading:
+        title: 'افحص الجهاز'
+    label:
+        allowPermission: 'اسمح باستخدام الكاميرا'
+        permissionInfo: 'هذا سيعطي التطبيق الاذن لاستخدام الكاميرا.'
+    buttons:
+        grantAccess: 'اعطي الاذن'
+joinHomeInvitation:
+    heading:
+        title: 'دعوة'
+    label:
+        title: 'منزل لواء'
+        subtitle: 'Aley, Hay Al Wata, Rayan Street, Kontar Bldg.'
+    input:
+        invitedByLabel: 'مدعو من'
+        invitedByHint: 'Liwaa Al Kontar'
+        rolesLabel: 'الدور والاذونات'
+        rolesHint: 'مستخدم، مدير امني، ادمن'
+        accessStartLabel: 'بداية الاذن'
+        accessStartHint: 'Friday 19, January 2022'
+        accessEndLabel: 'نهاية الاذن'
+        accessEndHint: 'Saturday 20, January 2022'
+        expiration: 'ينتهي في ٣ ايام و ٤ ساعات'
+    buttons:
+        accept: 'فبول'
+        reject: 'رفض'
+joinHomeUserInvites:
+    heading:
+        title: 'دعوات المستخدمين'
+    label:
+        activeInvites: 'قبول الدعوات'
+        recentInvites: 'الدعوات الاخيرة'
+
+##############################
+####### Home List Screen #####
+#############################
+homeList:
+    heading:
+        title: 'مرحبا، لواء'
+    moreOptionsMenuDropDown:
+        archivedHomes: 'المنازل المؤرشفه'
+        setupHome: 'إقامه منزلا'
+        editHomes: 'تعديل المنازل'
+    searchView:
+        searchHomes: 'البحث عن منازل واجهزه'
+    largeHomeWidget:
+        createHome: 'إنشاء منزلا جديد'
+        customizeHome: 'يمكنك تعديل منزلك لبدءاتمته حياتك اليوميه'
+        setupHome: 'إقامه منزلا'
+    smallHomeWidget:
+        watchTutorial: 'شاهد الفيديو التعليمي الخاص بنا الذي يوجهك خلال التطبيق'
+        readPDF: 'اقرأ الدليل لمعرفة المزيد حول جميع ميزاتنا'
+    suggesstions: 'مقترحات'
+    homeWidget:
+        editMenu:
+            archiveHome: 'أرشفه المنزل'
+            leaveHome: 'مغادره المنزل'
+            viewHome: 'افحص المنزل'
+        houseDetails:
+            houseName: 'منزل لواء'
+            address: 'حي الوطا، شارع ريان، مبني آل كنتار'
+            count: '٤ مقيمين، ٢ ضيوف'
+            temperature: '٢٠ درجة مئوية'
+            weatherCondition: 'مشمس جزئيا'
+        overview: 'ملخص'
+    homeToolbar:
+        done: 'تم'
+    bottomToolbar:
+        archive: 'ارشفة'
+        selectedHomes: 'منزل مختار'
+        selectedHome: 'منزل مختار'
+    lastPersonLeavingHomeWarning:
+        warning: 'تحذير'
+        warningText: 'انت اخر شخص يغادر هدا المنزل. اذا استمررت سيتم مسح المنزل.'
+        confirmation: 'هل انت متأكد انك تريد الرحيل؟'
+        leave: 'مغادرة'
+        cancel: 'الغاء'
+
+#############################
+####### Setup Home Flow #####
+############################
+setupHome:
+    setupHomeIntro:
+        introTitle: 'قم بإعداد منزلك'
+        introSubTitle: 'أضف معلومات منزلك للبدء'
+        addNewHome: 'أضف منزل جديد'
+        joinExistingHome: 'الانضمام إلى منزل موجود'
+    formInput:
+        select: 'اختار'
+        name: 'اسم'
+    homeTypeSelectionView:
+        apartment: 'شقة'
+        flat: 'طابق'
+        house: 'منزل'
+        villa: 'فيلا'
+    addHomeView:
+        homeInformation:
+            homeInfo: 'تفاصيل المنزل'
+            homeName: 'اسم المنزل'
+            homeType: 'نوع المنزل'
+        toolbarView:
+            addHome: 'أضف منزلاً'
+            next: 'التالي'
+            confirm: 'تأكيد'
+        guides:
+            confused: 'هل أنت متشتت؟'
+            readGuide: 'اقرأ إرشادات الطابق الخاصة بنا'
+        addFloor: # TODO: fix the redundancy here
+            floor: 'طابق' 
+            edit: 'تعديل'
+            done: 'تم'
+            floor0: 'طابق ٠'
+            floor1: 'طابق ١'
+            floor2: 'طابق ٢'
+            floor3: 'طابق ٣'
+            floor4: 'طابق ٤'
+            floor5: 'طابق ٥'
+            floor6: 'طابق ٦'
+            floor7: 'طابق ٧'
+            floor8: 'طابق ٨'
+            floor9: 'طابق ٩'
+            floorNumber: 'رقم الطابق'
+            groundFloor: 'طابقي'
+            firstFloor: 'مثال: الطابق الأول'
+            secondFloor: 'مثال: الطابق الثاني'
+            thirdFloor: 'مثال: الطابق الثالث'
+            fourthFloor: 'مثال: الطابق الرابع'
+            fifthFloor: 'مثال: الطابق الخامس'
+            sixthFloor: 'مثال: الطابق السادس'
+            seventhFloor: 'مثال: الطابق السابع'
+            eighthFloor: 'مثال: الطابق الثامن'
+            ninthFloor: 'مثال: الطابق التاسع'
+            floorDefault: 'مثال: رقم الطابق'
+            noFloor: 'لا توجد طوابق المضافة'
+    addressFillingView:
+        detectLocation: 'كشف الموقع'
+        address: 'العنوان'
+        addressInformation:
+            addressInfo: 'تفاصيل العنوان'
+            country: 'دولة'
+            state: 'ولاية'
+            addressline1: 'خط عنوان ١'
+            addressline2: 'خط عنوان ٢'
+            zipCode: 'الرمز البريدي'
+        enterHouseAddress: 'أدخل عنوان المنزل'
+        zipCodeExample: 'مثال: ١٢٣٤٥'
+    grantLocationView:
+        permission: 'اسمح للإذن باستخدام موقعك'
+        permissionInfo: 'سيعطي هذا التطبيق حق الوصول إلى موقعك لملء الموقع تلقائيًا'
+        grantAccess: 'موافق'
+    searchLocationView:
+        fetching: 'جاري البحث...'
+        autoFill: 'سيعطي هذا التطبيق حق الوصول إلى موقعك لملء الموقع تلقائيًا'
+        searchStatusFailed: 'فشل الكشف. حاول مرة اخرى'
+        tryAgain: 'حاول ثانية'
+        setManually: 'اضبطه يدويًا'
+    autoSearchLocationView:
+        selectYourAddress: 'حدد عنوانك'
+    generalPermissionRequestView:
+        findMyLocation: 'البحث عن موقعي'
+
+############################
+####### Home Dashbaord #####
+###########################
+homeDashboard:
+    heading:
+        title: 'منزل لواء'
+        subtitle: ''
+    largeHomeWidget:
+        createArea: 'إنشاء منطقة جديدة'
+        addDevice: 'اضف اول جهاز لديك'
+        inviteGuests: 'ادعة ضيوفك لبيتك'
+        customizeHome: 'يمكنك تعديل منزلك لبدءاتمته حياتك اليوميه'
+        recommendations: 'ترشيحات'
+    navBar:
+        dashboard: 'المنزل'
+        area: 'المنطقة'
+        operators: 'العاملين'
+        suggestions: 'الترشيحات'
+        settings: 'الاعدادت'
+
+###########################
+####### Add Area Flow #####
+##########################
+addArea:
+    addAreaIntroView:
+        title: 'قم بإنشاء منطقتك الأولى'
+        subtitle: 'قم بإعداد منطقتك الأولى الآن واملأ تفاصيلها'
+        addAreaButton: 'أضف منطقة جديدة'
+    toolbarView:
+        next: 'التالي'
+        confirm: 'تأكيد'
+        title: 'أضف منطقة'
+    areaInformationFillingView:
+        areaInfo: 'تفاصيل المنطقة'
+        areaType: 'نوع المنطقة'
+        areaName: 'اسم المنطقة'
+        areaInitials: 'الأحرف الأولى من اسم المنطقة'
+        areaFloor: 'طابق المنطقة'
+    formInput:
+        select: 'اختار'
+        name: 'اسم'
+        maximumCharacters: '٣ أحرف كحد أقصى'
+        myFloor: 'طابقي'
+    areaInitialsView:
+        preview: 'معاينة'
+        initials: 'الأحرف الأولى'
+        characters: 'الأحرف'
+    areaTypes:
+        backgroundColor: 'لون الخلفية'
+        inside:
+            kitchen: 'مطبخ'
+            bedroom: 'غرفة نوم'
+            livingRoom: 'غرفة المعيشة'
+            other: 'آخر'
+            inside: 'بالداخل'
+        outside:
+            garden: 'حديقة'
+            depot: 'مستودع'
+            other: 'آخر'
+            outside: 'باالخارج'
+        areaInitials:
+            ki: 'م ط'
+            br: 'غ ن'
+            lr: 'غ م'
+            de: 'م س'
+            ot: 'آ خ'
+            gr: 'ح د'
+    areaFloorSelection:
+        ground: 'الطابق الأرضي'
+        first: 'الطابق الأول'
+        basement: 'بدروم'  
+    areaDoorsAndWindows:
+        title: 'أبواب ونوافذ المنطقة'
+        doors: 'أبواب'
+        door: 'باب'
+        defaultDoors: 'لا توجد أبواب بشكل افتراضي. انقر فوق + لإضافة واحد'
+        windows: 'شبابيك'
+        defaultWindows: 'لا نوافذ بشكل افتراضي. انقر فوق + لإضافة واحد'
+        confused: 'هل أنت متشتت؟'
+        guide: 'اقرأ إرشادات الباب والنافذةالخاصه بنا'
+        selectConnectedArea: 'اختار المناطق المتصلة'
+        areaAddedSuccessfully: 'تم اضافة المنطقة بنجاح'
+    areasList:
+        title: 'قائمة المناطق'
+        searchForAreas: 'ابحث عن منطقة'
+        addDoors:
+            door: 'باب {num}'
+            doorNumber: 'رقم الباب'
+            doorEx: 'حدد المنطقة المتصلة'
+        addWindows:
+            window: 'نافذه {num}'
+            windowNumber: 'رقم النافذه'
+            windowNumbers: 'عدد النوافذ'
+            windowNumberHint: 'ادخل عدد النوافذ'
+            windowEx: 'مثال: منطقه المطبخ'
+    connectingAreas:
+        title: 'المناطق المتصله'
+    selectAreaConnectionView:
+        title: 'قائمة المنطقة'
+        blank: ' '
+
+###########################
+#######Add Device Flow#####
+##########################
+addDevice:
+    addDeviceIntroView:
+        title: 'يدعم Matter'
+        subtitle1: 'نظامنا متوافق مع أجهزة Matter.'
+        subtitle2: 'تأكد من إضافة الأجهزة التي تعمل مع Matter'
+        addDeviceButton: 'ابدأ في الإضافة'
+    toolbarView:
+        addDevice: 'أضف جهاز'
+        scanADeviceCode: 'مسح رمز الجهاز'
+        cancel: 'إلغاء'
+    scanADevice:
+        title: 'ضع جزء رمز الاستجابة السريعة في منتصف إطار الكاميرا للمسح الضوئي'
+        scanDevice: 'مسح جهاز'
+        scanning: 'يتم المسح...'
+        enterCodeManually: 'إدخال رمز يدويا'
+        useOtherMethods: 'استخدم طرقًا أخرى'
+        permissionDeniedError: 'يرجى الوصول إلى الكاميرا لمسح رمز الاستجابة السريعة ضوئيًا'      
+    addADeviceMethods:
+        title: 'حدد طريقتك'
+        nearDevice: 'أحضر جهازًا قريبًا'
+        networkScan: 'مسح على الشبكة'
+    scannedDeviceDetailsView:
+        title: 'إضافة جهاز جديد'
+        subtitle: 'تم اضافه الجهاز بنجاح'
+        pairDevice: 'إقران الجهاز'
+        
+        deviceCode: 'كود الجهاز'
+        vendorName: 'اسم البائع والمعرف'
+        productName: 'اسم المنتج والمعرف'
+        deviceTypes: 'أنواع الأجهزة'
+        versions: 'إصدارات'
+    bringNearDeviceView:
+        title: 'أحضر جهازًا قريبًا'
+        searching: 'يبحث...'
+        scanningFailed: 'فشل المسح'
+        
+    scanOnNetworkView:
+        title: 'مسح على الشبكة'
+        
+        wifiConnection: 'اتصال واي فاي'
+        consumption: 'استهلاك طاقة معتدل'
+        threadConnection: 'كيبل الأتصال'
+        notSupportedThread: 'الأسلاك غير مدعومة لهذا الجهاز'
+        
+    pairADeviceViaBluetoothView:
+        initiatePair: 'بدء عملية الاقتران...'
+        errorPairing: 'خطأ في إقران الجهاز'
+        readGuide: 'تحقق من إرشاداتنا الخاصة بإقران الأجهزة'
+        learnMore: 'تعلم أكثر'
+        tryAgain: 'حاول ثانية'
+        pairAnotherDevice: 'قم بإقران جهاز آخر'
+        devicePaired: 'تم إقران الجهاز بنجاح'
+        
+        
+    configuringDeviceView:
+        title: 'تكوين الجهاز'
+        protocol: 'جاري بدء بروتوكولات Wi-Fi ...'
+        failed: 'فشل الاتصال بهذا الجهاز'
+        success: 'تم توصيل الجهاز بنجاح'
+        guide: 'تحقق من دليلنا لتكوين الأجهزة'
+        learnMore: 'تعلم المزيد'
+        changeNetwork: 'تغيير بيانات اعتماد الشبكة'
+        
+    wifiListView:
+        title: 'قائمة wifi'
+        knownNetworks: 'الشبكات المعروفة'
+        unknownNetworks: 'شبكات غير معروفة'
+        usage: 'لا توجد أجهزة تستخدم هذه الشبكة'
+        search: 'ابحث عن الشبكات المخفية'
+        
+    addOtherNetworkView:
+        title: 'أضف شبكة أخرى'
+        networkDetails: 'تفاصيل الشبكة'
+        name: 'الاسم'
+        networkName: 'اسم الشبكة'
+        security: 'حماية'
+        password: 'كلمة المرور'
+        enterPassword: 'أدخل كلمة المرور'
+        wpa2: 'WPA2'
+        
+        otherNetworkWarning1: 'أنت متصل بشبكة Wifi أخرى. هل تريد الاتصال بالشبكة الجديدة؟'
+        otherNetworkWarning2: 'قد يؤثر استخدام شبكتين مختلفتين على العمليات غير المتصلة بالإنترنت. اعرف المزيد هل أنت متأكد أنك تريد المتابعة؟'
+
+    networkCredentialsView:
+        title: 'بيانات اعتماد الشبكة'
+        wifiDetails: 'تفاصيل Wi-Fi'
+        wifiPassword: 'كلمة مرور Wi-Fi'
+        
+    enterCodeManuallyView:
+        title: 'إدخال رمز يدويا'
+        subtitle: 'تحقق من رمز الجهاز الموجود في الخلف وأدخل الرمز أدناه.'
+        setupCode: 'كود الإعداد'
+        discriminator: 'رمز التمييز'
+        payloadCode: 'استخدم كود الحمولة'
+        payload: 'كود الحمولة'
+        setup: 'استخدم كود الإعداد و رمز التمييز'
+
+###############################
+####### User Profile Flow #####
+###############################
+# TODO: Add translations for user profile screen
